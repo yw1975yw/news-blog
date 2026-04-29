@@ -48,7 +48,7 @@ def generate_image(prompt, output_path, width=1344, height=768, seed=None, model
         
         content_type = response.headers.get("Content-Type", "")
         if "image" not in content_type and len(response.content) < 1000:
-            print(f"❌ 响应不是图片: {content_type}")
+            print(f"❌ 响应不是图片: {content_type}, size={len(response.content)}")
             print(f"   Body: {response.text[:200]}")
             return False
         
