@@ -114,10 +114,12 @@ def step_1_search_news(count=20):
                             if skip or title in seen_titles:
                                 continue
                             
-                            # 清理内容：转繁体为简体，移除英文和特殊符号
+                            # 清理标题（使用专门的标题清理函数）
+                            title = clean_title(title)
+
+                            # 清理内容（使用内容清理函数）
                             content = clean_news_content(raw_content)
-                            title = clean_news_content(title)
-                            
+
                             # 跳过太短的内容
                             if len(content) < 30:
                                 continue
@@ -229,43 +231,242 @@ def extract_image_keywords(title, summary):
     return ", ".join(keywords_found[:3])  # 最多返回3个关键词
 
 
+def translate_title_to_en(title):
+    """将中文标题翻译为英文关键词短语，用于图片生成"""
+    import re
+
+    # 中文到英文关键词的映射（标题专用的精简翻译）
+    TITLE_TRANSLATION = [
+        ("习近平总书记", "President Xi Jinping"),
+        ("习近平", "Xi Jinping"),
+        ("川普普京", "Trump Putin"),
+        ("中国男足", "Chinese men's football team"),
+        ("中国女排", "Chinese women's volleyball"),
+        ("人工智能", "artificial intelligence"),
+        ("量子计算", "quantum computing"),
+        ("电动汽车", "electric vehicles"),
+        ("国际科技创新中心", "international technology innovation center"),
+        ("数字中国", "digital China"),
+        ("新能源汽车", "new energy vehicles"),
+        ("中美贸易", "China US trade"),
+        ("联合国", "United Nations"),
+        ("二十届四中全会", "4th Plenary Session"),
+        ("川普", "Trump"),
+        ("特朗普", "Trump"),
+        ("普京", "Putin"),
+        ("拜登", "Biden"),
+        ("美中", "US China"),
+        ("中美", "China US"),
+        ("美国", "United States"),
+        ("中国", "China"),
+        ("航天", "spaceflight"),
+        ("卫星", "satellite"),
+        ("经济", "economy"),
+        ("科技", "technology"),
+        ("AI", "AI"),
+        ("新能源", "new energy"),
+        ("外交", "diplomacy"),
+        ("贸易", "trade"),
+        ("关税", "tariff"),
+        ("峰会", "summit"),
+        ("会议", "conference"),
+        ("全球", "global"),
+        ("国际", "international"),
+        ("突破", "breakthrough"),
+        ("创新", "innovation"),
+        ("发布", "released"),
+        ("开幕", "opened"),
+        ("召开", "held"),
+        ("举行", "held"),
+        ("成功", "successful"),
+        ("上涨", "rose"),
+        ("下跌", "fell"),
+        ("增长", "growth"),
+        ("下降", "decline"),
+        ("要闻", "top news"),
+        ("今日要闻", "today's top news"),
+        ("热点", "hot topic"),
+        ("头条", "headline"),
+    ]
+
+    # 直接替换已知词组（按长度降序，避免短词先替换导致长词无法匹配）
+    text = title
+    for cn, en in TITLE_TRANSLATION:
+        text = text.replace(cn, " " + en + " ")
+
+    # 移除剩余中文字符
+    text = re.sub(r'[\u4e00-\u9fa5]', ' ', text)
+
+    # 清理多余空白和标点
+    text = re.sub(r'[\s,。！？；：、]+', ' ', text).strip()
+
+    # 在英文单词/词组之间加空格（让 CamelCase 和连写词分开）
+    # 例如 "TrumpPutin" → "Trump Putin", "XiJinping" → "Xi Jinping"
+    text = re.sub(r'([a-z])([A-Z])', r'\1 \2', text)  # camelCase → 空格
+    text = re.sub(r'([a-zA-Z])([a-z])(?=[A-Z])', r'\1 \2', text)  # 词组边界
+    text = re.sub(r'([a-z])([A-Z][a-z])', r'\1 \2', text)
+
+    # 清理多余空格
+    text = re.sub(r'\s+', ' ', text).strip()
+
+    if not text or len(text) < 3:
+        return "breaking news, current events"
+
+    return text
+
+
+def clean_title(text):
+    """专门清理新闻标题：移除网站前缀、尾部来源、特殊分隔符，保留核心标题"""
+    if not text:
+        return "今日要闻"
+
+    import re
+
+    # 0. 繁体转简体
+    text = converter.convert(text)
+
+    # 1. 先移除英文单词（影响后续正则匹配）
+    text = re.sub(r'[a-zA-Z]{2,}', '', text)
+
+    # 2. 移除尾部网站来源（常见新闻网站后缀）
+    SITE_SUFFIX_BLACKLIST = [
+        '手机新浪网', '新浪网', '新浪体育', '新浪财经', '新浪科技',
+        '新华网', '新华网客户端', '新华网财经',
+        '人民网', '人民日报', '人民日报客户端',
+        '央广网', '央视新闻', '中国新闻网', '中国青年网',
+        '网易财经', '网易新闻', '网易科技', '网易体育',
+        '腾讯新闻', '腾讯财经', '腾讯体育', '腾讯科技',
+        '搜狐新闻', '搜狐财经', '凤凰网', '凤凰资讯',
+        '澎湃新闻', '界面新闻', '财新网', '第一财经',
+        '36氪', '虎嗅网', '观察者网', '环球时报',
+        '中国日报网', '经济参考报', '经济日报',
+        '21经济网', '21世纪经济报道', '经济观察网',
+        '国家统计局', '国家数据局', '央视网',
+        '新京报', '北京日报', '参考消息',
+        '亿欧网', '雷锋网', 'PingWest', '品玩',
+        '群益期货',
+        '的文章列表', '的热门文章', '热门文章',
+    ]
+    for suffix in SITE_SUFFIX_BLACKLIST:
+        if text.endswith(suffix):
+            text = text[:-len(suffix)]
+        if text.startswith(suffix):
+            text = text[len(suffix):]
+
+    # 3. 移除头部网站前缀（抓取类网站名前缀）
+    SITE_PREFIX_BLACKLIST = [
+        '新浪体育', '新浪财经', '新浪科技', '新浪新闻',
+        '新浪中国足球热点小时报', '新浪人工智能热点小时报',
+        '新浪汽车热点小时报', '新浪军事热点小时报',
+        '新浪国际热点小时报', '新浪财经热点小时报',
+        '网易号', '腾讯新闻', '网易新闻',
+        '今日头条', '百度新闻', '搜狐新闻',
+        '凤凰新闻', '澎湃新闻',
+        '华尔街日报', '华尔街日报中文版',
+        '中文版',
+        '国际热点小时报',
+        '热点小时报', '实时热点', '热点速递',
+        '新闻摘要', '新闻速报', '新闻早报', '新闻晚报',
+    ]
+    for prefix in SITE_PREFIX_BLACKLIST:
+        if text.startswith(prefix):
+            text = text[len(prefix):]
+
+    # 4. 移除头部日期前缀（如 "2026年04月30日" 或 "26年4月30日"）
+    text = re.sub(r'^\d{4}年\d{1,2}月\d{1,2}[日号](\s*[0-9时:：]+)?\s*', '', text)
+    text = re.sub(r'^\d{1,2}年\d{1,2}月\d{1,2}[日号](\s*[0-9时:：]+)?\s*', '', text)
+
+    # 5. 移除尾部数字ID/来源（如：12345678、ABC123等残留数字串）
+    text = re.sub(r'\d{4,}$', '', text)
+    text = re.sub(r'^新浪', '', text)
+
+    # 6. 移除标题中的特殊分隔符和列表标记
+    text = re.sub(r'[丨｜‖\||／/\\\\\_]', '', text)  # 竖线分隔符和下划线
+    text = re.sub(r'^\d+[.、]\s*', '', text)  # 数字编号
+
+    # 7. 移除URL残留
+    text = re.sub(r'http[s]?://\S+', '', text)
+    text = re.sub(r'www\.\S+', '', text)
+
+    # 8. 移除多余空白（统一在此处strip，不在中间处理）
+    text = re.sub(r'\s+', ' ', text).strip()
+
+    # 9. 如果标题为空或太短，生成默认标题
+    if not text or len(text) < 4:
+        return "今日要闻"
+
+    # 9. 截断过长标题，保留前40字
+    if len(text) > 40:
+        # 尝试在句号或逗号处截断
+        truncated = text[:40]
+        last_punct = max(truncated.rfind('，'), truncated.rfind('。'),
+                         truncated.rfind('：'), truncated.rfind('—'))
+        if last_punct > 15:
+            text = text[:last_punct + 1]
+        else:
+            text = truncated.rstrip() + "……"
+
+    return text
+
+
 def clean_news_content(text):
     """清理新闻内容：移除英文、繁体、特殊符号，转为纯简体中文"""
     if not text:
         return "暂无内容"
-    
+
     import re
-    
+
     # 0. 首先转换繁体为简体
     text = converter.convert(text)
-    
+
     # 1. 移除 markdown 链接和图片标记 ![[ ]] [[ ]] [视频]
     text = re.sub(r'!\[\[.*?\]\]', '', text)
     text = re.sub(r'\[\[视频\].*?\]', '', text)
     text = re.sub(r'\[.*?\]\(.*?\)', '', text)
-    
+
     # 2. 移除 Markdown 标题标记 ### ## *
     text = re.sub(r'^#+\s*', '', text, flags=re.MULTILINE)
     text = re.sub(r'\*\*|\*', '', text)
-    
+
     # 3. 移除英文单词（保留中文）
-    # 这个复杂，需要仔细处理 - 只移除���英文部分
-    # 简单方法：把所有连续英文字母替换为空
     text = re.sub(r'[a-zA-Z]{2,}', '', text)
-    
+
     # 4. 移除数字开头的内容（如 "1、", "2、" 作为列表编号）
     text = re.sub(r'^\d+[.、]\s*', '', text, flags=re.MULTILINE)
-    
-    # 5. 移除剩余特殊符号 但保留中文标点
+
+    # 5. 移除特殊分隔符（竖线类）
+    text = re.sub(r'[丨｜‖\||／/\\\\]', '', text)
+
+    # 6. 移除剩余特殊符号 但保留中文标点
     text = re.sub(r'[^\u4e00-\u9fa5\u3000-\u303f\uff00-\uffefa-zA-Z0-9\s\d，。！？；：、""''（）【】《》——…·]', '', text)
-    
-    # 6. 移除多余空白
+
+    # 7. 移除多余空白
     text = re.sub(r'\s+', ' ', text).strip()
-    
-    # 7. 移除 URL
+
+    # 8. 移除 URL
     text = re.sub(r'http[s]?://\S+', '', text)
     text = re.sub(r'www\.\S+', '', text)
-    
+
+    # 9. 移除头部/尾部的网站名前缀（内容层）
+    SITE_BLACKLIST_CONTENT = [
+        '新浪体育', '新浪财经', '新浪科技', '新浪新闻',
+        '新浪中国足球热点小时报', '新浪人工智能热点小时报',
+        '手机新浪网', '新浪网', '新华网', '新华网客户端',
+        '人民网', '人民日报', '央视新闻', '中国新闻网',
+        '网易财经', '网易新闻', '网易科技',
+        '腾讯新闻', '腾讯财经', '腾讯体育',
+        '搜狐新闻', '凤凰网', '澎湃新闻',
+        '21经济网', '21世纪经济报道', '经济观察网',
+        '国家统计局', '国家数据局', '36氪', '虎嗅网',
+    ]
+    for site in SITE_BLACKLIST_CONTENT:
+        if text.startswith(site):
+            text = text[len(site):].lstrip()
+        if text.endswith(site):
+            text = text[:-len(site)].rstrip()
+
+    text = text.strip()
+
     return text if text else "暂无内容"
 
 
@@ -435,14 +636,21 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
         """为单条新闻生成图片（线程安全，带限流）"""
         title = news.get("title", "")
         summary = news.get("summary", "")[:150]
-        raw_prompt = news.get("raw_prompt", "")[:100]
-        
-        keywords = extract_image_keywords(title, summary)
-        prompt_en = f"Realistic news photography: {keywords}. {title}. {summary}. "
+        raw_prompt = news.get("raw_prompt", "")[:150]
+
+        # 从原始内容（含英文）提取关键词，用于图片生成
+        keywords = extract_image_keywords(title, raw_prompt if raw_prompt else summary)
+
+        # 翻译标题概念为英文（用于图片生成）
+        title_en = translate_title_to_en(title)
+
+        # 构建纯英文提示词（Pollinations是英文模型，纯英文效果更好）
+        prompt_en = f"Realistic news photography: {title_en}. {keywords}. "
         prompt_en += "8K ultra high definition, photorealistic, detailed, natural lighting, "
-        prompt_en += "professional photojournalism, Reuters/Associated Press style, "
-        prompt_en += "real scene, actual event, no animation, no cartoon, vivid colors, "
-        prompt_en += "cinematic composition, sharp focus, depth of field, current news"
+        prompt_en += "professional photojournalism, Reuters/AP style, "
+        prompt_en += "real news scene, actual event, no animation, no cartoon, vivid colors, "
+        prompt_en += "cinematic composition, sharp focus, depth of field, current news headline"
+        prompt_en = prompt_en[:500]  # 限制提示词长度
 
         image_file = IMAGES_DIR / f"news_{thread_seed:04d}.png"
         
