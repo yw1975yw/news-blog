@@ -56,11 +56,18 @@ def step_1_search_news(count=20):
         '新闻滚动', '新闻直播', '时事与新闻直播', '全球新闻滚动',
         '头条汇总', '世界十大新闻', '新闻头条', '新闻排行榜',
         '网带您看遍', '全球新闻网', '联合新闻网', '大纪元',
-        '法广', 'BBC中文网', '美国之音', '自由亚洲电台',
-        '今日头条', '百度新闻', '新浪新闻', '搜狐新闻',
-        '凤凰网资讯', '环球时报', '观察者网',
-        '今日热点', '热点汇总', '热点新闻', '每日热点',
-        '新闻汇总', '新闻速递', '新闻简报', '新闻早餐',
+        '法广', 'RFI', 'BBC中文网', '美国之音', '自由亚洲电台',
+        '联合早报', 'TVB', 'TVB News', '无线新闻', '無綫新聞', '八度空間',
+        '新浪', '新浪新闻', '新浪财经', '新浪体育', '新浪科技',
+        '网易', '网易新闻', '腾讯', '腾讯新闻', '搜狐', '搜狐新闻',
+        '凤凰', '澎湃', '华尔街日报',
+        '新华网', '人民网', '央广网', '央视', '中国新闻网', '中国青年网',
+        '热点小时报', '实时热点', '热点速递', '热点实时',
+        '新闻摘要', '新闻速报', '新闻早报', '新闻晚报',
+        '新闻滚动', '新闻直播', '新闻简报', '新闻头条', '新闻排行榜',
+        '无线', '无线新闻', '大纪元', '联合早报',
+        '法广', 'RFI', 'BBC', '美国之音', '自由亚洲电台',
+        '今日头条', '百度', '百度新闻', '观察者网',
     ]
 
     try:
@@ -103,24 +110,60 @@ def step_1_search_news(count=20):
                     if 'results' in response:
                         for item in response['results']:
                             title = item.get('title', '')[:80]  # 截取标题避免过长
-                            # 调试：写入原始标题到临时文件
-                            with open('/tmp/news_titles.txt', 'a') as f:
-                                f.write(f"RAW: {title}\n")
                             raw_content = item.get('content', '')
-                            
-                            # 跳过黑名单中的feed/聚合网站
+
+                            # 第一步：解码HTML实体并统一简繁（所有后续处理基于简体）
+                            import html as _html_mod
+                            title = _html_mod.unescape(title)
+                            title = converter.convert(title)  # 繁→简统一
+                            # 移除英文字符（英文媒体名等）
+                            title = re.sub(r'[a-zA-Z]{2,}', '', title)
+                            # 移除URL残留
+                            title = re.sub(r'http[s]?://\S+', '', title)
+                            title = re.sub(r'www\.\S+', '', title)
+
+                            # 第二步：在简体标题上做去重和来源过滤
+                            if title in seen_titles:
+                                continue
                             skip = False
                             for bad in FEED_BLACKLIST:
                                 if bad in title:
                                     skip = True
                                     break
-                            if skip or title in seen_titles:
+                            if skip:
                                 continue
-                            
-                            # 清理标题（使用专门的标题清理函数）
-                            title = clean_title(title)
 
-                            # 清理内容（使用内容清理函数）
+                            # 第三步：精细清洗（简繁统一后版本）
+                            # 移除日期前缀（多种格式）
+                            title = re.sub(r'\d{4}年\d{1,2}月\d{1,2}[日号](\s*[0-9时:：]+)?\s*', '', title)
+                            title = re.sub(r'\d{1,2}年\d{1,2}月\d{1,2}[日号](\s*[0-9时:：]+)?\s*', '', title)
+                            title = re.sub(r'[?#]?\d{8}', '', title)
+                            title = re.sub(r'\d{2}\.\d{2}\s+', '', title)
+                            title = re.sub(r'\d{7,}', '', title)
+                            # 移除尾部日期后缀
+                            title = re.sub(r'[。！？；，、]\d{1,2}年\d{1,2}月\d{1,2}[日号](\s*[0-9时:：]+)?[\s\-—–…]*$', '', title)
+                            title = re.sub(r'\d{1,2}年\d{1,2}月\d{1,2}[日号][\s\-—–…]*$', '', title)
+                            # 移除全角括号包裹的日期
+                            title = re.sub(r'[（(]\d{4}年\d{1,2}月\d{1,2}[日号)）]', '', title)
+                            title = re.sub(r'[（(]\d{1,2}年\d{1,2}月\d{1,2}[日号)）]', '', title)
+                            # 移除特殊分隔符、引用标记
+                            title = re.sub(r'[「」『』【】《》〈〉〖〗〘〙〚〛‹›«»]', '', title)
+                            title = re.sub(r'[丨｜‖\||／/\\\\_]', '', title)
+                            title = re.sub(r'^\d+[.、]\s*', '', title)
+                            # 移除头尾部残留标点和空白
+                            title = re.sub(r'^[?？!！。；：、,\.\-\—–… ]+', '', title)
+                            title = re.sub(r'[\-—–… ]+$', '', title)
+                            title = re.sub(r'^[ \-—–…]+', '', title)
+                            # 移除多余空白并strip
+                            title = re.sub(r'\s+', ' ', title).strip()
+                            # 移除尾部4+位数字
+                            title = re.sub(r'\d{4,}$', '', title)
+
+                            # 最终兜底：太短则给默认标题
+                            if not title or len(title) < 4:
+                                title = "今日要闻"
+
+                            # 第三步：清洗内容
                             content = clean_news_content(raw_content)
 
                             # 跳过太短的内容
@@ -666,9 +709,6 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
     def generate_single_image(idx, news, thread_seed):
         """为单条新闻生成图片（线程安全，带限流）"""
         title = news.get("title", "")
-        # 调试：打印清洗前后标题
-        if idx <= 3:
-            print(f"[DEBUG idx={idx}] 原始标题: {title}", flush=True)
         summary = news.get("summary", "")[:150]
         raw_prompt = news.get("raw_prompt", "")[:150]
 
