@@ -55,8 +55,17 @@ def generate_image(prompt, output_path, width=1344, height=768, seed=None, model
         output_path = Path(output_path)
         output_path.parent.mkdir(parents=True, exist_ok=True)
         
-        with open(output_path, "wb") as f:
-            f.write(response.content)
+        # 确保输出为真正的 PNG 格式
+        import io
+        from PIL import Image
+        
+        # 将内容加载为图片并转换为 PNG
+        img = Image.open(io.BytesIO(response.content))
+        if img.mode != "RGB":
+            img = img.convert("RGB")
+        
+        # 保存为真正的 PNG
+        img.save(output_path, "PNG")
         
         size_kb = len(response.content) / 1024
         print(f"✅ 图片已保存: {output_path} ({size_kb:.0f} KB)")
