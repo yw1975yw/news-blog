@@ -346,6 +346,8 @@ def clean_title(text):
         '亿欧网', '雷锋网', 'PingWest', '品玩',
         '群益期货',
         '的文章列表', '的热门文章', '热门文章',
+        '华人头条', '无线新闻', '华语新闻', '八度空间华语新闻',
+        '驻墨尔本总领事馆', '外交部新闻',
     ]
     for suffix in SITE_SUFFIX_BLACKLIST:
         if text.endswith(suffix):
@@ -368,6 +370,9 @@ def clean_title(text):
         '热点小时报', '实时热点', '热点速递',
         '新闻摘要', '新闻速报', '新闻早报', '新闻晚报',
         '光明日报', '经济参考报',
+        '无线新闻', '华语新闻', '八度空间',
+        '【新闻第一线】', '【时事纵横】', '【今日焦点】',
+        '华人头条',
     ]
     for prefix in SITE_PREFIX_BLACKLIST:
         if text.startswith(prefix):
@@ -375,11 +380,14 @@ def clean_title(text):
         if prefix in text:
             text = text.replace(prefix, ' ')
 
-    # 4. 移除头部日期前缀（如 "2026年04月30日" 或 "26年4月30日"）
+    # 4. 移除头部日期前缀（多种格式）
     text = re.sub(r'^\d{4}年\d{1,2}月\d{1,2}[日号](\s*[0-9时:：]+)?\s*', '', text)
     text = re.sub(r'^\d{1,2}年\d{1,2}月\d{1,2}[日号](\s*[0-9时:：]+)?\s*', '', text)
-
-    # 5. 移除尾部日期后缀（日期+标点/连字符出现在末尾，如 "。26年4月30日-" 或 "4月30日-"）
+    # 移除 "?YYYYMMDD" 或 "YYYYMMDD" 日期格式
+    text = re.sub(r'[?#]?\d{8}', '', text)
+    # 移除 "MM.DD" 日期格式
+    text = re.sub(r'^\d{2}\.\d{2}\s+', '', text)
+    # 移除尾部日期后缀（日期+标点/连字符出现在末尾，如 "。26年4月30日-" 或 "4月30日-"）
     text = re.sub(r'[。！？；，、]\d{1,2}年\d{1,2}月\d{1,2}[日号](\s*[0-9时:：]+)?[\s\-—–…]*$', '', text)
     text = re.sub(r'\d{1,2}年\d{1,2}月\d{1,2}[日号][\s\-—–…]*$', '', text)
 
@@ -387,22 +395,29 @@ def clean_title(text):
     text = re.sub(r'\d{4,}$', '', text)
     text = re.sub(r'^新浪', '', text)
 
-    # 7. 移除标题中的特殊分隔符和列表标记
+    # 7. 移除标题中的特殊分隔符、引用标记和列表标记
     text = re.sub(r'[丨｜‖\||／/\\\\_]', '', text)  # 竖线分隔符和下划线
     text = re.sub(r'^\d+[.、]\s*', '', text)  # 数字编号
+    # 移除各类引用标记
+    text = re.sub(r'[「」『』【】《》〈〉〖〗〘〙〚〛]', '', text)  # 中文引号和书名号
+    text = re.sub(r'[‹›«»]', '', text)  # 西文尖引号
 
-    # 7. 移除URL残留
+    # 8. 移除URL残留
     text = re.sub(r'http[s]?://\S+', '', text)
     text = re.sub(r'www\.\S+', '', text)
 
-    # 8. 移除尾部残留的标点连字符（如 " -"、"——"、"…"）
+    # 9. 移除全角括号包裹的日期（如 "（2026年4月29日）"）
+    text = re.sub(r'[（(]\d{4}年\d{1,2}月\d{1,2}[日号)）]', '', text)
+    text = re.sub(r'[（(]\d{1,2}年\d{1,2}月\d{1,2}[日号)）]', '', text)
+
+    # 10. 移除尾部残留的标点连字符（如 " -"、"——"、"…"）
     text = re.sub(r'[\-—–… ]+$', '', text)
     text = re.sub(r'^[ \-—–…]+', '', text)
 
-    # 9. 移除多余空白（统一在此处strip，不在中间处理）
+    # 11. 移除多余空白（统一在此处strip，不在中间处理）
     text = re.sub(r'\s+', ' ', text).strip()
 
-    # 10. 如果标题为空或太短，生成默认标题
+    # 12. 如果标题为空或太短，生成默认标题
     if not text or len(text) < 4:
         return "今日要闻"
 
