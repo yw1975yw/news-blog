@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年04月30日 | 环球新闻</title>
+    <meta name="description" content="2026年04月30日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li><a href="contact.html">联系</a></li>
+            <li><a href="history.html">历史</a></li>
+            <li><a href="rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="images/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1>📅 2026年04月30日 全球热点新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年04月30日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+
+                <div class="news-card">
+                    <img src="images/news_20260431.png" alt="特朗普与传媒枪击泯恩仇?20260428" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">1</span>
+                        <h3 class="news-title">特朗普与传媒枪击泯恩仇?20260428</h3>
+                        <p class="news-summary">事件，会否成为特朗普同传媒修补关系的契机。 时刻紧贴香港无线新闻 26年4月30日 巴士的报 12 · 2027 ·。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。目前各方正在保持密切沟通与协调。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260432.png" alt="04.29 8 网络直播 政府调整 ..." class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">2</span>
+                        <h3 class="news-title">04.29 8 网络直播 政府调整 ...</h3>
+                        <p class="news-summary">法航舰戴高乐号地中海演习秀战力20260429 中央社全球晚间新闻 带您快速浏览各报头条【20260430 八度空间早晨新闻】 八度空间华语新闻。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260433.png" alt="2026年04月29日08时今日实时国际" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">3</span>
+                        <h3 class="news-title">2026年04月29日08时今日实时国际</h3>
+                        <p class="news-summary">新浪看点 新浪国际热点小时报2026年04月29日08时今日实时国际热点速递 2026年04月29日 0800 新浪网 作者 缩小字体 放大字体 收藏 微博 微信 分享 0 1、央视：美以伊冲突爆发已过60天 转自：京报网北京日报官方网站【央视：美以伊冲突爆发已过60天】特朗普60天军事行动期限已至 截至目前，美以伊冲突爆发已过60天，而自4月8日临时停火协议达成以来，各方的博弈从未停止。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260434.png" alt="白宫晚宴枪手首听证3项重罪或终身监禁 伊朗" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">4</span>
+                        <h3 class="news-title">白宫晚宴枪手首听证3项重罪或终身监禁 伊朗</h3>
+                        <p class="news-summary">【新闻第一线】白宫晚宴枪手首听证 3项重罪或终身监禁 【新唐人北京时间2026年04月28日讯】今日焦点：惊天密谋曝光！白宫晚宴枪手指控出炉，竟自称「友善刺客」；三项重罪将牢底坐穿；伊朗再出新方案，自爆多余石油；以色列再布防空部队；英国王飞抵美国、访问4天。 英国王抵美访问4天 莱维特谴责政治暴力 今天是4月27日星期一，首先来看最新消息，英国国王查尔斯三世及王后卡蜜拉，今天下午刚刚飞抵安德鲁斯联……</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260435.png" alt="突发！伊朗崩溃了急求美国解封 石油 开放海峡 能源市场" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">5</span>
+                        <h3 class="news-title">突发！伊朗崩溃了急求美国解封 石油 开放海峡 能源市场</h3>
+                        <p class="news-summary">【时事纵横】突发！伊朗崩溃了 急求美国解封 【新唐人北京时间2026年04月28日讯】今日焦点：突发：伊朗刚刚告知美国：我们崩溃了！希望尽快开放海峡；能源市场重大变动：阿联酋宣布退出！伊朗石油装不下要爆炸？用铁路运中国！晚宴枪手作案完整时间线曝光！ 聆听名家观点，看清世界风云。大家好，欢迎收看《时事纵横》，我是金石。今天是4月28日，周二。 【阿联酋宣布退出 能源市场迎重大变化？</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260436.png" alt="发言人表态中华人民共和国外交部" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">6</span>
+                        <h3 class="news-title">发言人表态中华人民共和国外交部</h3>
+                        <p class="news-summary">例行记者会 发言人表态和电话答问 外交部发言人就对加拿大、英国实施免签政策答记者问20260215 视频 毛宁：请中国公民利用航班恢复窗口抓紧时间撤离 微信 微博 外交部发言人办公室系列账号 联系我们 地址：北京市朝阳区朝阳门南大街2号 邮编：100701 电话：861065961114。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260437.png" alt="2026年04月30日06时" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">7</span>
+                        <h3 class="news-title">2026年04月30日06时</h3>
+                        <p class="news-summary">新浪看点 新浪人工智能热点小时报2026年04月30日06时今日实时人工智能热点速递 1、《数字中国发展报告（2025年）》发布 （来源：新华日报） 4月29日，第九届数字中国建设峰会在福建福州开幕。图为拍摄的峰会现场体验区展出的金龙无人配送车。（新华社发） 新华社电 29日，《数字中国发展报告（2025年）》在第九届数字中国建设峰会上正式发布。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260438.png" alt="中国经济圆桌会共话科技创新与产业创新深度融合" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">8</span>
+                        <h3 class="news-title">中国经济圆桌会共话科技创新与产业创新深度融合</h3>
+                        <p class="news-summary">中国经济圆桌会共话科技创新与产业创新深度融合 中国经济圆桌会共话科技创新与产业创新深度融合 20260401 214855 来源：新华社 原标题：中国经济圆桌会向新而行 双向奔赴 聚力向远——中国经济圆桌会共话十五五科技创新与产业创新深度融合 3月25日至29日在北京举行的2026中关村论坛年会，以科技创新与产业创新深度融合为主题，成为十五五开局观察中国发展的重要窗口，为全球科技创新交流合作注入新……</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260439.png" alt="新技术引领未来产业快速崛起" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">9</span>
+                        <h3 class="news-title">新技术引领未来产业快速崛起</h3>
+                        <p class="news-summary">新技术引领未来产业快速崛起 2026年04月27日来源：《经济日报》2026年4月26日（06版） 作者：渠慎宁 新一轮科技革命和产业变革加速演进，前沿技术不断涌现，引领和支撑未来产业快速崛起。今年1月，中共中央政治局就前瞻布局和发展未来产业进行集体学习，习近平总书记指出，科技突破的程度，很大程度上决定未来产业发展的速度、广度、深度。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260440.png" alt="习近平总书记指引未来产业发展 - 国际科技创新中心" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">10</span>
+                        <h3 class="news-title">习近平总书记指引未来产业发展 - 国际科技创新中心</h3>
+                        <p class="news-summary">请使用您的北京市统一身份认证账号和密码登录本平台，如果您在登录过程中遇到任何问题，请及时与我们联系，联系电话：01064850580，13581953095。 您现在的位置：首页 科技动态 三城一区 怀柔科学城 怀柔动态 习近平总书记指引未来产业发展 信创是保障信息技术安全的基础，也为落子未来，推动量子科技、脑机接口等领域发展持续夯实着底层技术支撑。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260441.png" alt="中国科技进阶方向明确！硬核“上新”，产业“裂变”" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">11</span>
+                        <h3 class="news-title">中国科技进阶方向明确！硬核“上新”，产业“裂变”</h3>
+                        <p class="news-summary">首页 宏观 公司 金融 证券 全球 观点 汽车 新健康 人文 智库 更多 大湾区 一带一路 文旅 理财 投资通 21视频 直播 品牌活动 中国科技进阶方向明确！硬核上新，产业裂变 2026年03月30日 1836 21世纪经济报道 21财经 冉黎黎 3月29日，紧扣科技创新与产业创新深度融合这一年度主题的2026中关村论坛年会在北京落下帷幕。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260442.png" alt="新思想引领新征程向新向优中国经济高质量发展步履坚实" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">12</span>
+                        <h3 class="news-title">新思想引领新征程向新向优中国经济高质量发展步履坚实</h3>
+                        <p class="news-summary">【新思想引领新征程】向新向优 中国经济高质量发展步履坚实 央视网消息（新闻联播）：习近平总书记指出，2026年是十五五开局之年，要锚定目标任务，坚定信心、乘势而上，扎实推动高质量发展。今年开年以来，在以习近平同志为核心的党中央坚强领导下，宏观政策靠前发力、应对有力，高质量发展新动能不断累积增强，推动经济运行实现良好开局。 一分钟，34万吨货物在各大港口吞吐进出。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260443.png" alt="推动科技创新和产业创新深度融合--经济·科技" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">13</span>
+                        <h3 class="news-title">推动科技创新和产业创新深度融合--经济·科技</h3>
+                        <p class="news-summary">3月29日，2026中关村论坛年会重大成果专场发布会召开。高能同步辐射光源（）全面建成，为航空航天、新材料、半导体、生物医学和医药等众多领域装上创新。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260444.png" alt="中华人民共和国国民经济和社会发展第十五个五年规划纲要" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">14</span>
+                        <h3 class="news-title">中华人民共和国国民经济和社会发展第十五个五年规划纲要</h3>
+                        <p class="news-summary">中华人民共和国国民经济和社会发展第十五个五年（2026－2030年）规划纲要，根据《中共中央关于制定国民经济和社会发展第十五个五年规划的建议》编制，主要阐明国家战略意图，明确政府工作重点，引导规范社会主体行为，是十五五时期我国全面建设社会主义现代化国家的宏伟蓝图，是全国各族人民共同的行动纲领。 十五五时期在基本实现社会主义现代化进程中具有承前启后的重要地位，是夯实基础、全面发力的关键时期，必须不懈……</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260445.png" alt="第一观察开局之年中央政治局首次集体学习聚焦未来产业发展" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">15</span>
+                        <h3 class="news-title">第一观察开局之年中央政治局首次集体学习聚焦未来产业发展</h3>
+                        <p class="news-summary">第一观察开局之年中央政治局首次集体学习聚焦未来产业发展 2026年02月03日 1001 来源： 新华社 1月30日下午，中共中央政治局就前瞻布局和发展未来产业进行第二十四次集体学习，习近平总书记发表了重要讲话。十五五开局之年，中央政治局首次集体学习聚焦这个课题，传递出新征程上我国将加快培育和发展未来产业，以现代化产业新优势把握未来发展主动权的鲜明信号。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260446.png" alt="贯彻落实党的二十届四中全会和中央经济工作会议精神深入推进数字 ..." class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">16</span>
+                        <h3 class="news-title">贯彻落实党的二十届四中全会和中央经济工作会议精神深入推进数字 ...</h3>
+                        <p class="news-summary">贯彻落实党的二十届四中全会和中央经济工作会议精神 深入推进数字中国建设——全国数据工作会议在京召开 2025年12月29日至30日，全国数据工作会议在京召开。会议以习近平新时代中国特色社会主义思想为指导，全面贯彻党的二十大和二十届历次全会精神，认真落实中央经济工作会议部署、全国发展和改革工作会议要求，总结2025年数据工作，部署2026年重点任务。国家发展改革委党组书记、主任郑栅洁出席会议并讲话。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260447.png" alt="今日要闻" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">17</span>
+                        <h3 class="news-title">今日要闻</h3>
+                        <p class="news-summary">2026年4月28日外交部发言人林剑 主持例行记者会 应中共中央政治局委员、外交部长王毅邀请，第80届联合国大会主席贝尔伯克将于4月29日至30日访华。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260448.png" alt="外交部发言人林剑主持例行记者会" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">18</span>
+                        <h3 class="news-title">外交部发言人林剑主持例行记者会</h3>
+                        <p class="news-summary">2026年4月27日外交部发言人林剑主持例行记者会 20260427 1746 打印 林剑：在两国领导人战略引领下，中澳全面战略伙伴关系保持向好发展势头。黄英贤外长访华期间，王毅外长将同她共同主持第八轮中澳外交与战略对话，就中澳关系及双方共同关心的国际、地区问题深入交换意见。 中方期待通过此访推进落实两国领导人达成的重要共识，增进政治互信，深化互利合作，推动中澳关系稳定、健康、可持续发展，更好造福……</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260449.png" alt="外交部发言人郭嘉昆主持例行记者会中华人民共和国驻美利坚合众国大使馆" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">19</span>
+                        <h3 class="news-title">外交部发言人郭嘉昆主持例行记者会中华人民共和国驻美利坚合众国大使馆</h3>
+                        <p class="news-summary">《人民日报》记者：当前中东局势外溢影响更加明显，各国民生发展受到严重冲击。我们注意到，中方刚刚主办了全球共享发展行动论坛第三届高级别会议，会议发布了《共创未来行动计划成果清单》。请问发言人能否介绍更多情况？在当前背景下，主办论坛有何特殊意义？ 郭嘉昆：今年是习近平主席提出全球发展倡议5周年。5年来，全球发展倡议从中国主张扩大为国际共识，从合作理念拓展到丰富实践，为联合国2030年可持续发展议程提供……</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260450.png" alt="外交部发言人林剑主持例行记者会中华人民共和国外交部" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">20</span>
+                        <h3 class="news-title">外交部发言人林剑主持例行记者会中华人民共和国外交部</h3>
+                        <p class="news-summary">2026年4月28日外交部发言人林剑主持例行记者会 中阿卫视记者：日本首相高市早苗在会议上声称，修订安保三文件是左右国家命运的重要工作，要以俄乌及中东局势为教训，推进应对新型作战方式以及为长期战争做好准备，推进海上安保能力、网络安全和经济安全保障。请问发言人对此有何评论？ 林剑：近期高市政权大力发展军工产业，现在又公然宣称为长期战争做准备。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="index.html">首页</a> | <a href="about.html">关于</a> | <a href="contact.html">联系</a> | <a href="rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">所有新闻内容仅供参考，请以官方发布为准 · 2026年04月30日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+
+    <div style="text-align:center;padding:20px;background:var(--footer-bg);">
+        <a href="../04/index.html">← 返回04月历史存档</a> · <a href="../../index.html">返回首页</a>
+    </div>
+</body>
+</html>
