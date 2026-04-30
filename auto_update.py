@@ -103,6 +103,9 @@ def step_1_search_news(count=20):
                     if 'results' in response:
                         for item in response['results']:
                             title = item.get('title', '')[:80]  # 截取标题避免过长
+                            # 调试：写入原始标题到临时文件
+                            with open('/tmp/news_titles.txt', 'a') as f:
+                                f.write(f"RAW: {title}\n")
                             raw_content = item.get('content', '')
                             
                             # 跳过黑名单中的feed/聚合网站
@@ -321,8 +324,10 @@ def clean_title(text):
         return "今日要闻"
 
     import re
+    import html
 
-    # 0. 繁体转简体
+    # 0. 解码 HTML 实体（&#12304; &#x1F308; 等）再转简体
+    text = html.unescape(text)
     text = converter.convert(text)
 
     # 1. 先移除英文单词（影响后续正则匹配）
@@ -383,7 +388,7 @@ def clean_title(text):
     # 4. 移除头部日期前缀（多种格式）
     text = re.sub(r'^\d{4}年\d{1,2}月\d{1,2}[日号](\s*[0-9时:：]+)?\s*', '', text)
     text = re.sub(r'^\d{1,2}年\d{1,2}月\d{1,2}[日号](\s*[0-9时:：]+)?\s*', '', text)
-    # 移除 "?YYYYMMDD" 或 "YYYYMMDD" 日期格式
+    # 移除 "?YYYYMMDD" 或 "YYYYMMDD" 日期格式（中间位置也要处理）
     text = re.sub(r'[?#]?\d{8}', '', text)
     # 移除 "MM.DD" 日期格式
     text = re.sub(r'^\d{2}\.\d{2}\s+', '', text)
@@ -661,6 +666,9 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
     def generate_single_image(idx, news, thread_seed):
         """为单条新闻生成图片（线程安全，带限流）"""
         title = news.get("title", "")
+        # 调试：打印清洗前后标题
+        if idx <= 3:
+            print(f"[DEBUG idx={idx}] 原始标题: {title}", flush=True)
         summary = news.get("summary", "")[:150]
         raw_prompt = news.get("raw_prompt", "")[:150]
 
