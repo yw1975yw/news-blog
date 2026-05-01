@@ -726,7 +726,9 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
         prompt_en += "cinematic composition, sharp focus, depth of field, current news headline"
         prompt_en = prompt_en[:500]  # 限制提示词长度
 
-        image_file = IMAGES_DIR / f"news_{thread_seed:04d}.png"
+        # 使用日期+序号格式：news_YYYYMMDD_NN.png
+        today = datetime.now().strftime("%Y%m%d")
+        image_file = IMAGES_DIR / f"news_{today}_{idx:02d}.png"
         
         retry_count = 0
         while retry_count <= max_retries:
