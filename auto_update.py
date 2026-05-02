@@ -72,7 +72,7 @@ def step_1_search_news(count=20):
 
     try:
         search_script = Path.home() / ".hermes/scripts/tavily_search.py"
-        date_str = "2026年05月01日"  # 强制使用2026年5月1日
+        date_str = "2026年05月02日"  # 强制使用2026年5月2日
         
         # 使用多个搜索查询获取不同类型的新闻
         queries = [
@@ -770,7 +770,7 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
                      "--nologo"],
                     capture_output=True,
                     text=True,
-                    timeout=180,
+                    timeout=300,
                     env={**os.environ, "NVIDIA_API_KEY": NVIDIA_API_KEY}
                 )
 
