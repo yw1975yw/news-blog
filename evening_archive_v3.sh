@@ -55,12 +55,21 @@ cp "history/$PREV_YEAR/$PREV_MONTH/$SOURCE_DATE.html" "history/$YEAR/$MONTH/$TOD
 echo "✅ 已拷贝：history/$PREV_YEAR/$PREV_MONTH/$SOURCE_DATE.html → history/$YEAR/$MONTH/$TODAY_FILE.html"
 echo ""
 
-# 步骤3：替换日期
-echo "📝 步骤3：替换日期..."
+# 步骤3：替换日期和修复导航链接
+echo "📝 步骤3：替换日期和修复导航链接..."
 sed -i "s/$SOURCE_DATE_STR/$TODAY_STR/g" "history/$YEAR/$MONTH/$TODAY_FILE.html"
-sed -i "s/images\/$SOURCE_DATE\//images\/$YEAR\/$MONTH\/$TODAY_FILE\//g" "history/$YEAR/$MONTH/$TODAY_FILE.html"
+sed -i "s/images\\/$SOURCE_DATE\\//images\\/$YEAR\\/$MONTH\\/$TODAY_FILE\\//g" "history/$YEAR/$MONTH/$TODAY_FILE.html"
+
+# 修复导航链接：将相对路径改为正确的路径
+sed -i 's|<a href="index.html"|<a href="../../../index.html"|g' "history/$YEAR/$MONTH/$TODAY_FILE.html"
+sed -i 's|<a href="about.html"|<a href="../../../about.html"|g' "history/$YEAR/$MONTH/$TODAY_FILE.html"
+sed -i 's|<a href="contact.html"|<a href="../../../contact.html"|g' "history/$YEAR/$MONTH/$TODAY_FILE.html"
+sed -i 's|<a href="history.html"|<a href="../../../history.html"|g' "history/$YEAR/$MONTH/$TODAY_FILE.html"
+sed -i 's|<a href="rss.xml"|<a href="../../../rss.xml"|g' "history/$YEAR/$MONTH/$TODAY_FILE.html"
+
 echo "✅ 已将所有 $SOURCE_DATE_STR 替换为 $TODAY_STR"
 echo "✅ 已将图片路径从 images/$TODAY_FILE/ 改为 images/$YEAR/$MONTH/$TODAY_FILE/"
+echo "✅ 已修复导航链接路径"
 echo ""
 
 # 步骤4：从首页提取新闻并替换

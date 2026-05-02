@@ -72,7 +72,7 @@ def step_1_search_news(count=20):
 
     try:
         search_script = Path.home() / ".hermes/scripts/tavily_search.py"
-        date_str = get_beijing_time().strftime("%Y年%m月%d日")
+        date_str = "2026年05月01日"  # 强制使用2026年5月1日
         
         # 使用多个搜索查询获取不同类型的新闻
         queries = [
@@ -577,10 +577,21 @@ def expand_summary(content, min_length=150, max_length=200):
             "专家指出这一趋势值得持续关注与研究。",
             "相关部门表示将加强监管与政策指导。",
             "公众对这一话题表现出浓厚兴趣与期待。",
+            "这一进展标志着相关领域迈入新阶段。",
+            "各方对此表示高度关注并积极应对。",
+            "该事件对行业发展具有深远意义。",
+            "相关数据表明这一趋势将持续发展。",
+            "业内分析认为未来前景广阔。",
+            "这一变化将带来新的发展机遇。",
+            "各方正在积极推动相关工作开展。",
+            "该举措得到了广泛支持与认可。",
+            "这一成果具有重要的里程碑意义。",
+            "相关研究为后续发展奠定了基础。",
         ]
 
         # 避免重复：优先用不同补充句
         used = set()
+        # 先尝试用关键词匹配的补充句
         for kw in keywords:
             if len(content) >= max_length:
                 break
@@ -590,13 +601,22 @@ def expand_summary(content, min_length=150, max_length=200):
                     used.add(add)
                     break
 
-        # 如果还不够长度，继续添加不重复的补充
+        # 如果还不够长度，继续添加不重复的补充（更积极）
         for add in additions_pool:
             if add not in used and len(content) + len(add) <= max_length:
                 content = content.rstrip('。！？') + "。" + add
                 used.add(add)
             if len(content) >= min_length:
                 break
+
+        # 如果仍然不够，强制添加（即使超过max_length）
+        if len(content) < min_length:
+            for add in additions_pool:
+                if add not in used:
+                    content = content.rstrip('。！？') + "。" + add
+                    used.add(add)
+                    if len(content) >= min_length:
+                        break
 
     # 如果太长，截取并确保句子完整
     if len(content) > max_length:
@@ -682,7 +702,7 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
     import threading
 
     logger.log(f"🎨 步骤 2/5: 并行生成 {len(news_list)} 张图片（{parallel}个线程）")
-    logger.log(f"📊 质量标准: 文件50KB-800KB, 宽≥800, 高≥450, 比例16:9")
+    logger.log(f"📊 质量标准: 文件50KB-800KB, 宽≥1024, 高≥576, 比例16:9")
     logger.log(f"⚡ API限流应对: 失败自动重试最多{max_retries+1}次，每次间隔递增等待")
 
     genai_script = Path.home() / ".hermes/scripts/pollinations_generate.py"
@@ -727,7 +747,7 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
         prompt_en = prompt_en[:500]  # 限制提示词长度
 
         # 使用日期+序号格式：news_YYYYMMDD_NN.png
-        today = datetime.now().strftime("%Y%m%d")
+        today = "20260501"  # 强制使用2026年5月1日
         image_file = IMAGES_DIR / f"news_{today}_{idx:02d}.png"
         
         retry_count = 0
@@ -744,8 +764,8 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
                     ["python3", str(genai_script),
                      prompt_en,
                      "--output", str(image_file),
-                     "--width", "1344",
-                     "--height", "768",
+                     "--width", "1024",
+                     "--height", "576",
                      "--seed", str(thread_seed + retry_count * 100),
                      "--nologo"],
                     capture_output=True,
@@ -822,8 +842,8 @@ def check_image_quality(image_path):
             # Pollinations 质量标准（适配实际输出）
             min_size_kb = 50   # Pollinations 压缩率较高
             max_size_kb = 800
-            min_width = 800    # Pollinations 通常输出 800-1024 宽度
-            min_height = 450
+            min_width = 1024   # Pollinations 通常输出 1024 宽度
+            min_height = 576
             target_ratio = 16/9
             ratio_tolerance = 0.2  # 放宽比例容差
 
@@ -892,7 +912,7 @@ def step_4_create_html(news_list, image_files):
         # 只需要修改新闻卡片部分
 
         from datetime import datetime
-        date_str = get_beijing_time().strftime("%Y年%m月%d日")
+        date_str = "2026年05月01日"  # 强制使用2026年5月1日
 
         news_cards_html = ""
         for idx, (news, image_file) in enumerate(zip(news_list, image_files), 1):
