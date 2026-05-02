@@ -747,7 +747,7 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
         prompt_en = prompt_en[:500]  # 限制提示词长度
 
         # 使用日期+序号格式：news_YYYYMMDD_NN.png
-        today = "20260501"  # 强制使用2026年5月1日
+        today = "20260502"  # 强制使用2026年5月2日
         image_file = IMAGES_DIR / f"news_{today}_{idx:02d}.png"
         
         retry_count = 0
@@ -912,7 +912,7 @@ def step_4_create_html(news_list, image_files):
         # 只需要修改新闻卡片部分
 
         from datetime import datetime
-        date_str = "2026年05月01日"  # 强制使用2026年5月1日
+        date_str = "2026年05月02日"  # 强制使用2026年5月2日
 
         news_cards_html = ""
         for idx, (news, image_file) in enumerate(zip(news_list, image_files), 1):
