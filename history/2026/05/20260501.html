@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年05月01日 | 环球新闻</title>
+    <meta name="description" content="2026年05月01日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li><a href="contact.html">联系</a></li>
+            <li><a href="history.html">历史</a></li>
+            <li><a href="rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="images/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年05月01日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+
+                <div class="news-card">
+                    <img src="images/news_20260501_01.png" alt="全球科技峰会今日开幕" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">1</span>
+                        <h3 class="news-title">全球科技峰会今日开幕</h3>
+                        <p class="news-summary">多国科技领袖齐聚一堂，聚焦人工智能与可持续发展议题。各国专家就AI伦理治理、绿色能源转型、数字经济发展等议题展开深入讨论，共同制定行业新标准，推动全球科技创新合作迈向新阶段。</p>
+                        <div>
+                            <span class="tag">科技</span>
+                            <span class="tag">国际</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_02.png" alt="新能源汽车销量创新高" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">2</span>
+                        <h3 class="news-title">新能源汽车销量创新高</h3>
+                        <p class="news-summary">本月新能源汽车销量同比增长30%，市场前景持续看好。多家厂商加速布局电动化转型，供应链体系持续完善，充电基础设施加快建设，消费者对新能源汽车的接受度显著提升。</p>
+                        <div>
+                            <span class="tag">汽车</span>
+                            <span class="tag">经济</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_03.png" alt="量子计算取得新突破" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">3</span>
+                        <h3 class="news-title">量子计算取得新突破</h3>
+                        <p class="news-summary">量子计算机实现更高稳定性和运算速度，为未来科技发展奠定基础。研究团队在纠错算法和量子比特控制方面取得重大进展，推动量子计算实用化进程。</p>
+                        <div>
+                            <span class="tag">科技</span>
+                            <span class="tag">量子计算</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_04.png" alt="航天发射任务圆满成功" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">4</span>
+                        <h3 class="news-title">航天发射任务圆满成功</h3>
+                        <p class="news-summary">最新卫星成功入轨，为通信网络升级提供支持。本次发射任务标志着航天工业进入新阶段，卫星互联网建设加速推进。</p>
+                        <div>
+                            <span class="tag">航天</span>
+                            <span class="tag">科技</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_05.png" alt="人工智能医疗应用加速" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">5</span>
+                        <h3 class="news-title">人工智能医疗应用加速</h3>
+                        <p class="news-summary">AI在疾病诊断和药物研发中的应用取得显著进展，医疗行业迎来数字化变革。多地医疗机构引入AI辅助诊断系统，提升诊疗效率和准确率。</p>
+                        <div>
+                            <span class="tag">AI</span>
+                            <span class="tag">医疗</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_06.png" alt="可再生能源投资创新高" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">6</span>
+                        <h3 class="news-title">可再生能源投资创新高</h3>
+                        <p class="news-summary">各国加大清洁能源投资力度，推动绿色转型战略实施。太阳能、风能市场持续扩大，技术创新降低成本，储能产业迎来快速发展期。</p>
+                        <div>
+                            <span class="tag">能源</span>
+                            <span class="tag">环保</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_07.png" alt="5G网络覆盖加速推进" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">7</span>
+                        <h3 class="news-title">5G网络覆盖加速推进</h3>
+                        <p class="news-summary">更多城市实现5G网络全覆盖，为数字经济提供基础设施建设支撑。5G应用场景不断丰富，工业互联网、智慧城市等领域加速发展。</p>
+                        <div>
+                            <span class="tag">科技</span>
+                            <span class="tag">通信</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_08.png" alt="在线教育平台用户激增" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">8</span>
+                        <h3 class="news-title">在线教育平台用户激增</h3>
+                        <p class="news-summary">学习数字化趋势明显，在线教育平台用户规模持续增长。个性化学习方案成为行业新趋势，AI辅助教学提升学习效率。</p>
+                        <div>
+                            <span class="tag">教育</span>
+                            <span class="tag">科技</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_09.png" alt="智慧城市建设加速" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">9</span>
+                        <h3 class="news-title">智慧城市建设加速</h3>
+                        <p class="news-summary">多个城市启动智慧城市建设项目，运用物联网、大数据等技术提升城市管理水平。智能交通、智慧安防等领域取得显著成效。</p>
+                        <div>
+                            <span class="tag">科技</span>
+                            <span class="tag">城市</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_10.png" alt="生物科技领域投资活跃" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">10</span>
+                        <h3 class="news-title">生物科技领域投资活跃</h3>
+                        <p class="news-summary">基因编辑、生物制药等前沿领域投资显著增加，生物科技创新成果不断涌现。创新药物研发提速，为疑难疾病治疗带来新希望。</p>
+                        <div>
+                            <span class="tag">科技</span>
+                            <span class="tag">生物</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_11.png" alt="数字经济规模持续扩大" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">11</span>
+                        <h3 class="news-title">数字经济规模持续扩大</h3>
+                        <p class="news-summary">数字经济成为经济增长新引擎，各行业数字化转型加速推进。云计算、大数据、区块链等技术广泛应用，推动产业升级和创新发展。</p>
+                        <div>
+                            <span class="tag">经济</span>
+                            <span class="tag">科技</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_12.png" alt="国际经贸合作深化" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">12</span>
+                        <h3 class="news-title">国际经贸合作深化</h3>
+                        <p class="news-summary">多国签署新的经贸合作协议，推动全球贸易自由化。区域经济一体化进程加快，为各国经济发展注入新动力。</p>
+                        <div>
+                            <span class="tag">国际</span>
+                            <span class="tag">经济</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_13.png" alt="绿色金融发展迅速" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">13</span>
+                        <h3 class="news-title">绿色金融发展迅速</h3>
+                        <p class="news-summary">绿色债券、绿色信贷等金融产品规模快速增长，支持可持续发展项目。金融机构积极布局绿色金融领域，推动经济绿色转型。</p>
+                        <div>
+                            <span class="tag">金融</span>
+                            <span class="tag">环保</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_14.png" alt="智能制造产业升级" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">14</span>
+                        <h3 class="news-title">智能制造产业升级</h3>
+                        <p class="news-summary">制造业智能化改造加速推进，工业机器人应用范围扩大。智能工厂建设提速，生产效率和产品质量显著提升。</p>
+                        <div>
+                            <span class="tag">制造</span>
+                            <span class="tag">科技</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_15.png" alt="网络安全防护加强" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">15</span>
+                        <h3 class="news-title">网络安全防护加强</h3>
+                        <p class="news-summary">各国加强网络安全建设，提升关键信息基础设施防护能力。网络安全技术不断创新，为数字经济发展提供安全保障。</p>
+                        <div>
+                            <span class="tag">安全</span>
+                            <span class="tag">科技</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_16.png" alt="文化产业发展繁荣" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">16</span>
+                        <h3 class="news-title">文化产业发展繁荣</h3>
+                        <p class="news-summary">文化创意产业规模持续扩大，数字文化产品丰富多样。文化消费市场活跃，为经济增长注入新活力。</p>
+                        <div>
+                            <span class="tag">文化</span>
+                            <span class="tag">经济</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_17.png" alt="体育产业迎来新机遇" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">17</span>
+                        <h3 class="news-title">体育产业迎来新机遇</h3>
+                        <p class="news-summary">体育赛事活动增多，体育消费市场持续扩大。体育产业与科技、旅游等产业融合发展，形成新的经济增长点。</p>
+                        <div>
+                            <span class="tag">体育</span>
+                            <span class="tag">经济</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_18.png" alt="农业现代化进程加快" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">18</span>
+                        <h3 class="news-title">农业现代化进程加快</h3>
+                        <p class="news-summary">智慧农业技术应用范围扩大，农业生产效率显著提升。农业科技创新成果丰硕，为粮食安全提供有力保障。</p>
+                        <div>
+                            <span class="tag">农业</span>
+                            <span class="tag">科技</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_19.png" alt="国际合作应对气候变化" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">19</span>
+                        <h3 class="news-title">国际合作应对气候变化</h3>
+                        <p class="news-summary">各国加强气候合作，共同应对全球气候变化挑战。清洁能源技术推广应用，碳减排目标持续推进。</p>
+                        <div>
+                            <span class="tag">国际</span>
+                            <span class="tag">环保</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="images/news_20260501_20.png" alt="太空探索取得新进展" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">20</span>
+                        <h3 class="news-title">太空探索取得新进展</h3>
+                        <p class="news-summary">人类太空探索活动不断深入，火星探测任务取得重要成果。空间站建设稳步推进，为未来深空探索奠定基础。</p>
+                        <div>
+                            <span class="tag">航天</span>
+                            <span class="tag">科技</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="index.html">首页</a> | <a href="about.html">关于</a> | <a href="contact.html">联系</a> | <a href="rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">所有新闻内容仅供参考，请以官方发布为准 · 2026年05月01日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
