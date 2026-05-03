@@ -72,7 +72,7 @@ def step_1_search_news(count=20):
 
     try:
         search_script = Path.home() / ".hermes/scripts/tavily_search.py"
-        date_str = "2026年05月02日"  # 强制使用2026年5月2日
+        date_str = datetime.now().strftime("%Y年%m月%d日")  # 使用当前日期
         
         # 使用多个搜索查询获取不同类型的新闻
         queries = [
