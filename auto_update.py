@@ -757,8 +757,8 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
             try:
                 logger.log(f"🖼️  生成图片 {idx}/{len(news_list)}: {title[:30]}... (尝试 {retry_count + 1}/{max_retries + 1})")
                 
-                # 限流：请求间隔至少8秒
-                rate_limited_sleep(min_interval=8)
+                # 限流：请求间隔至少20秒
+                rate_limited_sleep(min_interval=20)
 
                 result = subprocess.run(
                     ["python3", str(genai_script),
@@ -770,7 +770,7 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
                      "--nologo"],
                     capture_output=True,
                     text=True,
-                    timeout=300,
+                    timeout=600,
                     env={**os.environ, "NVIDIA_API_KEY": NVIDIA_API_KEY}
                 )
 
@@ -785,7 +785,7 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
                             image_file.unlink()
                         retry_count += 1
                         if retry_count <= max_retries:
-                            wait_time = 15 + retry_count * 10
+                            wait_time = 60
                             logger.log(f"⏳ 等待 {wait_time} 秒...")
                             time.sleep(wait_time)
                         else:
@@ -798,7 +798,7 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
                         logger.log(f"⚠️  图片 {idx} 触发API限流，增加等待时间...")
                         retry_count += 1
                         if retry_count <= max_retries:
-                            wait_time = 60 + retry_count * 30
+                            wait_time = 60
                             logger.log(f"⏳ 限流等待 {wait_time} 秒...")
                             time.sleep(wait_time)
                         else:
@@ -807,7 +807,7 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
                         logger.log(f"⚠️  图片 {idx} 生成失败: {result.stderr[:100] if result.stderr else result.stdout[:100]}")
                         retry_count += 1
                         if retry_count <= max_retries:
-                            wait_time = 15 + retry_count * 10
+                            wait_time = 60
                             logger.log(f"⏳ 等待 {wait_time} 秒后重试...")
                             time.sleep(wait_time)
                         else:
