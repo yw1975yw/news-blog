@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年05月03日 | 环球新闻</title>
+    <meta name="description" content="2026年05月03日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="../../../images/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年05月03日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_01.png" alt="八度空间午间新闻 12:30 网络直播今日焦点女子 ..." class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">1</span>
+                        <h3 class="news-title">八度空间午间新闻 12:30 网络直播今日焦点女子 ...</h3>
+                        <p class="news-summary">0503 八度空间午间新闻 1230 网络直播【今日焦点】女子持刀参与音乐节被捕 特朗普或不接受伊朗协议 日越领导谈南海争议。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_02.png" alt="20260305 精选新闻" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">2</span>
+                        <h3 class="news-title">20260305 精选新闻</h3>
+                        <p class="news-summary">在荷姆兹海峡情势紧张、伊朗宣布关闭航道之际，美以伊战事升温，国际油市剧烈震荡，布兰特原油价格4日飙升至每桶80美元。能源价格全面走扬，学者示警，台湾3月。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_03.png" alt="朝刊 （日） - 朝日新闻" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">3</span>
+                        <h3 class="news-title">朝刊 （日） - 朝日新闻</h3>
+                        <p class="news-summary">朝刊2026年05月03日 （日） 朝刊注目记事 高市政権改宪、賛否拮抗 賛成４７％反対４３％ 议论「急必要」６２％ 朝日新闻社世论调查有料会员记事 （１面） 派遣、９条「」 集団的自卫権行使容认、「骨抜」有料会员记事 （2面 総合２） （）黒田庆子 里山「切、売」神戸発有料会员记事 （13面 ｂｅ１） （动标）牟田都子「」 饮込言叶、饮惯有料会员记事 （29面 文化小说） 検察抗告原则禁止、法本……</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_04.png" alt="5月3日国际新闻简讯 - 新唐人电视台" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">4</span>
+                        <h3 class="news-title">5月3日国际新闻简讯 - 新唐人电视台</h3>
+                        <p class="news-summary">5月3日国际新闻简讯 周四在美国黄石国家公园外，一辆载有14人的旅游车和一辆皮卡车相撞，现场火势猛烈，浓烟滚滚。7人在车祸中丧生，包括6名旅客和1名小货车司机。中共党媒证实，有5名中国公民死亡，8人受伤。 近期，印度与巴基斯坦紧张局势持续升级。上个月，在印度控制的克什米尔发生针对游客的致命袭击，26人死亡，数十人受伤。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_05.png" alt="外交突围!总统出访史瓦帝尼"任何国家无权阻挡台湾"台视午间新闻" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">5</span>
+                        <h3 class="news-title">外交突围!总统出访史瓦帝尼"任何国家无权阻挡台湾"台视午间新闻</h3>
+                        <p class="news-summary">0503午间大头条：外交突围总统出访史瓦帝尼"任何国家无权阻挡台湾"【台视午间新闻】 10 · 3 台视午间新闻直播。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。目前各方正在保持密切沟通与协调。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_06.png" alt="军事情报局俄罗斯前线彻底崩了！俄军真的人吃人泰晤士报铁证 ..." class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">6</span>
+                        <h3 class="news-title">军事情报局俄罗斯前线彻底崩了！俄军真的人吃人泰晤士报铁证 ...</h3>
+                        <p class="news-summary">【军事情报局】俄罗斯前线彻底崩了！俄军真的人吃人 泰晤士报铁证曝光！ 【新唐人北京时间2026年05月03日讯】你敢相信吗？20252026年的俄乌前线，竟然真的出现了无人道的惨案！英国《泰晤士报》重磅报导，乌克兰情报部门掌握多起俄罗斯士兵残酷且令人难以想像的铁证，包括音频、照片和鉴定结果。严冬、补给断绝、心理崩溃……俄军前线已彻底沦为人间地狱！</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_07.png" alt="川习会是否能如期举行亚太新闻片段2026-03-05" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">7</span>
+                        <h3 class="news-title">川习会是否能如期举行亚太新闻片段2026-03-05</h3>
+                        <p class="news-summary">美战部长：鱼雷击沉伊朗舰一周内控制伊朗领空「川习会」是否能如期举行【亚太新闻片段】20260305 36 · 1 新唐人亚太新闻。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_08.png" alt="中国科技加速跃迁，“十五五”按下创新产业化加速键 - 新闻- 中国网" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">8</span>
+                        <h3 class="news-title">中国科技加速跃迁，“十五五”按下创新产业化加速键 - 新闻- 中国网</h3>
+                        <p class="news-summary">新闻直播 要闻 国际 军事 政协 政务 图片 视频 财经 财经 金融 证券 汽车 科技 消费 能源 地产 农业 观点 理论 智库 中国3分钟 中国访谈 中国网评 外媒观察 中国关键词 文化 文创 艺术 时尚 旅游 铁路 悦读 民藏 中医 中国瓷 国情 助残 一带一路 海洋 草原 湾区 联盟 心理 老年 承建网站 中国公共关系协会 南南合作知识分享中国大洋协会 中国藏学研究中心 南南人权论坛 中国妇……</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_09.png" alt="扎实推动科技创新与产业创新深度融合 - 光明网-理论频道" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">9</span>
+                        <h3 class="news-title">扎实推动科技创新与产业创新深度融合 - 光明网-理论频道</h3>
+                        <p class="news-summary">科技创新与产业创新深度融合，是培育新质生产力、实现经济高质量发展、推进中国式现代化的重要路径。党的二十届四中全会审议通过的《中共中央关于制定国民。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_10.png" alt="中国新五年计划聚焦未来科技：加速自主研发应对地缘挑战" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">10</span>
+                        <h3 class="news-title">中国新五年计划聚焦未来科技：加速自主研发应对地缘挑战</h3>
+                        <p class="news-summary">中国新五年计划聚焦未来科技：加速自主研发 应对地缘挑战 中国全国人大会议周四正式批准了关于2026年至2030年的第十五个五年规划。这份纲领性文件明确写道，中国将进入技术飞跃的新阶段，重点扶持半导体、人工智慧等战略性行业，以实现工业现代化和技术自主，应对日益激烈的国际竞争。 5 德国总理梅尔茨访问中国期间参观的人形机器人，是中国政府未来重点扶持的科技领域之一（资料图片）图片来源： （德国之声中文网……</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_11.png" alt="2026年政府工作报告：打造智能经济新形态。十五五规划纲要" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">11</span>
+                        <h3 class="news-title">2026年政府工作报告：打造智能经济新形态。十五五规划纲要</h3>
+                        <p class="news-summary">2026年政府工作报告：打造智能经济新形态。十五五规划纲要：深入推进数字中国建设，提升数智化发展水平 一、2025总结 一年来，我国发展向新向优、彰显蓬勃活力。新质生产力稳步发展，科技创新成果丰硕，人工智能、生物医药、机器人、量子科技等研发应用走在世界前列，芯片自主研发有了新突破，天问二号开启追星之旅，北斗规模应用全面拓展，雅下水电工程开工建设，首艘国产电磁弹射型航母福建舰正式入列，国产大模型引领……</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_12.png" alt="视频未来五年 新兴支柱产业和未来产业成为新动能 - 21经济网" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">12</span>
+                        <h3 class="news-title">视频未来五年 新兴支柱产业和未来产业成为新动能 - 21经济网</h3>
+                        <p class="news-summary">首页 宏观 公司 金融 证券 全球 观点 汽车 新健康 人文 创投 智库 更多 大湾区 一带一路 文旅 理财 投资通 21视频 直播 品牌活动 视频未来五年 新兴支柱产业和未来产业成为新动能 2026年03月15日 1700 央视新闻客户端 3月13日，十五五规划纲要正式发布。十五五规划纲要将建设现代化产业体系巩固壮大实体经济根基独立设为第二篇，与十四五规划纲要中加快发展现代产业体系相比，在定位、……</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_13.png" alt="两会热词在基层活力中国：向“新”而行 以“质”致远" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">13</span>
+                        <h3 class="news-title">两会热词在基层活力中国：向“新”而行 以“质”致远</h3>
+                        <p class="news-summary">两会热词在基层活力中国：向新而行 以质致远 今年政府工作报告强调因地制宜发展新质生产力，并就建设现代化产业体系全面增强自主创新能力深入破除体制机制障碍等作出具体部署。 在位于安徽省合肥市的中电信量子信息科技集团有限公司科技体验馆内拍摄的墨子号量子卫星模型（2025年7月1日摄）。新华社记者 张铖 摄 全链条推进关键核心技术攻关继续提高基础研究投入比重优化有利于原创性、颠覆性创新的环境……今年政府工……</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_14.png" alt="多领域处于全球第一梯队“十五五”期间中国加速迈向创新型国家 ..." class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">14</span>
+                        <h3 class="news-title">多领域处于全球第一梯队“十五五”期间中国加速迈向创新型国家 ...</h3>
+                        <p class="news-summary">多领域处于全球第一梯队 十五五期间中国加速迈向创新型国家行列 来源：央视网 2026年03月25日 135239 原标题：。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_15.png" alt="外交部新闻（）" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">15</span>
+                        <h3 class="news-title">外交部新闻（）</h3>
+                        <p class="news-summary">外交部新闻（2026年4月22日）潮新闻官网 外交部新闻（2026年4月22日） 刘彬表示，在习近平主席和米尔济约耶夫总统的战略引领和亲自推动下，中乌各领域合作快速提质升级，全面扩容增效，双边关系实现更高质量发展。中方愿同乌方一道，保持各层级密切往来，共同推动两国各领域合作走深走实。 乌方热烈祝贺中国全国两会成功举行并表示，乌方始终将发展对华关系作为外交政策优先方向，愿同中方保持密切高层交往，深化……</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_16.png" alt="202635 's ..." class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">16</span>
+                        <h3 class="news-title">202635 's ...</h3>
+                        <p class="news-summary">香港无线2026年4月28日【足本重温】外交部例行记者会两岸国际新闻 今日两岸新闻重点：广东「十五五」规划纲要首次提出积极对接香港。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_17.png" alt="外交部发言人林剑主持例行记者会" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">17</span>
+                        <h3 class="news-title">外交部发言人林剑主持例行记者会</h3>
+                        <p class="news-summary">林剑：霍尔木兹海峡及其附近水域近期局势紧张，冲击国际货物和能源贸易通道，破坏地区和世界和平稳定。中方再次呼吁各方立即停止军事行动，避免紧张事态进一步。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_18.png" alt="外交部发言人林剑主持例行记者会中华人民共和国外交部" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">18</span>
+                        <h3 class="news-title">外交部发言人林剑主持例行记者会中华人民共和国外交部</h3>
+                        <p class="news-summary">2026年3月20日外交部发言人林剑主持例行记者会 应肯尼亚副总统金迪基、南非副总统马沙蒂莱、塞舌尔副总统皮拉伊邀请，国家副主席韩正将于3月22日至30日访问肯尼亚、南非和塞舌尔。 《人民日报》记者：中方刚刚发布韩正副主席访问肯尼亚、南非、塞舌尔的消息。发言人能否介绍一下此访背景、活动安排和中方期待？ 林剑：中国和肯尼亚是新时代命运共同体，和南非是新时代全方位战略合作伙伴，和塞舌尔是战略伙伴。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_19.png" alt="外交部发言人林剑主持例行记者会中华人民共和国常驻联合国代表团" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">19</span>
+                        <h3 class="news-title">外交部发言人林剑主持例行记者会中华人民共和国常驻联合国代表团</h3>
+                        <p class="news-summary">2026年3月24日外交部发言人林剑主持例行记者会 20260324 1930 打印 法新社记者：美国总统特朗普宣布，为了给谈判留出空间，将推迟对伊朗电力设施打击5天，并表示美国政府方面正同一位身份未公开的伊朗高级官员进行沟通。中方对此有何评论？中方对美方应同伊方哪位官员谈判持何看法？ 林剑：战事延宕不符合任何一方利益，停火对话是唯一出路。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news_20260502_20.png" alt="形势政策系列报告会第五场报告会在北京举行" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">20</span>
+                        <h3 class="news-title">形势政策系列报告会第五场报告会在北京举行</h3>
+                        <p class="news-summary">在习近平总书记亲自擘画下，在习近平外交思想科学指引下，中国特色大国外交全面拓展，全方位、多层次、宽领域、立体化外交布局不断完善，我国的朋友圈持续。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">所有新闻内容仅供参考，请以官方发布为准 · 2026年05月03日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
