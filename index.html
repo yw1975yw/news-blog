@@ -78,7 +78,7 @@
             <li><a href="about.html">关于</a></li>
             <li><a href="contact.html">联系</a></li>
             <li><a href="history.html">历史</a></li>
-            <li><a href="../../../rss.xml">RSS</a></li>
+            <li><a href="rss.xml">RSS</a></li>
         </ul>
         <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
     </nav>
@@ -87,223 +87,251 @@
     </div>
     <div class="container">
         <div class="content">
-        <div class="news-grid" id="newsGrid">
+            <div class="cover-section">
+                <img src="images/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年05月08日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+
 
                 <div class="news-card">
-                    <img src="images/news_20260508_1.jpg" alt="中国科学家成功研发新型量子计算机芯片，运算速度提升千倍" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_1.png" alt="港股市场迎5月开门红 恒生指数涨1.71%" class="news-image">
                     <div class="news-content">
                         <span class="news-number">1</span>
-                        <h3 class="news-title">中国科学家成功研发新型量子计算机芯片，运算速度提升千倍</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">港股市场迎5月开门红 恒生指数涨1.71%</h3>
+                        <p class="news-summary">5月4日港股市场迎来5月开门红，主要指数集体上扬，恒生指数涨1.71%，恒生科技指数涨2.86%。大型科技股成上行主力，小米集团涨8.75%，因其4月汽车交付量超3万辆，市场对其汽车业务成长预期升温。半导体、AI应用等板块也表现活跃，交银国际认为港股科技板块估值有修复空间。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_2.jpg" alt="全国新能源汽车销量再创新高，市场渗透率突破百分之五十" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_2.png" alt="商务部发布阻断禁令 对抗美国制裁" class="news-image">
                     <div class="news-content">
                         <span class="news-number">2</span>
-                        <h3 class="news-title">全国新能源汽车销量再创新高，市场渗透率突破百分之五十</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">商务部发布阻断禁令 对抗美国制裁</h3>
+                        <p class="news-summary">5月2日，商务部发布阻断禁令，阻断美国以参与涉伊朗石油交易为由，对恒力石化等5家企业的制裁。2025年以来，美国以参与伊朗石油交易为由制裁中企，违反国际法和国际关系基本准则。商务部为维护国家和企业利益，依法发布禁令，规定不得承认、执行、遵守美国对这5家企业的制裁措施。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_3.jpg" alt="人工智能技术在医疗诊断领域应用取得显著成效" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_3.png" alt="美国警告中国数据战略威胁" class="news-image">
                     <div class="news-content">
                         <span class="news-number">3</span>
-                        <h3 class="news-title">人工智能技术在医疗诊断领域应用取得显著成效</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">美国警告中国数据战略威胁</h3>
+                        <p class="news-summary">美国国会下属的美中经济与安全审查委员会举行听证会，多位美国专家警告说，中国正在建立一套覆盖人工智能、网络攻击、联网汽车、生物技术、无人机、太空系统和商业平台的庞大数据战略，将原本分散在商业和社会生活中的信息转化为经济、情报和军事竞争优势。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_4.jpg" alt="中国空间站完成新一轮科学实验，取得多项重要科研成果" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_4.png" alt="中国十五五规划聚焦科技自主" class="news-image">
                     <div class="news-content">
                         <span class="news-number">4</span>
-                        <h3 class="news-title">中国空间站完成新一轮科学实验，取得多项重要科研成果</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">中国十五五规划聚焦科技自主</h3>
+                        <p class="news-summary">中国全国人大会议正式批准了关于2026年至2030年的第十五个五年规划。这份纲领性文件明确写道，中国将进入技术飞跃的新阶段，重点扶持半导体、人工智能等战略性行业，以实现工业现代化和技术自主，应对日益激烈的国际竞争。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_5.jpg" alt="全国数字经济规模持续扩大，数字化转型加速推进" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_5.png" alt="经济学家预测霍尔木兹海峡将重开" class="news-image">
                     <div class="news-content">
                         <span class="news-number">5</span>
-                        <h3 class="news-title">全国数字经济规模持续扩大，数字化转型加速推进</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">经济学家预测霍尔木兹海峡将重开</h3>
+                        <p class="news-summary">经济学家丹尼尔拉卡勒表示，美中两国迟早会携手打破霍尔木兹海峡封锁，因为僵持下去的代价太高，双方都有动力寻求解决方案。特朗普和习近平终将使海峡重开，这对全球石油运输和经济发展至关重要。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_6.jpg" alt="新型储能技术实现重大突破，清洁能源发展迎来新机遇" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_20260503_02.png" alt="中东局势牵制台海施压" class="news-image">
                     <div class="news-content">
                         <span class="news-number">6</span>
-                        <h3 class="news-title">新型储能技术实现重大突破，清洁能源发展迎来新机遇</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">中东局势牵制台海施压</h3>
+                        <p class="news-summary">2026年05月08日，中东局势持续紧张，霍尔木兹海峡封锁影响全球石油运输，美国和中国都在寻求解决方案，避免局势进一步恶化。中东牵制台海施压，川习会面临战略误判风险，各方需要谨慎应对。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_7.jpg" alt="教育改革深入推进，素质教育成果显著" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_7.png" alt="中国发展高层论坛聚焦高质量发展" class="news-image">
                     <div class="news-content">
                         <span class="news-number">7</span>
-                        <h3 class="news-title">教育改革深入推进，素质教育成果显著</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">中国发展高层论坛聚焦高质量发展</h3>
+                        <p class="news-summary">中国发展高层论坛2026年年会在北京举行，主题为十五五的中国高质量发展与共创新机遇。与会嘉宾认为，中国是全球稳定与增长的核心引擎，正以自身的稳定发展，日益成为世界的确定性基石和稳定性港湾。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_8.jpg" alt="城市更新行动成效显著，老旧小区改造惠及千万居民" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_8.png" alt="多部门联合支持科技创新" class="news-image">
                     <div class="news-content">
                         <span class="news-number">8</span>
-                        <h3 class="news-title">城市更新行动成效显著，老旧小区改造惠及千万居民</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">多部门联合支持科技创新</h3>
+                        <p class="news-summary">商务部发布禁令阻断美国对5家中国企业实施制裁。三部门联合发布通知，扩大科技创新和技术改造贷款投放，进一步支持设备更新。八部门印发2026年全国科学道德和学风建设宣讲教育工作要点，推动科研诚信建设。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_9.jpg" alt="农业现代化水平持续提升，粮食产量再创新高" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_20260503_01.png" alt="中国新五年规划目标科技超级大国" class="news-image">
                     <div class="news-content">
                         <span class="news-number">9</span>
-                        <h3 class="news-title">农业现代化水平持续提升，粮食产量再创新高</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">中国新五年规划目标科技超级大国</h3>
+                        <p class="news-summary">中国新五年规划继续把中国建设成科技超级大国作为核心目标。中国计划到2030年前将公共研发支出平均每年提高7%。多个前沿领域被列为重点发展方向，包括人工智能、量子科学、核聚变、生物技术、脑科学研究、深海探测以及航天探索。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_10.jpg" alt="文化产业蓬勃发展，文化自信不断增强" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_20260503_02.png" alt="中国十年高科技计划取得成效" class="news-image">
                     <div class="news-content">
                         <span class="news-number">10</span>
-                        <h3 class="news-title">文化产业蓬勃发展，文化自信不断增强</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">中国十年高科技计划取得成效</h3>
+                        <p class="news-summary">作为中国制造2025雄心勃勃的计划的一部分，中国过去十年来一直在缓慢累积包括人工智能在内的高科技产品方面的专业知识。对于分析师来说，DeepSeek的成功标志着中国在AI领域的重要突破，中国高科技计划正在取得显著成效。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_11.jpg" alt="生态环境保护成效显著，绿色发展理念深入人心" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_20260503_03.png" alt="半导体行业迎来关键变化" class="news-image">
                     <div class="news-content">
                         <span class="news-number">11</span>
-                        <h3 class="news-title">生态环境保护成效显著，绿色发展理念深入人心</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">半导体行业迎来关键变化</h3>
+                        <p class="news-summary">2026年半导体行业正在发生关键变化，周期回暖叠加技术跃迁，结构性机会全面爆发。AI成为行业最核心驱动力，全球AI服务器市场收入同比增长71%，AI训练服务器增长接近100%，AI芯片需求达到1100万颗级别，半导体产业进入新一轮上行周期。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_12.jpg" alt="科技创新成果丰硕，专利申请量位居世界前列" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_20260503_04.png" alt="AI芯片大战开启新竞争时代" class="news-image">
                     <div class="news-content">
                         <span class="news-number">12</span>
-                        <h3 class="news-title">科技创新成果丰硕，专利申请量位居世界前列</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">AI芯片大战开启新竞争时代</h3>
+                        <p class="news-summary">AI领域竞争日益激烈，Meta与亚马逊达成协议，获得数百万颗亚马逊自研CPU用于AI工作负载。这一伙伴关系标志着芯片竞争的转折点，从传统GPU转向更专业的处理器。OpenAI发布GPT5.5，在推理、语言处理和多模态交互方面具有增强能力。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_13.jpg" alt="交通运输网络不断完善，出行更加便捷高效" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_20260503_01.png" alt="DeepSeek V4引发半导体行情" class="news-image">
                     <div class="news-content">
                         <span class="news-number">13</span>
-                        <h3 class="news-title">交通运输网络不断完善，出行更加便捷高效</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">DeepSeek V4引发半导体行情</h3>
+                        <p class="news-summary">DeepSeek V4的发布引爆半导体板块行情。该模型不仅在性能上降本增效，还实现了与国产AI芯片的原生适配，打破了有硬件无生态的僵局。前Meta FAIR团队研究总监田渊栋给予高度评价，认为V4将推动技术平权。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_14.jpg" alt="社会保障体系持续健全，民生福祉不断增进" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_20260503_02.png" alt="全球首个AI芯片设计系统发布" class="news-image">
                     <div class="news-content">
                         <span class="news-number">14</span>
-                        <h3 class="news-title">社会保障体系持续健全，民生福祉不断增进</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">全球首个AI芯片设计系统发布</h3>
+                        <p class="news-summary">中国科学院计算技术研究所与软件研究所联合发布了全球首个基于人工智能技术的处理器芯片软硬件全自动设计系统启蒙。该系统首次实现从芯片硬件到基础软件的全流程无人化设计，其产出方案在性能、能效等关键指标上均达到人类专家水平。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_15.jpg" alt="体育事业蓬勃发展，全民健身蔚然成风" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_20260503_03.png" alt="科创板PCB板块业绩高增长" class="news-image">
                     <div class="news-content">
                         <span class="news-number">15</span>
-                        <h3 class="news-title">体育事业蓬勃发展，全民健身蔚然成风</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">科创板PCB板块业绩高增长</h3>
+                        <p class="news-summary">2026年一季报显示，A股科创板PCB板块普遍迎来业绩高增长，17家PCB科创板公司营收总额突破128.88亿元，净利润超16.46亿元。其中12家企业营收、净利润实现双增长，约占披露财报企业总数的71%，AI算力催生高端产能扩张。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_16.jpg" alt="对外开放水平不断提升，国际合作成果丰硕" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_20260503_04.png" alt="AI开启半导体新时代" class="news-image">
                     <div class="news-content">
                         <span class="news-number">16</span>
-                        <h3 class="news-title">对外开放水平不断提升，国际合作成果丰硕</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">AI开启半导体新时代</h3>
+                        <p class="news-summary">2026年AI开启半导体新时代，产业规模接近万亿美元。展会同期论坛聚焦当前多个市场热点，包括化合物半导体、AI智能应用和汽车芯片、先进材料、异构集成、AI算力与CPO等热门领域，AI算力需求激增推动半导体全产业链发展。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_17.jpg" alt="法治建设取得重要进展，社会治理水平显著提升" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_20260503_01.png" alt="应用材料股价大涨50%" class="news-image">
                     <div class="news-content">
                         <span class="news-number">17</span>
-                        <h3 class="news-title">法治建设取得重要进展，社会治理水平显著提升</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">应用材料股价大涨50%</h3>
+                        <p class="news-summary">应用材料公布了两款可实现原子级操作精度、专为新一代人工智能芯片设计的制造工具。人工智能算力需求的激增，已促使业界在2纳米节点引入全环绕栅极晶体管架构。应用材料股价2026年大涨50%，分析师看好其未来发展前景。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_18.jpg" alt="医疗卫生服务体系不断完善，健康中国建设稳步推进" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_20260503_02.png" alt="半导体设备迎来历史性机遇" class="news-image">
                     <div class="news-content">
                         <span class="news-number">18</span>
-                        <h3 class="news-title">医疗卫生服务体系不断完善，健康中国建设稳步推进</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">半导体设备迎来历史性机遇</h3>
+                        <p class="news-summary">在全球人工智能浪潮之下，我国半导体设备行业正迎来历史性发展机遇。智立方等企业通过布局以人工智能产业链为主的光通信、显示半导体、先进封装设备，把握住了人工智能浪潮所带来的机遇，国产半导体设备未来空间巨大。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_19.jpg" alt="乡村振兴战略深入实施，农村面貌焕然一新" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_20260503_03.png" alt="韩国半导体出口飙升173.5%" class="news-image">
                     <div class="news-content">
                         <span class="news-number">19</span>
-                        <h3 class="news-title">乡村振兴战略深入实施，农村面貌焕然一新</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">韩国半导体出口飙升173.5%</h3>
+                        <p class="news-summary">韩国4月份半导体出口额同比飙升173.5%，达到319亿美元，连续13个月刷新月度纪录。AI数据中心的大规模投资，使得市场对高带宽存储器、DDR5、NAND闪存等产品的需求激增。三星电子第一季度净利同比增长474.3%，主要得益于芯片业务强劲表现。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="news-card">
-                    <img src="images/news_20260508_20.jpg" alt="青年创新创业活力迸发，新时代青年展现新担当" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <img src="images/news_20260503_04.png" alt="国产半导体芯片快速成长" class="news-image">
                     <div class="news-content">
                         <span class="news-number">20</span>
-                        <h3 class="news-title">青年创新创业活力迸发，新时代青年展现新担当</h3>
-                        <p class="news-summary"></p>
+                        <h3 class="news-title">国产半导体芯片快速成长</h3>
+                        <p class="news-summary">在人工智能浪潮席卷全球的刺激下，半导体芯片行业正迎来前所未有的黄金发展期。2026年全球半导体市场规模将逼近1万亿美元，同比增长超25%。国内半导体芯片产业链快速成长，多家企业业绩表现亮眼，国产替代进程加速推进。</p>
                         <div>
                             <span class="tag">新闻</span>
                         </div>
@@ -324,7 +352,7 @@
         <footer>
             <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
             <div class="footer-links">
-                <a href="index.html">首页</a> | <a href="about.html">关于</a> | <a href="contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+                <a href="index.html">首页</a> | <a href="about.html">关于</a> | <a href="contact.html">联系</a> | <a href="rss.xml">RSS 订阅</a>
             </div>
             <p style="margin-top:10px;font-size:0.9em;">所有新闻内容仅供参考，请以官方发布为准 · 2026年05月08日</p>
         </footer>
