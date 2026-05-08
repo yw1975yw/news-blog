@@ -3,288 +3,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>环球新闻 - 2026年5月6日</title>
+    <title>全球20条热点新闻 - 2026年05月08日 | 环球新闻</title>
+    <meta name="description" content="2026年05月08日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
         }
-
-        body {
-            font-family: "Microsoft YaHei", "SimHei", Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .header {
-            text-align: center;
-            color: white;
-            margin-bottom: 40px;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-        }
-
-        .header h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .header .date {
-            font-size: 24px;
-            opacity: 0.9;
-        }
-
-        .news-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 25px;
-        }
-
-        .news-card {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .news-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .news-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-
-        .news-content {
-            padding: 20px;
-        }
-
-        .news-title {
-            font-size: 18px;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 10px;
-            line-height: 1.4;
-        }
-
-        .news-summary {
-            font-size: 14px;
-            color: #666;
-            line-height: 1.6;
-        }
-
-        .footer {
-            text-align: center;
-            color: white;
-            margin-top: 40px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-        }
-
-        @media (max-width: 768px) {
-            .news-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .header h1 {
-                font-size: 32px;
-            }
-
-            .header .date {
-                font-size: 18px;
-            }
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>环球新闻</h1>
-            <div class="date">2026年5月6日</div>
-        </div>
-
-        <div class="news-grid">
-            <div class="news-card">
-                <img src="images/news_1.jpg" alt="新闻图片1" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">中国科学家成功研发新型量子计算机芯片，运算速度提升千倍</div>
-                    <div class="news-summary">中国科研团队在量子计算领域取得重大突破，成功研发出新型量子计算机芯片。该芯片采用全新的量子比特设计，运算速度较传统量子计算机提升千倍以上。这一成果标志着中国在量子计算技术方面达到世界领先水平，为未来量子计算机的实用化奠定了坚实基础。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_2.jpg" alt="新闻图片2" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">全国新能源汽车销量再创新高，市场渗透率突破百分之五十</div>
-                    <div class="news-summary">据最新统计数据显示，今年第一季度全国新能源汽车销量持续增长，市场渗透率首次突破百分之五十大关。各大车企纷纷加大新能源车型研发投入，充电基础设施建设加速推进，消费者对新能源汽车的接受度显著提升，行业发展势头强劲。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_3.jpg" alt="新闻图片3" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">人工智能技术在医疗诊断领域应用取得显著成效</div>
-                    <div class="news-summary">国内多家医院引入人工智能辅助诊断系统，在癌症早期筛查、心血管疾病诊断等方面取得显著成效。该系统通过深度学习算法分析医学影像，诊断准确率超过百分之九十五，大幅提高了医疗诊断效率和准确性，为患者带来福音。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_4.jpg" alt="新闻图片4" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">中国空间站完成新一轮科学实验，取得多项重要科研成果</div>
-                    <div class="news-summary">中国空间站天和核心舱完成新一轮科学实验任务，在空间生命科学、微重力物理等领域取得多项重要科研成果。航天员在轨期间完成了数十项实验，为人类探索太空奥秘积累了宝贵数据，展现了中国航天科技的强大实力。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_5.jpg" alt="新闻图片5" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">全国数字经济规模持续扩大，数字化转型加速推进</div>
-                    <div class="news-summary">最新数据显示，全国数字经济规模持续扩大，占国内生产总值比重不断提升。各行业数字化转型加速推进，工业互联网、云计算、大数据等新兴技术广泛应用，为经济高质量发展注入新动能，数字中国建设取得显著成效。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_6.jpg" alt="新闻图片6" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">新型储能技术实现重大突破，清洁能源发展迎来新机遇</div>
-                    <div class="news-summary">科研团队在新型储能技术领域实现重大突破，研发出高能量密度、长寿命的新型电池。该技术可有效解决清洁能源存储难题，为风电、光伏等可再生能源的大规模应用提供技术支撑，推动能源结构转型升级。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_7.jpg" alt="新闻图片7" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">教育改革深入推进，素质教育成果显著</div>
-                    <div class="news-summary">全国教育系统深入推进素质教育改革，在课程设置、教学方法、评价体系等方面进行全面创新。学生综合素质明显提升，创新能力和实践能力显著增强，教育公平和质量同步提高，为培养新时代人才奠定坚实基础。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_8.jpg" alt="新闻图片8" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">城市更新行动成效显著，老旧小区改造惠及千万居民</div>
-                    <div class="news-summary">全国城市更新行动取得显著成效，数万个老旧小区完成改造升级。改造内容包括基础设施完善、环境整治、公共服务配套等，极大改善了居民生活条件，提升了城市品质和居民幸福感。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_9.jpg" alt="新闻图片9" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">农业现代化水平持续提升，粮食产量再创新高</div>
-                    <div class="news-summary">全国农业现代化水平持续提升，农业科技推广应用成效显著。今年粮食产量再创新高，主要农产品供给充足，农业产业结构不断优化，农民收入稳步增长，乡村振兴战略实施取得重要进展。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_10.jpg" alt="新闻图片10" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">文化产业蓬勃发展，文化自信不断增强</div>
-                    <div class="news-summary">全国文化产业蓬勃发展，影视、出版、动漫、游戏等各领域精品力作不断涌现。文化消费市场活跃，文化走出去步伐加快，中华优秀传统文化得到创造性转化和创新性发展，文化自信不断增强。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_11.jpg" alt="新闻图片11" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">生态环境保护成效显著，绿色发展理念深入人心</div>
-                    <div class="news-summary">全国生态环境保护工作取得显著成效，空气质量、水环境质量持续改善。绿色发展理念深入人心，绿色生产生活方式加快形成，碳达峰碳中和工作稳步推进，美丽中国建设迈出坚实步伐。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_12.jpg" alt="新闻图片12" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">科技创新成果丰硕，专利申请量位居世界前列</div>
-                    <div class="news-summary">全国科技创新成果丰硕，专利申请量连续多年位居世界前列。在人工智能、量子信息、生物技术等前沿领域取得一系列重要突破，创新型企业不断涌现，创新生态持续优化，科技强国建设加快推进。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_13.jpg" alt="新闻图片13" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">交通运输网络不断完善，出行更加便捷高效</div>
-                    <div class="news-summary">全国交通运输网络不断完善，高铁、高速公路、民航等基础设施建设加快推进。综合交通枢纽布局优化，城乡交通一体化水平提升，人民群众出行更加便捷高效，物流成本显著降低。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_14.jpg" alt="新闻图片14" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">社会保障体系持续健全，民生福祉不断增进</div>
-                    <div class="news-summary">全国社会保障体系持续健全，养老、医疗、失业等保险覆盖面不断扩大。社会救助体系更加完善，困难群众基本生活得到有效保障，民生福祉不断增进，人民群众获得感、幸福感、安全感显著提升。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_15.jpg" alt="新闻图片15" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">体育事业蓬勃发展，全民健身蔚然成风</div>
-                    <div class="news-summary">全国体育事业蓬勃发展，竞技体育成绩优异，群众体育活动丰富多彩。全民健身蔚然成风，体育设施不断完善，体育产业快速发展，体育强国建设取得重要进展，人民身体素质普遍提高。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_16.jpg" alt="新闻图片16" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">对外开放水平不断提升，国际合作成果丰硕</div>
-                    <div class="news-summary">全国对外开放水平不断提升，自贸试验区建设成效显著，一带一路合作深入推进。与各国经贸往来更加密切，人文交流日益频繁，国际合作成果丰硕，为构建人类命运共同体作出重要贡献。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_17.jpg" alt="新闻图片17" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">法治建设取得重要进展，社会治理水平显著提升</div>
-                    <div class="news-summary">全国法治建设取得重要进展，科学立法、严格执法、公正司法、全民守法深入推进。社会治理水平显著提升，矛盾纠纷多元化解机制不断完善，平安中国建设成效显著，社会大局保持和谐稳定。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_18.jpg" alt="新闻图片18" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">医疗卫生服务体系不断完善，健康中国建设稳步推进</div>
-                    <div class="news-summary">全国医疗卫生服务体系不断完善，基层医疗服务能力显著提升。分级诊疗制度逐步建立，药品集中带量采购成效显著，健康中国建设稳步推进，人民群众健康水平持续提高。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_19.jpg" alt="新闻图片19" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">乡村振兴战略深入实施，农村面貌焕然一新</div>
-                    <div class="news-summary">全国乡村振兴战略深入实施，农村产业发展、人居环境整治、乡村治理等工作取得显著成效。农村基础设施和公共服务明显改善，农民收入持续增长，农村面貌焕然一新，农业农村现代化加快推进。</div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <img src="images/news_20.jpg" alt="新闻图片20" class="news-image">
-                <div class="news-content">
-                    <div class="news-title">青年创新创业活力迸发，新时代青年展现新担当</div>
-                    <div class="news-summary">全国青年创新创业活力迸发，在科技创新、乡村振兴、文化传承等领域展现新担当。各级政府出台一系列支持政策，为青年成长成才创造良好环境，新时代青年在实现中华民族伟大复兴的征程中贡献青春力量。</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer">
-            <p>© 2026 环球新闻 | 每日更新</p>
-        </div>
+    <nav class="navbar">
+        <a href="index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li><a href="contact.html">联系</a></li>
+            <li><a href="history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
     </div>
+    <div class="container">
+        <div class="content">
+        <div class="news-grid" id="newsGrid">
+
+                <div class="news-card">
+                    <img src="images/news_20260508_1.jpg" alt="中国科学家成功研发新型量子计算机芯片，运算速度提升千倍" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">1</span>
+                        <h3 class="news-title">中国科学家成功研发新型量子计算机芯片，运算速度提升千倍</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_2.jpg" alt="全国新能源汽车销量再创新高，市场渗透率突破百分之五十" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">2</span>
+                        <h3 class="news-title">全国新能源汽车销量再创新高，市场渗透率突破百分之五十</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_3.jpg" alt="人工智能技术在医疗诊断领域应用取得显著成效" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">3</span>
+                        <h3 class="news-title">人工智能技术在医疗诊断领域应用取得显著成效</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_4.jpg" alt="中国空间站完成新一轮科学实验，取得多项重要科研成果" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">4</span>
+                        <h3 class="news-title">中国空间站完成新一轮科学实验，取得多项重要科研成果</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_5.jpg" alt="全国数字经济规模持续扩大，数字化转型加速推进" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">5</span>
+                        <h3 class="news-title">全国数字经济规模持续扩大，数字化转型加速推进</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_6.jpg" alt="新型储能技术实现重大突破，清洁能源发展迎来新机遇" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">6</span>
+                        <h3 class="news-title">新型储能技术实现重大突破，清洁能源发展迎来新机遇</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_7.jpg" alt="教育改革深入推进，素质教育成果显著" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">7</span>
+                        <h3 class="news-title">教育改革深入推进，素质教育成果显著</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_8.jpg" alt="城市更新行动成效显著，老旧小区改造惠及千万居民" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">8</span>
+                        <h3 class="news-title">城市更新行动成效显著，老旧小区改造惠及千万居民</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_9.jpg" alt="农业现代化水平持续提升，粮食产量再创新高" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">9</span>
+                        <h3 class="news-title">农业现代化水平持续提升，粮食产量再创新高</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_10.jpg" alt="文化产业蓬勃发展，文化自信不断增强" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">10</span>
+                        <h3 class="news-title">文化产业蓬勃发展，文化自信不断增强</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_11.jpg" alt="生态环境保护成效显著，绿色发展理念深入人心" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">11</span>
+                        <h3 class="news-title">生态环境保护成效显著，绿色发展理念深入人心</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_12.jpg" alt="科技创新成果丰硕，专利申请量位居世界前列" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">12</span>
+                        <h3 class="news-title">科技创新成果丰硕，专利申请量位居世界前列</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_13.jpg" alt="交通运输网络不断完善，出行更加便捷高效" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">13</span>
+                        <h3 class="news-title">交通运输网络不断完善，出行更加便捷高效</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_14.jpg" alt="社会保障体系持续健全，民生福祉不断增进" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">14</span>
+                        <h3 class="news-title">社会保障体系持续健全，民生福祉不断增进</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_15.jpg" alt="体育事业蓬勃发展，全民健身蔚然成风" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">15</span>
+                        <h3 class="news-title">体育事业蓬勃发展，全民健身蔚然成风</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_16.jpg" alt="对外开放水平不断提升，国际合作成果丰硕" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">16</span>
+                        <h3 class="news-title">对外开放水平不断提升，国际合作成果丰硕</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_17.jpg" alt="法治建设取得重要进展，社会治理水平显著提升" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">17</span>
+                        <h3 class="news-title">法治建设取得重要进展，社会治理水平显著提升</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_18.jpg" alt="医疗卫生服务体系不断完善，健康中国建设稳步推进" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">18</span>
+                        <h3 class="news-title">医疗卫生服务体系不断完善，健康中国建设稳步推进</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_19.jpg" alt="乡村振兴战略深入实施，农村面貌焕然一新" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">19</span>
+                        <h3 class="news-title">乡村振兴战略深入实施，农村面貌焕然一新</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="images/news_20260508_20.jpg" alt="青年创新创业活力迸发，新时代青年展现新担当" class="news-image" onclick="toggleImageFullscreen(this)">
+                    <div class="news-content">
+                        <span class="news-number">20</span>
+                        <h3 class="news-title">青年创新创业活力迸发，新时代青年展现新担当</h3>
+                        <p class="news-summary"></p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="index.html">首页</a> | <a href="about.html">关于</a> | <a href="contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">所有新闻内容仅供参考，请以官方发布为准 · 2026年05月08日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
 </body>
 </html>
