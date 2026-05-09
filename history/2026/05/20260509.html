@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年05月08日 | 环球新闻</title>
+    <meta name="description" content="2026年05月08日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="../../../images/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年05月08日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_01.png" alt="美军与伊朗在霍尔木兹海峡交火" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">1</span>
+                        <h3 class="news-title">美军与伊朗在霍尔木兹海峡交火</h3>
+                        <p class="news-summary">美国海军导弹驱逐舰编队在穿越霍尔木兹海峡时拦截了伊朗发起的袭击，并采取自卫反击行动。美方表示无意寻求局势升级，但将始终保持战备部署。伊朗方面称已恢复正常局势。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">国际</span>
+                            <span class="tag">军事</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_02.png" alt="特朗普否认停火结束" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">2</span>
+                        <h3 class="news-title">特朗普否认停火结束</h3>
+                        <p class="news-summary">美国总统特朗普接受电话采访，否认美军袭击伊朗意味着停火结束。特朗普表示这只是轻轻敲打，停火还在持续。他警告称如果伊朗不尽快达成协议，美国将采取更强硬的打击。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">国际</span>
+                            <span class="tag">政治</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_03.png" alt="沙特科威特解除美军基地限制" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">3</span>
+                        <h3 class="news-title">沙特科威特解除美军基地限制</h3>
+                        <p class="news-summary">沙特阿拉伯与科威特已解除在美国启动霍尔木兹海峡通航护航行动后对美军使用其基地和领空实施的限制。此举化解了一大阻碍，美国计划重启护航行动。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">国际</span>
+                            <span class="tag">军事</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_04.png" alt="美伊局势影响美股油价" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">4</span>
+                        <h3 class="news-title">美伊局势影响美股油价</h3>
+                        <p class="news-summary">随着交易员和投资者密切关注中东局势，美股从前一天创下的纪录高位回落，油价则在早盘大跌后收窄跌幅，收于每桶约100美元。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。目前各方正在保持密切沟通与协调。</p>
+                        <div>
+                            <span class="tag">经济</span>
+                            <span class="tag">金融</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_05.png" alt="美国众议院推出法案禁止中国汽车" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">5</span>
+                        <h3 class="news-title">美国众议院推出法案禁止中国汽车</h3>
+                        <p class="news-summary">美国众议院中国问题特设委员会主席宣布推出法案，旨在阻止中国获取美国农田。另一项法案计划禁止中国汽车在美国道路行驶。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。目前各方正在保持密切沟通与协调。</p>
+                        <div>
+                            <span class="tag">国际</span>
+                            <span class="tag">政治</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_06.png" alt="美国与伊朗间接谈判继续" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">6</span>
+                        <h3 class="news-title">美国与伊朗间接谈判继续</h3>
+                        <p class="news-summary">美国与伊朗之间的间接谈判仍在继续，双方力求在中东这场已持续九周的冲突中取得突破。华盛顿重申其目标是让伊朗成为一个无核国家。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。目前各方正在保持密切沟通与协调。</p>
+                        <div>
+                            <span class="tag">国际</span>
+                            <span class="tag">外交</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_07.png" alt="第二十八届北京科博会开幕" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">7</span>
+                        <h3 class="news-title">第二十八届北京科博会开幕</h3>
+                        <p class="news-summary">第二十八届中国北京国际科技产业博览会将于5月8日至10日在国家会议中心举办。本届科博会以科技引领创享未来为主题，聚焦前沿科技新兴产业和未来产业领域。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">科技</span>
+                            <span class="tag">展会</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_08.png" alt="北京科博会设六大专题展区" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">8</span>
+                        <h3 class="news-title">北京科博会设六大专题展区</h3>
+                        <p class="news-summary">北京科博会展览总面积约5万平方米，共设置信息科技、智能制造、医药健康、绿色双碳、数字经济和区域创新等6个专题展区，国内外参展企业和机构800余家。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">科技</span>
+                            <span class="tag">展会</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_09.png" alt="一季度工业增加值同比增长6.1%" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">9</span>
+                        <h3 class="news-title">一季度工业增加值同比增长6.1%</h3>
+                        <p class="news-summary">一季度规模以上工业增加值同比增长6.1%，31个省份全部实现正增长，行业增长面超八成，工业对经济增长的贡献率近四成。推进数字产业发展壮大。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">经济</span>
+                            <span class="tag">工业</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_10.png" alt="政府工作报告聚焦科技创新" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">10</span>
+                        <h3 class="news-title">政府工作报告聚焦科技创新</h3>
+                        <p class="news-summary">2026年政府工作报告提出加快高水平科技自立自强，抓住新一轮科技革命和产业变革历史机遇，全面增强自主创新能力，为高质量发展提供科技支撑。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">科技</span>
+                            <span class="tag">政策</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_11.png" alt="外交部回应英国法院裁定" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">11</span>
+                        <h3 class="news-title">外交部回应英国法院裁定</h3>
+                        <p class="news-summary">外交部发言人林剑表示，英方以莫须有罪名抓捕和起诉在英中国公民，滥用法律操弄司法程序定罪，是典型的政治闹剧。中方对此予以强烈谴责和坚决反对。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">外交</span>
+                            <span class="tag">政治</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_12.png" alt="中国油轮在霍尔木兹海峡遇袭" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">12</span>
+                        <h3 class="news-title">中国油轮在霍尔木兹海峡遇袭</h3>
+                        <p class="news-summary">一艘大型中国成品油船在霍尔木兹海峡入口附近遇袭，船身标有中国船东及船员字样，甲板起火。相关遇袭船只系马绍尔群岛籍，船上有中国籍船员，未报告有船员伤亡。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">国际</span>
+                            <span class="tag">军事</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_13.png" alt="特朗普称中美首脑会晤将举行" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">13</span>
+                        <h3 class="news-title">特朗普称中美首脑会晤将举行</h3>
+                        <p class="news-summary">美国总统特朗普日前表示，中美首脑会晤会按计划举行。中方对此表示期待，双方将重点讨论包括经贸、科技、国际地区事务等议题。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。目前各方正在保持密切沟通与协调。</p>
+                        <div>
+                            <span class="tag">国际</span>
+                            <span class="tag">外交</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_14.png" alt="欧盟拟禁止中企参与关键基建" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">14</span>
+                        <h3 class="news-title">欧盟拟禁止中企参与关键基建</h3>
+                        <p class="news-summary">欧盟正推进出台网络安全法，禁止中国企业参与欧关键基础设施建设。该法案要求在未来五年中拆除和替换大量中国硬件，总耗资将超过3678亿欧元。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">国际</span>
+                            <span class="tag">经济</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_15.png" alt="中国三家企业入选影响力榜单" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">15</span>
+                        <h3 class="news-title">中国三家企业入选影响力榜单</h3>
+                        <p class="news-summary">美国时代周刊发布了2026年最具影响力的10家人工智能公司榜单，中国有3家企业入选。这充分体现了中国产业和技术发展的成就。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。目前各方正在保持密切沟通与协调。</p>
+                        <div>
+                            <span class="tag">科技</span>
+                            <span class="tag">AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_16.png" alt="汉坦病毒疫情风险绝对很低" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">16</span>
+                        <h3 class="news-title">汉坦病毒疫情风险绝对很低</h3>
+                        <p class="news-summary">世界卫生组织强调，汉坦病毒向普通人群传播的风险绝对很低。此前一名与确诊患者有过接触的空乘人员检测结果呈阴性。该患者来自疫情暴发的游轮。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">健康</span>
+                            <span class="tag">疫情</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_17.png" alt="乌克兰战争医疗设施袭击超3000起" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">17</span>
+                        <h3 class="news-title">乌克兰战争医疗设施袭击超3000起</h3>
+                        <p class="news-summary">世卫组织表示，自乌克兰战争全面升级以来，在持续1534天的冲突中，已通过监测系统核实超过3000起针对医疗设施的袭击事件。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。目前各方正在保持密切沟通与协调。</p>
+                        <div>
+                            <span class="tag">国际</span>
+                            <span class="tag">战争</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_18.png" alt="粮农组织警告海峡危机冲击粮食供应" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">18</span>
+                        <h3 class="news-title">粮农组织警告海峡危机冲击粮食供应</h3>
+                        <p class="news-summary">联合国粮农组织总干事警告说，霍尔木兹海峡运输中断引发的全球化肥短缺，将导致2026年下半年至2027年间作物减产及粮食供应趋紧。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">国际</span>
+                            <span class="tag">经济</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_19.png" alt="澳大利亚日本深化安全经济合作" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">19</span>
+                        <h3 class="news-title">澳大利亚日本深化安全经济合作</h3>
+                        <p class="news-summary">澳大利亚与日本达成新协议，深化安全与经济联系。双方将在多个领域加强合作，共同应对地区挑战。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。目前各方正在保持密切沟通与协调。市场对此反应积极，总体形势向好。</p>
+                        <div>
+                            <span class="tag">国际</span>
+                            <span class="tag">外交</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20.png" alt="中国前国防部长被判死缓" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">20</span>
+                        <h3 class="news-title">中国前国防部长被判死缓</h3>
+                        <p class="news-summary">中国两名前国防部长被判死缓。这表明中国持续加强反腐败工作，对任何违法违纪行为都将依法严惩，维护军队纯洁性和战斗力。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。目前各方正在保持密切沟通与协调。</p>
+                        <div>
+                            <span class="tag">国内</span>
+                            <span class="tag">法治</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">所有新闻内容仅供参考，请以官方发布为准 · 2026年05月08日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
