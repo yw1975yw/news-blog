@@ -156,10 +156,17 @@ def update_html():
     """更新 index.html"""
     print(f"📝 步骤 3/5: 更新 HTML 页面")
     
+    # 当日日期
+    today_cn = datetime.now().strftime('%Y年%m月%d日')
+    today_iso = datetime.now().strftime('%Y-%m-%d')
+    
     # 读取当前 index.html
     index_file = WORKDIR / "index.html"
     with open(index_file) as f:
         content = f.read()
+    
+    # 替换日期（支持多日期格式）
+    content = re.sub(r'\d{4}年\d{1,2}月\d{1,2}日', today_cn, content)
     
     # 替换 news_default.png 为 news-generated/news_XX.png
     counter = 1
@@ -175,7 +182,7 @@ def update_html():
     with open(index_file, 'w') as f:
         f.write(new_content)
     
-    print(f"✅ HTML 更新成功")
+    print(f"✅ HTML 更新成功 (日期: {today_cn})")
     return True
 
 def commit_and_push():
