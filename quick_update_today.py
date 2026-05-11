@@ -240,9 +240,18 @@ def main():
     with open(html_file, 'w', encoding='utf-8') as f:
         f.write(html_content)
 
+    # 🔒 验证：确保生成的HTML正好包含20张新闻卡片
+    with open(html_file, 'r', encoding='utf-8') as f:
+        html_check = f.read()
+    actual_cards = html_check.count('class="news-card"')
+    expected_count = len(processed_news)
+    print(f"🔍 HTML验证: 预期 {expected_count} 张新闻卡片, 实际 {actual_cards} 张")
+    if actual_cards != expected_count:
+        raise ValueError(f"❌ HTML卡片数量不匹配! 预期 {expected_count}, 实际 {actual_cards}")
+
     print(f"\n✅ HTML 创建成功: {html_file}")
-    print(f"📰 新闻: {len(processed_news)} 条")
-    print(f"📷 图片: {len(processed_news)} 张")
+    print(f"📰 新闻: {expected_count} 条")
+    print(f"📷 图片: {expected_count} 张")
 
 if __name__ == "__main__":
     main()

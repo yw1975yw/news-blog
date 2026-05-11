@@ -191,7 +191,6 @@ def step_1_search_news(count=20):
         
         if len(all_news) >= count:
             logger.log(f"✅ 搜索成功: 找到 {len(all_news)} 条新闻")
-            return all_news[:count]
         else:
             logger.log(f"⚠️ 仅找到 {len(all_news)} 条新闻，使用示例数据补足")
             remaining = count - len(all_news)
@@ -200,7 +199,13 @@ def step_1_search_news(count=20):
                 news['summary'] = expand_summary(news['summary'], min_length=150, max_length=200)
                 news['raw_prompt'] = news['summary'][:100]
             all_news.extend(sample)
-            return all_news
+
+        # 🔒 严格限制：确保正好20条，不多不少
+        if len(all_news) > count:
+            logger.log(f"⚠️ 搜索结果超出 {count} 条，自动截断多余部分")
+            all_news = all_news[:count]
+        
+        return all_news
     
     except Exception as e:
         logger.log(f"⚠️ 搜索异常: {str(e)}，使用示例数据")
@@ -747,7 +752,7 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
         prompt_en = prompt_en[:500]  # 限制提示词长度
 
         # 使用日期+序号格式：news_YYYYMMDD_NN.png
-        today = "20260502"  # 强制使用2026年5月2日
+        today = datetime.now().strftime("%Y%m%d")
         image_file = IMAGES_DIR / f"news_{today}_{idx:02d}.png"
         
         retry_count = 0
@@ -954,6 +959,14 @@ def step_4_create_html(news_list, image_files):
         html_file = Path(BLOG_PATH) / "index.html"
         with open(html_file, 'w', encoding='utf-8') as f:
             f.write(html_content)
+
+        # 🔒 验证：确保生成的HTML正好包含count个新闻卡片
+        with open(html_file, 'r', encoding='utf-8') as f:
+            html_check = f.read()
+        actual_cards = html_check.count('class="news-card"')
+        logger.log(f"🔍 HTML验证: 预期 {len(news_list)} 张新闻卡片, 实际 {actual_cards} 张")
+        if actual_cards != len(news_list):
+            raise ValueError(f"❌ HTML卡片数量不匹配! 预期 {len(news_list)}, 实际 {actual_cards}")
 
         logger.log(f"✅ HTML 创建成功: {html_file}")
         return str(html_file)
