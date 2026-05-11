@@ -402,8 +402,11 @@ except:
     # 如果无法提取，使用默认描述
     description = "每日新闻更新，涵盖科技、财经、国际等领域"
 
-# 检查是否已包含今日的链接
-if today_file not in content:
+# 🔒 安全检查：确保归档文件真实存在，才更新索引
+archive_path = f"history/{year}/{month}/{today_file}.html"
+if not os.path.exists(archive_path):
+    print(f"⚠️ 归档文件 {archive_path} 不存在，跳过更新索引")
+elif today_file not in content:
     # 生成新的历史项
     new_item = f'''
         <a href="{today_file}.html" class="day-card">
