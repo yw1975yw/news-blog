@@ -1,122 +1,122 @@
 [
   {
     "id": 1,
-    "title": "美军与伊朗在霍尔木兹海峡交火",
-    "summary": "美国海军导弹驱逐舰编队在穿越霍尔木兹海峡时遭遇伊朗革命卫队快艇包围，美军开火自卫，击沉三艘伊朗快艇。伊朗最高国家安全委员会随即召开紧急会议，地区局势骤然升级。联合国安理会应英国请求召开紧急磋商，中俄呼吁双方保持克制。全球石油价格应声上涨超过5%。",
-    "category": ["国际", "军事"]
+    "title": "中国自主研发新一代量子芯片实现量产突破",
+    "summary": "中国科研团队宣布新一代量子计算芯片实现稳定量产，量子比特数量突破千位大关，在量子纠错和相干时间方面达到国际领先水平。这一重大突破将加速量子计算实用化进程，为密码分析、人工智能药物研发、金融风险模拟、气候预测、材料科学等领域带来革命性变化，标志着中国在量子科技领域已迈入世界前列，成为全球量子竞争格局中的重要力量，对提升国家科技竞争力具有深远意义。",
+    "image_prompt": "futuristic quantum computer chip, microscopic view, glowing blue circuits, quantum bits visualization, scientific laboratory, high-tech hardware, dark background with light effects"
   },
   {
     "id": 2,
-    "title": "特朗普否认停火结束 称已锁定伊朗核设施",
-    "summary": "美国总统特朗普在社交媒体发文称，美军对伊朗核设施的精确打击是莫大的成功，目标是永久剥夺伊朗研制核武器的能力。他否认美伊停火协议已经破裂，表示在联合国主导下已拟定新的和平框架。伊朗最高领袖哈梅内伊则誓言报复，声称将对美国目标发动全面反击。",
-    "category": ["国际", "政治"]
+    "title": "中美就人工智能安全治理签署联合声明",
+    "summary": "中美两国元首在日内瓦举行的首届AI安全峰会上，就人工智能伦理规范、技术风险管控、跨境数据流动、算法透明度等核心议题达成重要共识。联合声明强调两国将共同推动建立全球AI治理框架，防止AI技术被滥用于军事和情报领域，为国际社会应对AI挑战提供重要表率，推动构建开放、包容、可持续的全球AI治理秩序。联合声明的签署标志着中美在AI领域合作迈上新台阶。",
+    "image_prompt": "China US cooperation, AI artificial intelligence, bilateral summit meeting, Geneva conference, world leaders shaking hands, technology governance, international diplomacy"
   },
   {
     "id": 3,
-    "title": "沙特科威特解除美军基地限制 允许重启护航行动",
-    "summary": "沙特阿拉伯与科威特宣布解除对美国使用两国基地和领空的限制，为美军在霍尔木兹海峡重启护航作战行动铺平道路。五角大楼发言人表示，护航舰队将在72小时内完成部署。美国同时呼吁欧盟成员国派遣军舰加入多国护航编队，维护国际航行自由。",
-    "category": ["国际", "军事"]
+    "title": "中国A股市场强势上涨沪指突破3800点",
+    "summary": "受科技板块业绩大幅增长和政策利好刺激，中国A股市场延续强势上涨态势，沪指突破3800点整数关口，创两年半来新高。沪深两市成交额连续多日突破万亿元规模，北向资金持续净流入创历史同期记录，投资者信心明显增强，市场赚钱效应显著。券商机构普遍看好后市行情，认为在政策支持和流动性充裕背景下，市场有望继续震荡上行，结构性行情将持续演绎。",
+    "image_prompt": "stock market trading, China A-share market, stock price rising, Shanghai stock exchange, financial charts, bullish trend, modern city skyline"
   },
   {
     "id": 4,
-    "title": "美伊局势影响全球股市原油价格大幅波动",
-    "summary": "中东局势骤然紧张引发全球金融市场剧烈震荡，美股三大指数集体下挫超过2%，道琼斯指数创年内最大单日跌幅。原油价格一度飙升至每桶115美元，随后在媒体报道美方表示不希望升级后回落至105美元附近。黄金价格突破每盎司2800美元大关，投资者避险情绪显著升温。",
-    "category": ["经济", "金融"]
+    "title": "中国成功发射火星采样返回任务探测器",
+    "summary": "中国探火工程取得重大进展，天问三号探测器成功发射升空，将执行人类首次火星采样返回任务。探测器预计将于2027年抵达火星轨道，在火星表面完成样本采集、封装和上升器对接，随后返回地球。这是中国深空探测的又一重要里程碑，也是人类和平利用太空的伟大壮举，对全球太空探索事业具有重大标志性意义，将为人类了解火星提供珍贵样本。",
+    "image_prompt": "Mars mission spacecraft launching, Chinese rocket, space exploration, red planet Mars in background, rocket flames, dramatic sky, science fiction"
   },
   {
     "id": 5,
-    "title": "美国众议院通过法案禁止中国智能网联汽车",
-    "summary": "美国众议院以微弱多数票通过《保护和恢复美国交通安全法案》，明令禁止来自中国等国家的智能网联汽车和自动驾驶汽车在美国道路上行驶。法案同时禁止美国车主使用中国制造的智能驾驶系统。该法案引发中方强烈抗议，指责美国公然违反世贸组织规则，属于典型的保护主义行为。",
-    "category": ["国际", "政治"]
+    "title": "俄乌双方就停火协议框架达成一致",
+    "summary": "经过多轮艰难谈判，俄罗斯与乌克兰在土耳其调解下就停火协议框架基本达成一致，双方同意在联合国监督下实现永久停火。协议涵盖领土边界划分、战后重建资金分担、战俘遣返细节等核心议题。国际社会对这一历史性突破表示热烈欢迎和积极评价，联合国秘书长呼吁各方珍惜来之不易的和平机遇，共同推动地区局势缓和，早日实现地区持久和平与稳定。",
+    "image_prompt": "peace negotiation, Russia Ukraine conflict resolution, diplomatic talks, UN security council, diplomats shaking hands, world peace, international relations"
   },
   {
     "id": 6,
-    "title": "美国与伊朗在第三国展开非直接核谈判",
-    "summary": "在美国国务卿与伊朗外长分别抵达日内瓦后，美伊双方通过瑞士外交渠道展开非直接核谈判。这是自美军打击伊朗核设施以来双方首次正式接触。欧盟外交与安全政策高级代表充当中间传话人。中国和俄罗斯派特使赴日内瓦表达对谈判的支持，呼吁达成一项平衡各方关切的协议。",
-    "category": ["国际", "外交"]
+    "title": "日本首相正式访华推动两国关系回暖",
+    "summary": "日本新任首相对中国进行正式访问，这是五年来日本首相首次访华，标志着中日关系走出低谷。两国签署涵盖经贸、科技、环保、文化等领域的二十余项合作文件，同意建立高级别对话机制，重启各层级交流渠道。此访被视为中日关系迈向新阶段的重要起点，为地区和平稳定注入正能量，推动两国关系持续改善发展，实现互利共赢。",
+    "image_prompt": "Japan China relations, Japanese prime minister visiting China, bilateral meeting, Beijing capital, diplomatic ceremony, flags of two countries, diplomacy"
   },
   {
     "id": 7,
-    "title": "第二十八届北京科博会圆满闭幕 达成合作意向500亿",
-    "summary": "为期三天的第二十八届中国北京国际科技产业博览会落下帷幕，本届科博会以科技引领创享未来为主题，吸引来自全球50多个国家和地区的近千家企业参展，累计达成合作意向金额超过500亿元人民币。人工智能、新能源、生物医药等领域成为国际合作热点。科博会期间发布的技术成果超过2000项。",
-    "category": ["科技", "展会"]
+    "title": "全球半导体产业链重构进入新阶段",
+    "summary": "在美国芯片法案和欧洲芯片计划大力推动下，全球半导体产业链重构加速推进。中国在成熟制程领域产能大幅提升，高端芯片国产化率首次突破30%大关，多项核心技术实现自主可控。欧洲多国和东南亚也成为芯片投资热门目的地，全球产业格局正经历深刻变革和重新洗牌，区域化趋势日益明显，供应链安全成为各国关注焦点。",
+    "image_prompt": "semiconductor chip manufacturing, global supply chain, high-tech factory, silicon wafer production, clean room environment, technology industry"
   },
   {
     "id": 8,
-    "title": "北京科博会展示六大硬科技突破 引发国际关注",
-    "summary": "北京科博会设立的信息科技、智能制造、医药健康、绿色双碳、数字经济和区域创新六大专题展区亮点纷呈。国产第七代自主可控操作系统、12英寸先进制程芯片样品、深海机器人等多项硬科技突破引发国际业界高度关注。科博会首日就有超过8万人次专业观众入场参观。",
-    "category": ["科技", "展会"]
+    "title": "中国新能源汽车全球市场份额突破45%",
+    "summary": "中国汽车工业协会数据显示，中国新能源汽车继续保持高速增长态势，全球市场份额已突破45%大关，出口量连续多年位居世界第一。比亚迪、奇瑞、蔚来、小鹏等品牌在欧洲和东南亚市场表现强劲，海外工厂布局加速推进，售后服务网络覆盖全球主要市场。中国新能源汽车产业竞争力持续提升，技术创新能力和成本优势明显增强。",
+    "image_prompt": "Chinese electric vehicles, EV cars charging, modern charging station, BYD cars, new energy transportation, green technology, electric future"
   },
   {
     "id": 9,
-    "title": "一季度工业经济开门红 增加值同比增长6.5%",
-    "summary": "国家统计局发布数据显示，一季度规模以上工业增加值同比增长6.5%，增速较去年四季度加快0.8个百分点。31个省份工业生产全部实现正增长，高技术制造业和装备制造业表现亮眼。数字经济核心产业同比增长12%，工业对经济增长的贡献率提升至42%，经济运行延续回升向好态势。",
-    "category": ["经济", "工业"]
+    "title": "欧洲央行宣布维持当前利率水平不变",
+    "summary": "欧洲央行在法兰克福召开货币政策会议，决定维持当前利率水平不变，以支持欧元区经济复苏。行长在新闻发布会上表示，虽然通胀已有所回落至2.3%的目标附近，但地缘政治不确定性仍存，经济增长面临下行压力，货币政策将保持灵活性和前瞻性，根据经济数据变化相机抉择，必要时采取进一步宽松措施支持经济复苏。",
+    "image_prompt": "European Central Bank, ECB Frankfurt, monetary policy meeting, Euro currency, bank building, financial district, European finance"
   },
   {
     "id": 10,
-    "title": "政府工作报告部署科技创新 强调高水平自立自强",
-    "summary": "2026年政府工作报告将科技创新置于突出位置，提出加快实现高水平科技自立自强的具体目标。报告明确要抓住新一轮科技革命和产业变革机遇，在人工智能、量子计算、集成电路、脑科学等前沿领域布局一批重大科技项目。报告还提出到2027年全社会研发经费投入占GDP比重达到3.2%。",
-    "category": ["科技", "政策"]
+    "title": "韩国宣布加入全球AI安全倡议",
+    "summary": "韩国政府召开新闻发布会宣布正式加入全球AI安全倡议，承诺在军事和情报领域限制AI自主武器应用，呼吁全球各国共同应对AI技术带来的安全挑战。韩国表示将积极参与国际AI治理合作，支持建立透明、可解释、可控制的AI系统标准，与盟友共同推动AI技术规范发展，确保AI技术造福全人类而不是成为威胁。",
+    "image_prompt": "South Korea joining AI safety initiative, artificial intelligence security, global cooperation, Seoul cityscape, technology governance, international agreement"
   },
   {
     "id": 11,
-    "title": "外交部谴责英国起诉中国留学生 敦促撤销指控",
-    "summary": "针对英国司法部门以所谓国家安全罪名起诉在英中国留学生的行径，外交部发言人表示强烈谴责和坚决反对。发言人说，英方此举是典型的以国家安全为借口进行政治迫害的行为，中方已向英方提出严正交涉，敦促英方立即撤销相关指控，切实保障中国留学生的合法权益。",
-    "category": ["外交", "政治"]
+    "title": "中国自主大模型DeepSeek用户规模突破5亿",
+    "summary": "中国自主研发的大语言模型DeepSeek官方宣布，用户规模已突破5亿大关，成为全球增长最快的人工智能应用之一。该模型在中文理解和生成方面表现优异，已在政务服务、医疗诊断、教育培训、金融分析等领域广泛应用，帮助企业降低运营成本、提升服务效率，深度赋能产业数字化转型升级，推动人工智能技术与实体经济深度融合。",
+    "image_prompt": "AI language model, Chinese artificial intelligence, large language model, ChatGPT alternative, futuristic technology interface, digital brain, neural network"
   },
   {
     "id": 12,
-    "title": "中国油轮在波斯湾海域成功脱险 船员平安",
-    "summary": "一艘中国籍油轮在波斯湾海域航行时遭遇不明武装快艇接近，船员启动防海盗程序并发出求救信号。中国海军护航编队紧急派出舰载直升机赶往事发海域进行支援护航，在海军火力威慑下，武装快艇最终离去。船上25名中国籍船员全部平安，油轮已安全抵达目的港。",
-    "category": ["国际", "军事"]
+    "title": "中东地区多个国家签署互不侵犯条约",
+    "summary": "伊朗、沙特、阿联酋、卡塔尔等海湾国家在利雅得举行峰会，共同签署互不侵犯条约，承诺通过和平方式解决争端，反对任何形式的武力威胁。条约有效期为50年，是中东地区数十年来最重要的和平协议。联合国秘书长亲自出席签署仪式，国际油价应声下跌，市场信心大增，地区安全格局有望根本改善。",
+    "image_prompt": "Middle East peace treaty, Riyadh summit, Gulf countries cooperation, Iran Saudi Arabia, peace agreement signing ceremony, desert diplomacy"
   },
   {
     "id": 13,
-    "title": "特朗普透露中美首脑会谈有望在六月举行",
-    "summary": "美国总统特朗普在记者会上透露，中国领导人与他的会谈预计将在六月举行，会谈地点可能在第三国。特朗普称这次会谈将是一次重要的峰会，双方将讨论贸易平衡、技术竞争和地区安全等关键议题。白宫官员表示，会谈有望为中美关系注入稳定性和可预测性。",
-    "category": ["国际", "外交"]
+    "title": "数字人民币跨境支付服务扩展至50个国家",
+    "summary": "数字人民币国际化取得重大进展，中国人民银行宣布跨境支付服务已扩展至全球50个国家和地区，覆盖亚洲、欧洲、非洲、美洲的主要经济体。跨境电商、跨境旅游、海外留学汇款等场景应用快速增长，月均交易额突破千亿元人民币，数字货币国际化进程不断加速，为全球贸易结算提供新选择。",
+    "image_prompt": "digital yuan RMB, digital currency internationalization, cross-border payment, Chinese currency globalization, fintech revolution, mobile payment"
   },
   {
     "id": 14,
-    "title": "欧盟网络安全法获批 五年内替换中国5G设备",
-    "summary": "欧洲议会以压倒性多数票通过了《欧盟网络安全弹性法案》，该法案要求成员国在五年内将存在安全风险的中国企业生产的5G设备从关键基础设施中移除。法案估算替换成本将超过3500亿欧元，同时要求对包括华为、中兴在内的中国通信设备进行彻底安全审查。中国驻欧盟使团对此表示坚决反对。",
-    "category": ["国际", "经济"]
+    "title": "SpaceX星舰完成首次商业月球运输任务",
+    "summary": "SpaceX使用新一代星舰成功完成首次商业月球运输任务，将包括月球基地建设物资、科学仪器设备等送至月球轨道。发射成本较传统火箭降低70%以上，发射效率大幅提升，多项技术指标创造新纪录。此次任务的成功标志着商业航天进入新纪元，为未来月球基地建设和太空资源开发奠定重要基础，开启商业航天新时代。",
+    "image_prompt": "SpaceX Starship moon mission, commercial space flight, moon landing, rocket in space, lunar base concept, science fiction technology"
   },
   {
     "id": 15,
-    "title": "中国三家科技企业入选时代周刊AI影响力榜单",
-    "summary": "美国《时代周刊》发布2026年最具影响力人工智能企业十强榜单，中国企业占据三席，其中DeepSeek、阿里云和华为昇腾生态全部上榜。评委称中国企业在大型语言模型、云计算基础设施和边缘AI芯片领域展现出强劲的创新能力和全球竞争力。这一结果引发美国国会部分议员对华AI技术领先优势的担忧。",
-    "category": ["科技", "AI"]
+    "title": "德国制造业PMI指数连续六个月回升",
+    "summary": "德国联邦统计局公布最新数据显示，制造业PMI指数已连续六个月保持在扩张区间，工业产出超出市场预期。德国经济展现出强劲韧性，企业投资意愿显著回升，机械设备、汽车制造、化工等支柱产业订单充足，对外贸易保持增长。分析师认为德国经济正从能源危机影响中完全恢复，欧元区经济前景趋于乐观。",
+    "image_prompt": "German manufacturing, industry 4.0, factory automation, industrial production, BMW Mercedes factory, European economy, precision engineering"
   },
   {
     "id": 16,
-    "title": "世卫组织澄清汉坦病毒人际传播风险极低",
-    "summary": "针对近期部分媒体对汉坦病毒疫情的过度报道，世卫组织发布官方声明澄清：现有证据表明汉坦病毒人际传播风险绝对极低，主要传播途径仍是接触感染病毒的啮齿类动物排泄物。世卫组织同时表示，全球已具备成熟的汉坦病毒检测和治疗方案，公众无需过度担忧，保持良好个人和环境卫生即可有效预防。",
-    "category": ["健康", "疫情"]
+    "title": "东南亚数字经济规模首破2万亿美元",
+    "summary": "东南亚数字经济继续保持高速增长，市场规模首次突破2万亿美元。电商平台交易额增长35%，移动支付用户数超5亿，短视频和直播电商蓬勃发展，外卖配送和在线教育也高速增长。中国科技企业阿里巴巴、腾讯、字节跳动加大投资力度，越南、印尼成为数字经济投资最热门目的地，市场潜力巨大。",
+    "image_prompt": "Southeast Asia digital economy, Singapore Jakarta city, e-commerce delivery, mobile payment, young entrepreneurs, tech hub Asia, digital transformation"
   },
   {
     "id": 17,
-    "title": "乌克兰局势持续胶着 医疗设施遭袭超三千起",
-    "summary": "世界卫生组织公布的最新监测报告显示，乌克兰冲突进入第四年后，针对医疗设施的袭击事件已累计超过3000起，造成大量医护人员伤亡。报告称这是21世纪以来最严重的针对医疗系统的系统性破坏。联合国人权理事会呼吁冲突各方严格遵守国际人道法，立即停止对医疗设施的一切攻击。",
-    "category": ["国际", "战争"]
+    "title": "中国核聚变实验装置实现千秒高约束运行",
+    "summary": "中国自主设计的新一代托卡马克核聚变实验装置成功实现千秒级高约束模运行，创造了该领域新的世界纪录。实验温度超过1亿度，等离子体约束时间大幅提升，各项性能指标均达到或超过设计要求。核聚变能被视为人类终极清洁能源，这一重大突破为商业化聚变堆建设奠定坚实基础，中国走在全球前列。",
+    "image_prompt": "nuclear fusion reactor, tokamak fusion device, plasma physics experiment, China scientific achievement, infinite clean energy, futuristic laboratory"
   },
   {
     "id": 18,
-    "title": "粮农组织警告地区冲突将引发全球粮食危机",
-    "summary": "联合国粮农组织总干事就全球粮食安全发出严肃警告，称中东和欧洲部分地区持续冲突已严重冲击全球化肥供应链和粮食贸易通道。如果冲突不能尽快缓解，2026年下半年至2027年全球粮食价格可能上涨40%，低收入国家将面临严峻的人道主义危机。粮农组织呼吁国际社会紧急提供30亿美元粮食援助资金。",
-    "category": ["国际", "经济"]
+    "title": "伦敦金融城人才流失加剧竞争力下滑",
+    "summary": "受脱欧后续效应和较高税收政策影响，伦敦金融城金融从业人员持续外流，巴黎、法兰克福金融业快速崛起。多国金融机构将欧洲总部从伦敦迁出，对冲基金和资管公司纷纷转向欧盟城市。伦敦作为全球金融中心的地位面临严峻挑战，竞争力持续下滑，金融服务出口下降，金融城面临转型压力。",
+    "image_prompt": "London City financial district, Canary Wharf, London Bridge, British economy, financial services, city of London, historic architecture"
   },
   {
     "id": 19,
-    "title": "澳大利亚日本签署新安全协定 剑指地区威胁",
-    "summary": "澳大利亚总理与日本首相在东京签署新的安全和防务伙伴关系协定，协定内容包括定期举行联合军演、共享情报数据、加强导弹防御合作等。两国领导人表示，新的伙伴关系旨在应对日益复杂的地区安全挑战，维护印太地区的和平与稳定。该协定被视为美国亚太同盟体系的重要补充。",
-    "category": ["国际", "外交"]
+    "title": "全球可再生能源投资首超化石能源",
+    "summary": "国际能源署发布年度报告显示，2026年全球可再生能源投资总额首次超过化石能源投资，达到1.8万亿美元。太阳能和风能发电成本持续下降，已比化石燃料更具经济性。中国、欧盟和美国引领全球清洁能源转型，碳中和目标实现路径更加清晰，可再生能源成为全球能源投资的主角，清洁能源时代加速到来。",
+    "image_prompt": "renewable energy wind turbines solar panels, green energy investment, clean power plant, sustainable future, environmental protection, clean technology"
   },
   {
     "id": 20,
-    "title": "中国持续推进反腐败斗争 维护军队纯洁性",
-    "summary": "军事法院对两名前国防部长严重违纪违法案作出宣判。军队反腐工作持续深入推进，彰显了党和国家依法从严治军、绝不姑息腐败的坚定决心。国防部发言人强调，人民军队永远是党和人民完全可以信赖的英雄军队，有能力打败一切来犯之敌，维护国家主权和领土完整。",
-    "category": ["国内", "法治"]
+    "title": "中国互联网巨头季度财报普遍超预期",
+    "summary": "中国主要互联网平台企业陆续发布季度财报，业绩普遍超出市场预期。AI大模型应用带动用户活跃度和ARPU值增长，腾讯、阿里、美团、京东等市值较年初增长40%以上。投行分析师普遍看好互联网板块估值修复行情，认为在AI赋能下行业景气度持续回升，监管环境趋于稳定，建议投资者逢低增持优质标的。",
+    "image_prompt": "Chinese internet giants Alibaba Tencent, tech company headquarters, stock market performance, Qiangguo internet companies, digital economy growth"
   }
 ]
