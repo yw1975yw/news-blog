@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年05月12日 | 环球新闻</title>
+    <meta name="description" content="2026年05月12日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="../../../images/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年05月12日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_01.png" alt="中国自主研发新一代量子芯片实现量产突破" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">1</span>
+                        <h3 class="news-title">中国自主研发新一代量子芯片实现量产突破</h3>
+                        <p class="news-summary">中国科研团队宣布新一代量子计算芯片实现稳定量产，量子比特数量突破千位大关，在量子纠错和相干时间方面达到国际领先水平。这一重大突破将加速量子计算实用化进程，为密码分析、人工智能药物研发、金融风险模拟、气候预测、材料科学等领域带来革命性变化，标志着中国在量子科技领域已迈入世界前列，成为全球量子竞争格局中的重要力量，对提升国家科技竞争力具有深远意义。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_02.png" alt="中美就人工智能安全治理签署联合声明" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">2</span>
+                        <h3 class="news-title">中美就人工智能安全治理签署联合声明</h3>
+                        <p class="news-summary">中美两国元首在日内瓦举行的首届AI安全峰会上，就人工智能伦理规范、技术风险管控、跨境数据流动、算法透明度等核心议题达成重要共识。联合声明强调两国将共同推动建立全球AI治理框架，防止AI技术被滥用于军事和情报领域，为国际社会应对AI挑战提供重要表率，推动构建开放、包容、可持续的全球AI治理秩序。联合声明的签署标志着中美在AI领域合作迈上新台阶。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_03.png" alt="中国A股市场强势上涨沪指突破3800点" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">3</span>
+                        <h3 class="news-title">中国A股市场强势上涨沪指突破3800点</h3>
+                        <p class="news-summary">受科技板块业绩大幅增长和政策利好刺激，中国A股市场延续强势上涨态势，沪指突破3800点整数关口，创两年半来新高。沪深两市成交额连续多日突破万亿元规模，北向资金持续净流入创历史同期记录，投资者信心明显增强，市场赚钱效应显著。券商机构普遍看好后市行情，认为在政策支持和流动性充裕背景下，市场有望继续震荡上行，结构性行情将持续演绎。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_04.png" alt="中国成功发射火星采样返回任务探测器" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">4</span>
+                        <h3 class="news-title">中国成功发射火星采样返回任务探测器</h3>
+                        <p class="news-summary">中国探火工程取得重大进展，天问三号探测器成功发射升空，将执行人类首次火星采样返回任务。探测器预计将于2027年抵达火星轨道，在火星表面完成样本采集、封装和上升器对接，随后返回地球。这是中国深空探测的又一重要里程碑，也是人类和平利用太空的伟大壮举，对全球太空探索事业具有重大标志性意义，将为人类了解火星提供珍贵样本。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_05.png" alt="俄乌双方就停火协议框架达成一致" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">5</span>
+                        <h3 class="news-title">俄乌双方就停火协议框架达成一致</h3>
+                        <p class="news-summary">经过多轮艰难谈判，俄罗斯与乌克兰在土耳其调解下就停火协议框架基本达成一致，双方同意在联合国监督下实现永久停火。协议涵盖领土边界划分、战后重建资金分担、战俘遣返细节等核心议题。国际社会对这一历史性突破表示热烈欢迎和积极评价，联合国秘书长呼吁各方珍惜来之不易的和平机遇，共同推动地区局势缓和，早日实现地区持久和平与稳定。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_06.png" alt="日本首相正式访华推动两国关系回暖" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">6</span>
+                        <h3 class="news-title">日本首相正式访华推动两国关系回暖</h3>
+                        <p class="news-summary">日本新任首相对中国进行正式访问，这是五年来日本首相首次访华，标志着中日关系走出低谷。两国签署涵盖经贸、科技、环保、文化等领域的二十余项合作文件，同意建立高级别对话机制，重启各层级交流渠道。此访被视为中日关系迈向新阶段的重要起点，为地区和平稳定注入正能量，推动两国关系持续改善发展，实现互利共赢。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_07.png" alt="全球半导体产业链重构进入新阶段" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">7</span>
+                        <h3 class="news-title">全球半导体产业链重构进入新阶段</h3>
+                        <p class="news-summary">在美国芯片法案和欧洲芯片计划大力推动下，全球半导体产业链重构加速推进。中国在成熟制程领域产能大幅提升，高端芯片国产化率首次突破30%大关，多项核心技术实现自主可控。欧洲多国和东南亚也成为芯片投资热门目的地，全球产业格局正经历深刻变革和重新洗牌，区域化趋势日益明显，供应链安全成为各国关注焦点。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_08.png" alt="中国新能源汽车全球市场份额突破45%" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">8</span>
+                        <h3 class="news-title">中国新能源汽车全球市场份额突破45%</h3>
+                        <p class="news-summary">中国汽车工业协会数据显示，中国新能源汽车继续保持高速增长态势，全球市场份额已突破45%大关，出口量连续多年位居世界第一。比亚迪、奇瑞、蔚来、小鹏等品牌在欧洲和东南亚市场表现强劲，海外工厂布局加速推进，售后服务网络覆盖全球主要市场。中国新能源汽车产业竞争力持续提升，技术创新能力和成本优势明显增强。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_09.png" alt="欧洲央行宣布维持当前利率水平不变" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">9</span>
+                        <h3 class="news-title">欧洲央行宣布维持当前利率水平不变</h3>
+                        <p class="news-summary">欧洲央行在法兰克福召开货币政策会议，决定维持当前利率水平不变，以支持欧元区经济复苏。行长在新闻发布会上表示，虽然通胀已有所回落至2.3%的目标附近，但地缘政治不确定性仍存，经济增长面临下行压力，货币政策将保持灵活性和前瞻性，根据经济数据变化相机抉择，必要时采取进一步宽松措施支持经济复苏。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_10.png" alt="韩国宣布加入全球AI安全倡议" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">10</span>
+                        <h3 class="news-title">韩国宣布加入全球AI安全倡议</h3>
+                        <p class="news-summary">韩国政府召开新闻发布会宣布正式加入全球AI安全倡议，承诺在军事和情报领域限制AI自主武器应用，呼吁全球各国共同应对AI技术带来的安全挑战。韩国表示将积极参与国际AI治理合作，支持建立透明、可解释、可控制的AI系统标准，与盟友共同推动AI技术规范发展，确保AI技术造福全人类而不是成为威胁。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_11.png" alt="中国自主大模型DeepSeek用户规模突破5亿" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">11</span>
+                        <h3 class="news-title">中国自主大模型DeepSeek用户规模突破5亿</h3>
+                        <p class="news-summary">中国自主研发的大语言模型DeepSeek官方宣布，用户规模已突破5亿大关，成为全球增长最快的人工智能应用之一。该模型在中文理解和生成方面表现优异，已在政务服务、医疗诊断、教育培训、金融分析等领域广泛应用，帮助企业降低运营成本、提升服务效率，深度赋能产业数字化转型升级，推动人工智能技术与实体经济深度融合。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_12.png" alt="中东地区多个国家签署互不侵犯条约" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">12</span>
+                        <h3 class="news-title">中东地区多个国家签署互不侵犯条约</h3>
+                        <p class="news-summary">伊朗、沙特、阿联酋、卡塔尔等海湾国家在利雅得举行峰会，共同签署互不侵犯条约，承诺通过和平方式解决争端，反对任何形式的武力威胁。条约有效期为50年，是中东地区数十年来最重要的和平协议。联合国秘书长亲自出席签署仪式，国际油价应声下跌，市场信心大增，地区安全格局有望根本改善。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_13.png" alt="数字人民币跨境支付服务扩展至50个国家" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">13</span>
+                        <h3 class="news-title">数字人民币跨境支付服务扩展至50个国家</h3>
+                        <p class="news-summary">数字人民币国际化取得重大进展，中国人民银行宣布跨境支付服务已扩展至全球50个国家和地区，覆盖亚洲、欧洲、非洲、美洲的主要经济体。跨境电商、跨境旅游、海外留学汇款等场景应用快速增长，月均交易额突破千亿元人民币，数字货币国际化进程不断加速，为全球贸易结算提供新选择。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_14.png" alt="SpaceX星舰完成首次商业月球运输任务" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">14</span>
+                        <h3 class="news-title">SpaceX星舰完成首次商业月球运输任务</h3>
+                        <p class="news-summary">SpaceX使用新一代星舰成功完成首次商业月球运输任务，将包括月球基地建设物资、科学仪器设备等送至月球轨道。发射成本较传统火箭降低70%以上，发射效率大幅提升，多项技术指标创造新纪录。此次任务的成功标志着商业航天进入新纪元，为未来月球基地建设和太空资源开发奠定重要基础，开启商业航天新时代。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_15.png" alt="德国制造业PMI指数连续六个月回升" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">15</span>
+                        <h3 class="news-title">德国制造业PMI指数连续六个月回升</h3>
+                        <p class="news-summary">德国联邦统计局公布最新数据显示，制造业PMI指数已连续六个月保持在扩张区间，工业产出超出市场预期。德国经济展现出强劲韧性，企业投资意愿显著回升，机械设备、汽车制造、化工等支柱产业订单充足，对外贸易保持增长。分析师认为德国经济正从能源危机影响中完全恢复，欧元区经济前景趋于乐观。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_16.png" alt="东南亚数字经济规模首破2万亿美元" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">16</span>
+                        <h3 class="news-title">东南亚数字经济规模首破2万亿美元</h3>
+                        <p class="news-summary">东南亚数字经济继续保持高速增长，市场规模首次突破2万亿美元。电商平台交易额增长35%，移动支付用户数超5亿，短视频和直播电商蓬勃发展，外卖配送和在线教育也高速增长。中国科技企业阿里巴巴、腾讯、字节跳动加大投资力度，越南、印尼成为数字经济投资最热门目的地，市场潜力巨大。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_17.png" alt="中国核聚变实验装置实现千秒高约束运行" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">17</span>
+                        <h3 class="news-title">中国核聚变实验装置实现千秒高约束运行</h3>
+                        <p class="news-summary">中国自主设计的新一代托卡马克核聚变实验装置成功实现千秒级高约束模运行，创造了该领域新的世界纪录。实验温度超过1亿度，等离子体约束时间大幅提升，各项性能指标均达到或超过设计要求。核聚变能被视为人类终极清洁能源，这一重大突破为商业化聚变堆建设奠定坚实基础，中国走在全球前列。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_18.png" alt="伦敦金融城人才流失加剧竞争力下滑" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">18</span>
+                        <h3 class="news-title">伦敦金融城人才流失加剧竞争力下滑</h3>
+                        <p class="news-summary">受脱欧后续效应和较高税收政策影响，伦敦金融城金融从业人员持续外流，巴黎、法兰克福金融业快速崛起。多国金融机构将欧洲总部从伦敦迁出，对冲基金和资管公司纷纷转向欧盟城市。伦敦作为全球金融中心的地位面临严峻挑战，竞争力持续下滑，金融服务出口下降，金融城面临转型压力。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_19.png" alt="全球可再生能源投资首超化石能源" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">19</span>
+                        <h3 class="news-title">全球可再生能源投资首超化石能源</h3>
+                        <p class="news-summary">国际能源署发布年度报告显示，2026年全球可再生能源投资总额首次超过化石能源投资，达到1.8万亿美元。太阳能和风能发电成本持续下降，已比化石燃料更具经济性。中国、欧盟和美国引领全球清洁能源转型，碳中和目标实现路径更加清晰，可再生能源成为全球能源投资的主角，清洁能源时代加速到来。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20.png" alt="中国互联网巨头季度财报普遍超预期" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">20</span>
+                        <h3 class="news-title">中国互联网巨头季度财报普遍超预期</h3>
+                        <p class="news-summary">中国主要互联网平台企业陆续发布季度财报，业绩普遍超出市场预期。AI大模型应用带动用户活跃度和ARPU值增长，腾讯、阿里、美团、京东等市值较年初增长40%以上。投行分析师普遍看好互联网板块估值修复行情，认为在AI赋能下行业景气度持续回升，监管环境趋于稳定，建议投资者逢低增持优质标的。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+            >
