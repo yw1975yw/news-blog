@@ -917,7 +917,8 @@ def step_4_create_html(news_list, image_files):
         # 只需要修改新闻卡片部分
 
         from datetime import datetime
-        date_str = datetime.now().strftime("%Y年%m月%d日")  # 使用当前日期
+        beijing_time = get_beijing_time()  # 使用北京时间
+        date_str = beijing_time.strftime("%Y年%m月%d日")
 
         news_cards_html = ""
         for idx, (news, image_file) in enumerate(zip(news_list, image_files), 1):
