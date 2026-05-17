@@ -754,12 +754,8 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
         prompt_en += "cinematic composition, sharp focus, depth of field, current news headline"
         prompt_en = prompt_en[:500]  # 限制提示词长度
 
-        # 使用日期+序号格式：news_YYYYMMDD_NN.png
-        # 使用北京时间获取日期
-        tz_beijing = timezone(timedelta(hours=8))
-        beijing_now = datetime.now(tz=tz_beijing)
-        today = beijing_now.strftime("%Y%m%d")
-        image_file = IMAGES_DIR / f"news_{today}_{idx:02d}.png"
+        # 使用序号格式：news_XX.png（与HTML引用格式一致）
+        image_file = IMAGES_DIR / f"news_{idx:02d}.png"
         
         retry_count = 0
         while retry_count <= max_retries:
