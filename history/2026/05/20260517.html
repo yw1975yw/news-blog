@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年05月17日 | 环球新闻</title>
+    <meta name="description" content="2026年05月17日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="../../../images/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年05月17日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_01.png" alt="特朗普访华成果：中美签署多项经贸合作协议" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#1</span>
+                        <span class="tag" style="background:#e8f5e9;color:#2e7d32;">国际</span>
+                        <h3 class="news-title">特朗普访华成果：中美签署多项经贸合作协议</h3>
+                        <p class="news-summary">5月16日，中美双方在北京发布联合声明，宣布就经贸、科技、能源等领域达成多项合作协议。双方同意建立新的双边对话机制，就关税、市场准入等议题保持密切沟通。此访被国际媒体视为中美关系回暖的重要信号，全球市场对此反应积极。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_02.png" alt="中国一季度GDP增长5.3%：经济开局良好" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#2</span>
+                        <span class="tag" style="background:#e8f5e9;color:#2e7d32;">经济</span>
+                        <h3 class="news-title">中国一季度GDP增长5.3%：经济开局良好</h3>
+                        <p class="news-summary">国家统计局数据显示，2026年一季度中国GDP同比增长5.3%，超出市场预期。其中，高技术制造业和服务业增长强劲，消费贡献率进一步提升。分析认为，一系列稳增长政策持续发力，中国经济保持稳中向好态势。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_03.png" alt="解放军台海联合巡航：维护国家主权和领土完整" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#3</span>
+                        <span class="tag" style="background:#ffebee;color:#c62828;">军事</span>
+                        <h3 class="news-title">解放军台海联合巡航：维护国家主权和领土完整</h3>
+                        <p class="news-summary">中国人民解放军在台海地区开展例行性联合巡航行动，出动舰艇和战机进行海空立体演练。国防部强调，演练旨在检验部队联合作战能力，坚决捍卫国家主权和领土完整，坚决挫败任何"台独"分裂图谋。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_04.png" alt="DeepSeek发布V3大模型：多项指标超越GPT-5" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#4</span>
+                        <span class="tag" style="background:#e3f2fd;color:#1565c0;">科技</span>
+                        <h3 class="news-title">DeepSeek发布V3大模型：多项指标超越GPT-5</h3>
+                        <p class="news-summary">中国AI企业深度求索发布DeepSeek-V3大模型，在多项国际基准测试中表现优于GPT-5。该模型采用全新的注意力机制架构，训练效率大幅提升。美国科技界对此高度关注，有分析认为中国AI正在从追赶者转变为领跑者。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_05.png" alt="京沪高铁5月26日涨价：二等座票价上调20%" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#5</span>
+                        <span class="tag" style="background:#fff3e0;color:#ef6c00;">交通</span>
+                        <h3 class="news-title">京沪高铁5月26日涨价：二等座票价上调20%</h3>
+                        <p class="news-summary">铁路部门公布京沪高铁票价调整方案，二等座票价将上调约20%，新票价自5月26日起执行。由于火车票提前两周发售，调价后的车票已从5月12日起陆续开售。铁路部门表示，调整是为更好反映运营成本和市场供需。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_06.png" alt="A股三大指数集体收涨：科技股引领反弹" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#6</span>
+                        <span class="tag" style="background:#fff3e0;color:#ef6c00;">金融</span>
+                        <h3 class="news-title">A股三大指数集体收涨：科技股引领反弹</h3>
+                        <p class="news-summary">A股市场今日表现强势，三大指数集体收涨，创业板指涨近3%。AI、半导体等科技板块领涨，多只龙头个股涨停。券商机构表示，政策暖风频吹叠加业绩预期改善，市场做多信心回升，增量资金持续入场。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_07.png" alt="中国驻美大使谢锋会见美国国会议员" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#7</span>
+                        <span class="tag" style="background:#e8f5e9;color:#2e7d32;">外交</span>
+                        <h3 class="news-title">中国驻美大使谢锋会见美国国会议员</h3>
+                        <p class="news-summary">中国驻美大使谢锋在华盛顿会见美国国会两党议员，就中美关系、经贸合作等议题交换意见。谢锋表示，中美合则两利、斗则俱伤，希望美方同中方相向而行。议员们对当前中美关系表示关注，同意保持对话沟通。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_08.png" alt="华为发布鸿蒙PC操作系统：打破Windows垄断" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#8</span>
+                        <span class="tag" style="background:#e3f2fd;color:#1565c0;">科技</span>
+                        <h3 class="news-title">华为发布鸿蒙PC操作系统：打破Windows垄断</h3>
+                        <p class="news-summary">华为正式发布鸿蒙PC版操作系统，搭载该系统的首批PC设备同步上市。这意味着华为实现了从手机到PC的全场景操作系统自主可控。业内分析认为，鸿蒙PC将对微软Windows在中国市场的垄断地位形成挑战。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_09.png" alt="中欧班列累计开行突破10万列：亚欧物流大通道" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#9</span>
+                        <span class="tag" style="background:#e8f5e9;color:#2e7d32;">贸易</span>
+                        <h3 class="news-title">中欧班列累计开行突破10万列：亚欧物流大通道</h3>
+                        <p class="news-summary">中欧班列累计开行总量突破10万列，货值超过4000亿美元，已成为亚欧大陆间最重要的物流通道之一。班列覆盖欧洲20多个国家、100多个城市，运输货物种类从最初的IT产品扩展到机械设备、汽车配件、跨境电商等多元品类。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_10.png" alt="中国成功发射第62颗北斗导航卫星" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#10</span>
+                        <span class="tag" style="background:#e3f2fd;color:#1565c0;">科技</span>
+                        <h3 class="news-title">中国成功发射第62颗北斗导航卫星</h3>
+                        <p class="news-summary">中国在西昌卫星发射中心用长征三号乙运载火箭成功发射第62颗北斗导航卫星，进一步完善北斗全球卫星导航系统星座布局。北斗系统已为全球200多个国家和地区的用户提供高精度定位、导航和授时服务。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_11.png" alt="2026年《财富》世界500强：中企数量再创新高" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#11</span>
+                        <span class="tag" style="background:#fff3e0;color:#ef6c00;">商业</span>
+                        <h3 class="news-title">2026年《财富》世界500强：中企数量再创新高</h3>
+                        <p class="news-summary">2026年《财富》世界500强榜单揭晓，中国大陆（含香港）共有145家企业上榜，再创历史新高。国家电网、工商银行、腾讯、阿里等排名靠前。榜单显示，中国企业在数字化转型和全球化布局方面取得显著进展。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_12.png" alt="中国与塞尔维亚签署自贸协定：深化中东欧合作" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#12</span>
+                        <span class="tag" style="background:#e8f5e9;color:#2e7d32;">贸易</span>
+                        <h3 class="news-title">中国与塞尔维亚签署自贸协定：深化中东欧合作</h3>
+                        <p class="news-summary">中国与塞尔维亚签署自由贸易协定，这是中国与中东欧国家签署的首份自贸协定。协定涵盖货物贸易、服务贸易、投资、知识产权等领域。塞尔维亚总统武契奇表示，协定将为两国企业创造更多合作机遇。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_13.png" alt="OpenAI阿尔特曼遭SEC调查：个人投资关联交易引质疑" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#13</span>
+                        <span class="tag" style="background:#e3f2fd;color:#1565c0;">科技</span>
+                        <h3 class="news-title">OpenAI阿尔特曼遭SEC调查：个人投资关联交易引质疑</h3>
+                        <p class="news-summary">OpenAI CEO阿尔特曼因涉嫌通过关联交易为个人入股初创企业谋利，正接受美国证券交易委员会调查。众议院监督委员会已要求阿尔特曼出席听证会。OpenAI董事会表示正在评估相关治理流程是否需要改进。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_14.png" alt="天舟十号货运飞船发射：空间站运营保障再升级" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#14</span>
+                        <span class="tag" style="background:#e3f2fd;color:#1565c0;">科技</span>
+                        <h3 class="news-title">天舟十号货运飞船发射：空间站运营保障再升级</h3>
+                        <p class="news-summary">中国天舟十号货运飞船成功发射并与空间站完成对接，创下中国货运飞船在轨吨位和物资运输效率多项纪录。天舟十号将为神舟二十号载人飞船和后续任务提供物资保障，中国空间站进入常态化运营阶段。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_15.png" alt="美国扩大对华半导体设备出口禁令：损人不利己" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#15</span>
+                        <span class="tag" style="background:#ffebee;color:#c62828;">科技</span>
+                        <h3 class="news-title">美国扩大对华半导体设备出口禁令：损人不利己</h3>
+                        <p class="news-summary">美国宣布扩大对华半导体制造设备出口管制范围，将更多中国芯片企业列入实体清单。中国商务部回应称，美方此举是典型的经济霸凌，将加速中国半导体自主可控进程。数据显示中国芯片自给率已突破40%。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_16.png" alt="中国具身智能机器人进入量产阶段：年产能10万台" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#16</span>
+                        <span class="tag" style="background:#e3f2fd;color:#1565c0;">科技</span>
+                        <h3 class="news-title">中国具身智能机器人进入量产阶段：年产能10万台</h3>
+                        <p class="news-summary">中国首款具身智能机器人完成量产准备工作，规划年产能达10万台。该机器人搭载国产大模型，具备复杂环境感知和任务执行能力。业内认为，具身智能机器人将成为下一个万亿级产业风口。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_17.png" alt="存储芯片行业回暖：HBM需求爆发推动板块走强" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#17</span>
+                        <span class="tag" style="background:#fff3e0;color:#ef6c00;">金融</span>
+                        <h3 class="news-title">存储芯片行业回暖：HBM需求爆发推动板块走强</h3>
+                        <p class="news-summary">受益于AI服务器对HBM内存的爆发式需求，全球存储芯片市场持续回暖。三星、SK海力士和美光三大厂商看好2026年行情，相关板块股价表现强势。A股存储芯片龙头业绩普遍预喜，机构投资者加仓迹象明显。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_18.png" alt="中国量子计算再获突破：实现1000量子比特" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#18</span>
+                        <span class="tag" style="background:#e3f2fd;color:#1565c0;">科技</span>
+                        <h3 class="news-title">中国量子计算再获突破：实现1000量子比特</h3>
+                        <p class="news-summary">中国科研团队宣布成功构建1000量子比特超导量子计算机，在量子纠错和量子模拟方面取得重大进展。这一成果使中国在量子计算领域与美国、欧洲形成三足鼎立格局，为密码破译、药物研发等应用奠定基础。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_19.png" alt="中国可再生能源投资超万亿元：绿色转型加速" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#19</span>
+                        <span class="tag" style="background:#e8f5e9;color:#2e7d32;">能源</span>
+                        <h3 class="news-title">中国可再生能源投资超万亿元：绿色转型加速</h3>
+                        <p class="news-summary">2026年上半年，中国在风能、太阳能、储能等可再生能源领域的投资总额超过1.2万亿元，创历史同期新高。中国在新能源装备制造和装机容量方面均居全球首位，为实现碳达峰碳中和目标提供强有力支撑。</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20.png" alt="基金经理看好科技业主升段：AI算力需求持续爆发" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">#20</span>
+                        <span class="tag" style="background:#fff3e0;color:#ef6c00;">金融</span>
+                        <h3 class="news-title">基金经理看好科技业主升段：AI算力需求持续爆发</h3>
+                        <p class="news-summary">多位明星基金经理表示，当前科技股行情有望延续，AI算力需求爆发将持续推动科技板块业绩兑现。从估值角度看，A股优质科技股仍具上涨空间。机构建议逢低布局AI算力基础设施和应用端核心标的。</p>
+                    </div>
+                </div>
+
+                        </div>
+        </div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">所有新闻内容仅供参考，请以官方发布为准 · 2026年05月17日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
