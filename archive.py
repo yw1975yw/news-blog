@@ -13,19 +13,22 @@ import subprocess
 # 配置
 BLOG_PATH = "/home/swg/.openclaw/workspace/news-blog"
 INDEX_FILE = Path(BLOG_PATH) / "index.html"
-HISTORY_DIR = Path(BLOG_PATH) / "history"
+from datetime import datetime, timezone, timedelta
 
 def get_current_date():
-    """获取当前日期"""
-    return datetime.now().strftime("%Y%m%d")
+    """获取当前日期（北京时间）"""
+    tz_beijing = timezone(timedelta(hours=8))
+    return datetime.now(tz=tz_beijing).strftime("%Y%m%d")
 
 def get_current_date_display():
-    """获取当前日期显示格式"""
-    return datetime.now().strftime("%Y年%m月%d日")
+    """获取当前日期显示格式（北京时间）"""
+    tz_beijing = timezone(timedelta(hours=8))
+    return datetime.now(tz=tz_beijing).strftime("%Y年%m月%d日")
 
 def get_year_month():
-    """获取年月"""
-    now = datetime.now()
+    """获取年月（北京时间）"""
+    tz_beijing = timezone(timedelta(hours=8))
+    now = datetime.now(tz=tz_beijing)
     return now.strftime("%Y"), now.strftime("%m")
 
 def archive_news():

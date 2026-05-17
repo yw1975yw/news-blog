@@ -72,7 +72,10 @@ def step_1_search_news(count=20):
 
     try:
         search_script = Path.home() / ".hermes/scripts/tavily_search.py"
-        date_str = datetime.now().strftime("%Y年%m月%d日")  # 使用当前日期
+        # 使用北京时间获取日期（用于搜索查询）
+        tz_beijing = timezone(timedelta(hours=8))
+        beijing_now = datetime.now(tz=tz_beijing)
+        date_str = beijing_now.strftime("%Y年%m月%d日")
         
         # 使用多个搜索查询获取不同类型的新闻
         queries = [
@@ -752,7 +755,10 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
         prompt_en = prompt_en[:500]  # 限制提示词长度
 
         # 使用日期+序号格式：news_YYYYMMDD_NN.png
-        today = datetime.now().strftime("%Y%m%d")
+        # 使用北京时间获取日期
+        tz_beijing = timezone(timedelta(hours=8))
+        beijing_now = datetime.now(tz=tz_beijing)
+        today = beijing_now.strftime("%Y%m%d")
         image_file = IMAGES_DIR / f"news_{today}_{idx:02d}.png"
         
         retry_count = 0
@@ -1023,7 +1029,10 @@ def main():
 
     # 默认用日期生成seed，每天不重复，避免覆盖历史图片
     if args.seed is None:
-        today = datetime.now().strftime("%Y%m%d")
+        # 使用北京时间获取日期
+        tz_beijing = timezone(timedelta(hours=8))
+        beijing_now = datetime.now(tz=tz_beijing)
+        today = beijing_now.strftime("%Y%m%d")
         args.seed = int(today)  # e.g. 20260428
 
     try:
