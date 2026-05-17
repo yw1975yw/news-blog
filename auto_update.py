@@ -703,7 +703,7 @@ def get_sample_news(count=20):
     return sample_news
 
 
-def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
+def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2, today=None):
     """第2步：并行生成图片（带质量检查和重试，严格限流避免429）"""
     import concurrent.futures
     from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -754,8 +754,8 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2):
         prompt_en += "cinematic composition, sharp focus, depth of field, current news headline"
         prompt_en = prompt_en[:500]  # 限制提示词长度
 
-        # 使用序号格式：news_XX.png（与HTML引用格式一致）
-        image_file = IMAGES_DIR / f"news_{idx:02d}.png"
+        # 使用日期前缀格式：news_YYYYMMDD_XX.png（每天独立图片）
+        image_file = IMAGES_DIR / f"news_{today}_{idx:02d}.png"
         
         retry_count = 0
         while retry_count <= max_retries:
@@ -1037,8 +1037,8 @@ def main():
         if not news_list:
             return 1
 
-        # 第2步：生成图片（带质量检查）
-        image_files = step_2_generate_images(news_list, args.seed)
+        # 第2步：生成图片（带质量检查，每天独立图片文件）
+        image_files = step_2_generate_images(news_list, args.seed, today=today)
 
         # 第3步：检查质量
         quality_ok = step_3_check_quality(news_list, image_files)

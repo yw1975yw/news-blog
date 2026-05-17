@@ -9,6 +9,11 @@ import sys
 from pathlib import Path
 from PIL import Image
 
+from datetime import datetime, timezone, timedelta
+
+tz_beijing = timezone(timedelta(hours=8))
+today = datetime.now(tz=tz_beijing).strftime("%Y%m%d")
+
 SKILL_DIR = Path("/home/swg/.openclaw/workspace/skills/nvidia-genai")
 POLLINATIONS_SCRIPT = Path("/home/swg/.openclaw/workspace/news-blog/pollinations_generate.py")
 OUTPUT_DIR = Path("/home/swg/.openclaw/workspace/news-blog/images/news-generated")
@@ -40,7 +45,7 @@ NEWS_IMAGES = [
 
 def generate_with_pollinations(news_id, prompt_en, title):
     """使用 Pollinations 生成图片"""
-    output_file = OUTPUT_DIR / f"news_{news_id:02d}.png"
+    output_file = OUTPUT_DIR / f"news_{today}_{news_id:02d}.png"
     
     print(f"[{news_id:02d}] 重新生成: {title}")
     print(f"     Prompt: {prompt_en[:60]}...")
