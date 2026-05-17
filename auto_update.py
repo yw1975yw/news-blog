@@ -916,8 +916,13 @@ def step_4_create_html(news_list, image_files):
         # 这里使用完整的 index_enhanced.html 作为基础模板
         # 只需要修改新闻卡片部分
 
-        from datetime import datetime
-        beijing_time = get_beijing_time()  # 使用北京时间
+        from datetime import datetime, timezone, timedelta
+        # 使用北京时区获取正确日期
+        # cron 在 UTC 22:00 执行（约北京时间06:00）
+        # datetime.now() 在 UTC 时区返回 UTC 时间 = 北京时间 - 8h = \"昨天\"
+        # 正确做法是用 timezone 直接获取北京时间，而不是 +8h
+        tz_beijing = timezone(timedelta(hours=8))
+        beijing_time = datetime.now(tz=tz_beijing)
         date_str = beijing_time.strftime("%Y年%m月%d日")
 
         news_cards_html = ""
