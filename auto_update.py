@@ -7,7 +7,7 @@
 import os
 import sys
 import re
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import subprocess
 import time
@@ -755,7 +755,7 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2, today
         prompt_en = prompt_en[:500]  # 限制提示词长度
 
         # 使用日期前缀格式：news_YYYYMMDD_XX.png（每天独立图片）
-        image_file = IMAGES_DIR / f"news_{today}_{idx:02d}.png"
+        image_file = IMAGES_DIR / "news-generated" / f"news_{today}_{idx:02d}.png"
         
         retry_count = 0
         while retry_count <= max_retries:
@@ -765,7 +765,7 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2, today
                 logger.log(f"🖼️  生成图片 {idx}/{len(news_list)}: {title[:30]}... (尝试 {retry_count + 1}/{max_retries + 1})")
                 
                 # 限流：请求间隔至少20秒
-                rate_limited_sleep(min_interval=20)
+                rate_limited_sleep(min_interval=3)
 
                 result = subprocess.run(
                     ["python3", str(genai_script),
@@ -792,7 +792,7 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2, today
                             image_file.unlink()
                         retry_count += 1
                         if retry_count <= max_retries:
-                            wait_time = 60
+                            wait_time = 15
                             logger.log(f"⏳ 等待 {wait_time} 秒...")
                             time.sleep(wait_time)
                         else:
@@ -805,7 +805,7 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2, today
                         logger.log(f"⚠️  图片 {idx} 触发API限流，增加等待时间...")
                         retry_count += 1
                         if retry_count <= max_retries:
-                            wait_time = 60
+                            wait_time = 15
                             logger.log(f"⏳ 限流等待 {wait_time} 秒...")
                             time.sleep(wait_time)
                         else:
@@ -814,7 +814,7 @@ def step_2_generate_images(news_list, seed=101, max_retries=5, parallel=2, today
                         logger.log(f"⚠️  图片 {idx} 生成失败: {result.stderr[:100] if result.stderr else result.stdout[:100]}")
                         retry_count += 1
                         if retry_count <= max_retries:
-                            wait_time = 60
+                            wait_time = 15
                             logger.log(f"⏳ 等待 {wait_time} 秒后重试...")
                             time.sleep(wait_time)
                         else:
@@ -932,7 +932,7 @@ def step_4_create_html(news_list, image_files):
             title = news.get("title", "无标题")
             summary = news.get("summary", "无内容")
             tags = news.get("tags", [])
-            image_path = f"images/{Path(image_file).name}" if image_file else "images/news_default.png"
+            image_path = f"images/news-generated/{Path(image_file).name}" if image_file else "images/news-generated/news_default.png"
 
             # 构建新闻卡片
             news_cards_html += f"""
