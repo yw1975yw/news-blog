@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年05月19日 | 环球新闻</title>
+    <meta name="description" content="2026年05月19日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <img src="../../../images/cover.png" alt="环球新闻封面" class="cover-image">
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年05月19日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_01.png" alt="小田原市" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">1</span>
+                        <h3 class="news-title">小田原市</h3>
+                        <p class="news-summary">2026年05月19日 桑原鬼柳米田植体験【6月7日日开催】 2026年05月18日 小田原市共创事业推进恳谈会知 2026年05月15日 山车等修缮费补助金【6月1日。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_02.png" alt="参考消息" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">2</span>
+                        <h3 class="news-title">参考消息</h3>
+                        <p class="news-summary">港媒：《给阿嬷的情书》引发轰动，带火潮汕旅游 · 外媒：阿联酋曾试图联合邻国打击伊朗遭拒 · 新媒文章：为中美关系建立制度性护栏 · 巴媒文章：以新定位开启中美关系新阶段。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_03.png" alt="上海交通大学物理与天文学院" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">3</span>
+                        <h3 class="news-title">上海交通大学物理与天文学院</h3>
+                        <p class="news-summary">新闻动态 【新闻动态】超燃直击！物理与天文学院师生展现昂扬姿态和竞技风采！ 【新闻动态】天问为引，问道物理前沿 ——北大、北航物理师生来校开展研学交流活动 【新闻动态】党建引领聚合力，共促基础学科内涵发展 ——物理与天文学院、数学科学学院举办共建交流活动 【新闻动态】暗物质物理全国重点实验室2026年度交流会成功举办 【新闻动态】热烈祝贺！上海交通大学缪子物理团队共享基础物理学突破奖！</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_04.png" alt="中南大学粉末冶金研究院" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">4</span>
+                        <h3 class="news-title">中南大学粉末冶金研究院</h3>
+                        <p class="news-summary">中南大学战略空天与重大装备关键材料及构件创新团队获2026年度中国青年五四表彰 近日，2026年度中国青年五四奖章暨新时代青年先锋奖评选结果揭晓。中南大学战略空天与重大装备关键材料及构件创新团队荣获中国青年五四奖章集体荣誉称号。中南大学战略空天与重大装备关键材料及构件创新团队，共92人，超七成为35岁以下青年。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_05.png" alt="中华民国总统府" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">5</span>
+                        <h3 class="news-title">中华民国总统府</h3>
+                        <p class="news-summary">加入好友" " " " 写信给总统" " 总统府记者会 总统府新闻 副总统参访「嘉义车库园区」、「北门驿」及「桧意森活村」 每日活动行程 1020 出席「2026台湾外科医学会年会暨外科联合学术国际研讨会」开幕式 0930 出席「 2026第27届台北国际安全科技应用博览会」 总统府建筑风格属后期文艺复兴式，受英国建筑家 的影响，又称辰野式样，立面充满古典样式的建筑语汇，包括柱列、山墙、圆拱窗、牛……</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_06.png" alt="国家气候中心" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">6</span>
+                        <h3 class="news-title">国家气候中心</h3>
+                        <p class="news-summary">邮箱： 版权所有：国家气候中心 网站备案许可证号：京备11008704号2 技术支持：中研网。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。目前各方正在保持密切沟通与协调。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_07.png" alt="雷达回波 交通部中央气象署" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">7</span>
+                        <h3 class="news-title">雷达回波 交通部中央气象署</h3>
+                        <p class="news-summary">雷达回波颜色说明无地形 雷达回波 雷达发射之电磁波经由大气中的降水粒子雨、雪、冰雹等反射回来的讯号， 称为雷达回波，根据雷达接收到降水粒子所反射回来的讯号强度，再利用不同颜色显示，即可制成雷达回波图。回波的强度与降水粒子的大小、形状、状态以及单位体积内粒子的数量有关，一般而言，反射回来的讯号越强，降水的强度就越强，因此可借由雷达回波图研判天气系统的降水强度及分布状况。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_08.png" alt="21世纪经济报道- 数字报" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">8</span>
+                        <h3 class="news-title">21世纪经济报道- 数字报</h3>
+                        <p class="news-summary">2026年05月19日 星期二 登录帐号后，可查看近1年的期刊 （帐号无时间限制）。 01版：头版 5月16日、5月17日，中国移动、中国联通、中国电信三大电信运营商相继面向端用户推出（词元）套餐产品。5月16日，上海电信宣布，即日起面向上海电信用 5月18日，国家统计局发布4月经济数据。4月部分经济指标出现波动下行，包括工业、服务业、社会消费品零售总额、投资等数据。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_09.png" alt="智能经济新形态：从技术革命到产业生态重构 - 光明网" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">9</span>
+                        <h3 class="news-title">智能经济新形态：从技术革命到产业生态重构 - 光明网</h3>
+                        <p class="news-summary">全部导航 智能经济新形态：从技术革命到产业生态重构 作者：王永贵、华迎（分别系浙江省习近平新时代中国特色社会主义思想研究中心研究员、浙江工商大学校长，对外经济贸易大学北京对外开放研究院教授） 2026年《政府工作报告》（以下简称《报告》）首次提出打造智能经济新形态。从人工智能到智能经济的演进，标志着我国人工智能已经从赋能千行百业的技术工具，跃升为推动经济高质量运行的新经济形态。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_10.png" alt="[] 中华人民共和国国民经济和社会发展第十五个五年规划纲要" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">10</span>
+                        <h3 class="news-title">[] 中华人民共和国国民经济和社会发展第十五个五年规划纲要</h3>
+                        <p class="news-summary">3 岁以下婴幼儿入托率提高（百分点） — — 〔6〕 预期性 13人均预期寿命（岁） 7925 80 — 预期性 绿色 低碳 14单位 二氧化碳排放降低（） 〔177〕 — 〔17〕 约束性 15非化石能源占能源消费总量比重（） 217 25 — 约束性 16地级及以上城市细颗粒物（25）浓度（微 克立方米） 28 ＜27 — 约束性 17优良水体比例（） 80 85 — 约束性 18森林覆盖率（……</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_11.png" alt="中国青年报版：经济周刊" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">11</span>
+                        <h3 class="news-title">中国青年报版：经济周刊</h3>
+                        <p class="news-summary">推动社会进步服务青年成长。中国青年报创刊于1951 年4 月27 日，共青团中央机关报。是一份以青年为主要读者对象、具有重大影响力的全国性综合日报，。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_12.png" alt="国家统计局局长就2025年全年国民经济运行情况答记者问" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">12</span>
+                        <h3 class="news-title">国家统计局局长就2025年全年国民经济运行情况答记者问</h3>
+                        <p class="news-summary">谢谢您的提问。2025年是十四五规划收官之年，也是中国式现代化进程中具有重要意义的一年。这一年，我国发展历程很不平凡，取得的成绩令人鼓舞，经济顶压前行、向新向优发展，主要预期目标圆满实现，十四五胜利收官，第二个百年奋斗目标新征程实现良好开局。对于过去一年的经济表现，在这里我想用稳、进、新、韧这四个字来作简要概括。 首先，稳的格局得到巩固。2025年的中国经济，稳是突出的特点。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_13.png" alt="工业经济平稳增长 传统产业焕新推动高质量发展-中新网" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">13</span>
+                        <h3 class="news-title">工业经济平稳增长 传统产业焕新推动高质量发展-中新网</h3>
+                        <p class="news-summary">安徽北京重庆福建甘肃 贵州广东广西海南河北 河南 湖北湖南黑龙江江苏江西 吉林 辽宁内蒙古宁夏青海山东 山西 陕西上海四川天津新疆 兵团 云南浙江 高层 人事 反腐 深度 两岸 科教 军事 中外对话世界观广角镜世代洋腔队舆论场新漫评思享家 宏观产经中国新观察三里河民生调查局中新财评 世界观国际识局国际人物国际热评新漫评国际视野 热点追踪 中新真探 新闻浮世绘 中新法治 第一现场 港澳风向标快车道青……</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_14.png" alt="五年规划里的大国“治慧”——习近平主席引领中国高质量发展的世界启迪" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">14</span>
+                        <h3 class="news-title">五年规划里的大国“治慧”——习近平主席引领中国高质量发展的世界启迪</h3>
+                        <p class="news-summary">时间：20260303 作者： 来源：新华社 草木蔓发，春山可望。蓬勃春意中，中国壮美的发展新画卷徐徐展开。十五五开局起步，神州大地涌动着团结奋进的澎湃活力，升腾起中国式现代化的万千气象。 新起点再出发，中国的奋进征程牵动全球目光；谋发展惠世界，中国五年规划提供的机遇与启迪备受瞩目。在五年规划的科学制定和接续实施中，世界看到在习近平主席领航掌舵下，新时代中国开放合作的坚定决心和高质量发展的光明前景……</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_15.png" alt="一批“十五五”时期高技术产业标志性引领性重大工程正谋划推进（权威 ..." class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">15</span>
+                        <h3 class="news-title">一批“十五五”时期高技术产业标志性引领性重大工程正谋划推进（权威 ...</h3>
+                        <p class="news-summary">谋划推进一批高技术产业；研究制定城乡居民增收计划、2026—2030年扩大内需战略实施方案；制定全国统一大市场建设条例，规范地方政府和企业行为……作为重要的。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_16.png" alt="推动高质量、可持续的发展中央网络安全和信息化委员会办公室" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">16</span>
+                        <h3 class="news-title">推动高质量、可持续的发展中央网络安全和信息化委员会办公室</h3>
+                        <p class="news-summary">推动高质量、可持续的发展 2026年01月19日 1444 来源： 人民日报 2026年是十五五开局之年，当前，外部环境变化影响加深，国内供强需弱矛盾突出，重点领域风险隐患较多。 习近平总书记在中央经济工作会议上强调：推动高质量、可持续的发展。这为中国经济航船破浪前行提供了科学指引，我们要深刻理解把握。 习近平总书记强调：始终以创新、协调、绿色、开放、共享的内在统一来把握发展、衡量发展、推动发展。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_17.png" alt="外交部发言人郭嘉昆主持例行记者会" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">17</span>
+                        <h3 class="news-title">外交部发言人郭嘉昆主持例行记者会</h3>
+                        <p class="news-summary">2026年5月14日外交部发言人郭嘉昆主持例行记者会 沙特东方电视台记者：中美元首会晤是否谈及中东局势？在伊朗局势和霍尔木兹海峡重开问题上有何进展？（《纽约时报》亦问及） 郭嘉昆：今天上午习近平主席同特朗普总统举行会谈，两国元首就中东局势等重大国际和地区问题交换了意见，中方已经发布了有关消息，你可以查阅。关于霍尔木兹海峡问题，中方的立场是一贯的、明确的。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_18.png" alt="外交部发言人林剑主持例行记者会" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">18</span>
+                        <h3 class="news-title">外交部发言人林剑主持例行记者会</h3>
+                        <p class="news-summary">2026年5月6日外交部发言人林剑主持例行记者会 应吉布提共和国总统盖莱、乌干达共和国总统穆塞韦尼邀请，国家主席习近平特使、全国人大常委会副委员长洛桑江村将赴吉布提市、坎帕拉出席分别于5月9日、5月12日举行的吉布提总统盖莱、乌干达总统穆塞韦尼就职典礼。 中阿卫视记者：据报道，今天日本88式导弹首次在肩并肩军演中发射。这是日本首次在境外发射进攻型导弹。请问中方有何评论？</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_19.png" alt="内政外交挑战重重2026美国全球战略如何重构？" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">19</span>
+                        <h3 class="news-title">内政外交挑战重重2026美国全球战略如何重构？</h3>
+                        <p class="news-summary">国际》播放列表：41 《权威发布》播放列表： 2105 · 中文 ·  "。此事引发社会各界的普遍关注与热议。相关领域专家就此议题发表了专业见解。有关部门正在积极研究应对策略与方案。业内人士普遍认为这将产生重要影响。多家主流媒体对此进行了深度报道分析。目前各方正在保持密切沟通与协调。市场对此反应积极，总体形势向好。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260519_20.png" alt="大国之大利天下——2026年春季中国元首外交纪事习近平外交思想和新时代中国外交" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">20</span>
+                        <h3 class="news-title">大国之大利天下——2026年春季中国元首外交纪事习近平外交思想和新时代中国外交</h3>
+                        <p class="news-summary">网站地图 特色栏目 语言 大国之大利天下——2026年春季中国元首外交纪事 来源：新华网 责任编辑：戚易斌 发布时间：20260504 新华社北京5月4日电 很高兴结识查波总统先生。欢迎你对中国进行国事访问，也欢迎你带来的代表团和各位部长。你就任总统以来，莫桑比克经济社会发展取得新成就，我向你表示祝贺。 四月北京，春和景明。</p>
+                        <div>
+                            <span class="tag">新闻</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">所有新闻内容仅供参考，请以官方发布为准 · 2026年05月19日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
