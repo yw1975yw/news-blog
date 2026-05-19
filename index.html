@@ -26,7 +26,8 @@
             --footer-bg: #16213e; --footer-color: #a0a0a0;
             --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
         }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-gradient); min-height: 100vh; padding: 20px; color: var(--text-color); position: relative; overflow-x: hidden; }
+        #bg-video { position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; opacity: 0.4; }
         .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
         .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
         .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
@@ -71,6 +72,9 @@
     </style>
 </head>
 <body>
+    <video id="bg-video" autoplay muted loop playsinline>
+        <source src="videos/cover.mp4" type="video/mp4">
+    </video>
     <nav class="navbar">
         <a href="index.html" class="navbar-brand">📰 环球新闻</a>
         <ul class="nav-links">
