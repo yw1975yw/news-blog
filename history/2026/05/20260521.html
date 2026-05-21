@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年05月21日 | 环球新闻</title>
+    <meta name="description" content="2026年05月21日全球20条热点新闻全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <video src="../../../videos/cover.mp4" autoplay loop muted playsinline class="cover-image"></video>
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年05月21日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_01.png" alt="Netanyahu opposes Iran war end deal, Trump defends diplomacy" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">1</span>
+                        <h3 class="news-title">Netanyahu opposes Iran war end deal, Trump defends diplomacy</h3>
+                        <p class="news-summary">Israeli Prime Minister Benjamin Netanyahu strongly opposes any deal meant to end the war with Iran, calling it too many concessions. President Trump defended the diplomatic approach, saying pressuring Iran through negotiations serves American interests. The U.S. threatens to resume military strikes to force Iran into real concessions, escalating Middle East tensions.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_02.png" alt="Samsung management reaches preliminary deal with union to avoid strike" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">2</span>
+                        <h3 class="news-title">Samsung management reaches preliminary deal with union to avoid strike</h3>
+                        <p class="news-summary">Samsung Electronics management and union representatives reached a preliminary agreement after multiple rounds of negotiations, successfully avoiding a massive strike that could affect global chip supply. The deal includes better wages, benefits and working conditions. Samsung shares rose on news of stable supply expectations.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_03.png" alt="Trump concludes China visit, Xi invites him to White House in September" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">3</span>
+                        <h3 class="news-title">Trump concludes China visit, Xi invites him to White House in September</h3>
+                        <p class="news-summary">President Trump concluded his visit to China with President Xi inviting him to visit the White House on September 24. During the visit, both nations signed multiple trade deals with China committing to purchase over 200 Boeing aircraft and large quantities of American agricultural products. Trump called the visit extremely positive and productive.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_04.png" alt="Putin visits China for 25th time, Sino-Russian ties deepen" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">4</span>
+                        <h3 class="news-title">Putin visits China for 25th time, Sino-Russian ties deepen</h3>
+                        <p class="news-summary">Russian President Putin arrived in Beijing for his 25th visit to China. President Xi held an official welcome ceremony. The two leaders held talks and jointly attended the opening of the China-Russia Year of Education. Multiple cooperation agreements were signed covering energy, infrastructure and technology. The deepening relationship draws close attention from the U.S. and Europe.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_05.png" alt="US and China sign billions in trade deals, Boeing jumbo orders" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">5</span>
+                        <h3 class="news-title">US and China sign billions in trade deals, Boeing jumbo orders</h3>
+                        <p class="news-summary">During the summit, the U.S. and China signed multiple trade agreements worth tens of billions of dollars. China committed to purchasing 200+ Boeing aircraft, GE engines and large quantities of American agricultural products. U.S. trade representatives expect Beijing to sign additional agricultural purchase deals worth billions.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_06.png" alt="Trump warns Iran 'clock is ticking', Middle East conflict risk remains" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">6</span>
+                        <h3 class="news-title">Trump warns Iran 'clock is ticking', Middle East conflict risk remains</h3>
+                        <p class="news-summary">President Trump warned Iran on social media that 'the clock is ticking', threatening even fiercer strikes than before if no agreement is reached quickly. The U.S. presented five demands including Iran handing over 400kg of enriched uranium. Iran refused and military options are back on the table.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_07.png" alt="Ukraine war near end? Putin hints Moscow ready for ceasefire" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">7</span>
+                        <h3 class="news-title">Ukraine war near end? Putin hints Moscow ready for ceasefire</h3>
+                        <p class="news-summary">President Putin hinted the Ukraine war may be nearing its end, saying Moscow is ready to end the conflict through negotiations. Ukraine cautiously welcomed the statement while the UN Secretary-General called on all parties to seize the opportunity. Battlefield uncertainty remains but hopes for a peaceful resolution are rising.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_08.png" alt="Shenzhou-23 crew conducts launch site drills for upcoming mission" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">8</span>
+                        <h3 class="news-title">Shenzhou-23 crew conducts launch site drills for upcoming mission</h3>
+                        <p class="news-summary">The Shenzhou-23 manned spaceflight mission conducted full-system drills at the launch site, preparing for the upcoming launch. This is a critical step in China's space station construction. Astronauts will conduct multiple scientific experiments and technical tests in orbit. China's manned space program proceeds on schedule.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_09.png" alt="Japanese PM visits South Korea, holds summit with President Lee" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">9</span>
+                        <h3 class="news-title">Japanese PM visits South Korea, holds summit with President Lee</h3>
+                        <p class="news-summary">Japanese Prime Minister Sunae Wasae visited South Korea for a summit with President Lee Jae-myung. The two leaders exchanged views on energy security, trade cooperation and regional situations. This marks the first official visit by a Japanese PM in years, signaling a thaw in bilateral relations. Both agreed to establish regular foreign minister-level consultations.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_10.png" alt="UN Secretary-General warns Strait of Hormuz blockade is global crisis" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">10</span>
+                        <h3 class="news-title">UN Secretary-General warns Strait of Hormuz blockade is global crisis</h3>
+                        <p class="news-summary">The UN Secretary-General warned during a visit to Japan that the blockade of the Strait of Hormuz is triggering a global crisis, severely impacting shipping, energy supply and the world economy. He called on all parties to exercise restraint and restore dialogue to protect international waterways.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_11.png" alt="Iran rejects U.S. conditions, nuclear talks at impasse" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">11</span>
+                        <h3 class="news-title">Iran rejects U.S. conditions, nuclear talks at impasse</h3>
+                        <p class="news-summary">Iran rejected multiple American conditions including handing over 400kg of enriched uranium and reducing to a single nuclear facility. An Iranian military spokesman warned any military action would result in even fiercer retaliation. Iran believes time is on its side with a hardline stance, making nuclear talks outlook bleak.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_12.png" alt="US-China summit discusses Taiwan, Trump says no troops for Taiwan" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">12</span>
+                        <h3 class="news-title">US-China summit discusses Taiwan, Trump says no troops for Taiwan</h3>
+                        <p class="news-summary">The US-China summit addressed the Taiwan issue. President Trump stated Washington has no conflict with Beijing over Taiwan and would not make any promises to Xi on the matter. The U.S. Defense Department said Taiwan arms sales are under review. Taiwan emerged as a core focus of the summit.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_13.png" alt="CIA director visits Cuba, discusses energy crisis and humanitarian aid" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">13</span>
+                        <h3 class="news-title">CIA director visits Cuba, discusses energy crisis and humanitarian aid</h3>
+                        <p class="news-summary">CIA Director John Ratcliffe visited Cuba for talks on the energy crisis and humanitarian assistance. U.S. Secretary of State Marco Rubio accused the Cuban government of lying about American aid offers. Cuba faces a deepening energy crisis with power shortages triggering public protests.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_14.png" alt="China restricts critical mineral exports to U.S., semiconductor supply war escalates" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">14</span>
+                        <h3 class="news-title">China restricts critical mineral exports to U.S., semiconductor supply war escalates</h3>
+                        <p class="news-summary">China announced restrictions on exporting critical minerals to the U.S., including gallium and germanium essential for semiconductor manufacturing. This counters American tech restrictions and will significantly impact global semiconductor supply chains. The U.S. Commerce Department is evaluating supply chain security risks.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_15.png" alt="G7 finance ministers agree on AI model risk countermeasures" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">15</span>
+                        <h3 class="news-title">G7 finance ministers agree on AI model risk countermeasures</h3>
+                        <p class="news-summary">G7 finance ministers and central bank governors meeting in Japan agreed to compile specific countermeasures for managing risks of advanced AI models. Japan had previously proposed interim AI risk guidelines receiving positive response. Discussions covered AI impacts on financial stability and employment, with agreement to strengthen cross-border regulatory cooperation.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_16.png" alt="Digital yuan cross-border payment expands to 50 countries and regions" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">16</span>
+                        <h3 class="news-title">Digital yuan cross-border payment expands to 50 countries and regions</h3>
+                        <p class="news-summary">The digital yuan internationalization achieved major progress as cross-border payment services expanded to 50 countries and regions worldwide, covering major economies across Asia, Europe, Africa and the Americas. Cross-border e-commerce, tourism and overseas study remittance applications are growing rapidly with monthly transaction volume exceeding 100 billion yuan.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_17.png" alt="German manufacturing PMI rises for sixth consecutive month, strong recovery" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">17</span>
+                        <h3 class="news-title">German manufacturing PMI rises for sixth consecutive month, strong recovery</h3>
+                        <p class="news-summary">Germany's Federal Statistical Office reported the manufacturing PMI remaining in expansion territory for six consecutive months, with industrial output exceeding market expectations. Machinery, automotive, chemical and other pillar industries reported ample orders with foreign trade growing. Analysts say the German economy is fully recovering from the energy crisis impact.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_18.png" alt="Serbian president to visit China, boost comprehensive strategic partnership" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">18</span>
+                        <h3 class="news-title">Serbian president to visit China, boost comprehensive strategic partnership</h3>
+                        <p class="news-summary">At the invitation of President Xi Jinping, the Serbian president will pay a state visit to China. During the visit, the two countries will sign multiple cooperation agreements covering trade, infrastructure, technology and culture. Serbia is China's important partner in Central and Eastern Europe, and this visit will further deepen traditional friendship.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_19.png" alt="US and China issue AI joint statement, promote AI safety governance" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">19</span>
+                        <h3 class="news-title">US and China issue AI joint statement, promote AI safety governance</h3>
+                        <p class="news-summary">The U.S. and China issued a joint AI statement during the summit, reaching important consensus on AI ethics, technology risk management and cross-border data flows. Both countries will jointly promote a global AI governance framework to prevent AI misuse in military and intelligence domains. This sets an important example for international AI governance.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="../../../images/news-generated/news_20260521_20.png" alt="Global renewable energy investment exceeds fossil fuels for first time" class="news-image">
+                    <div class="news-content">
+                        <span class="news-number">20</span>
+                        <h3 class="news-title">Global renewable energy investment exceeds fossil fuels for first time</h3>
+                        <p class="news-summary">The IEA annual report shows global renewable energy investment reached $1.8 trillion in 2026, exceeding fossil fuel investment for the first time. Solar and wind power costs continue to drop, becoming more economical than fossil fuels. China, the EU and the U.S. lead the global clean energy transition with carbon neutrality paths becoming clearer.</p>
+                        <div>
+                            <span class="tag">News</span>
+                        </div>
+                    </div>
+                </div>
+</div>
+        <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻生成与发布 by <a href="https://github.com/nickmccart/hn" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://build.nvidia.com/" target="_blank">NVIDIA AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">所有新闻内容仅供参考，请以官方发布为准 · 2026年05月21日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
