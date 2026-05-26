@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 - 2026年05月25日 | 环球新闻</title>
+    <meta name="description" content="2026年05月25日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <video src="../../../videos/cover.mp4" autoplay loop muted playsinline class="cover-image"></video>
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年05月25日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_01.png" alt="全球最大碳捕集设施在冰岛正式投入运营" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">01</span>
+                        <h3 class="news-title">全球最大碳捕集设施在冰岛正式投入运营</h3>
+                        <p class="news-summary">全球规模最大的直接空气碳捕集设施近日在冰岛正式启用，每年可从大气中吸收3.6万吨二氧化碳。该设施采用模块化设计，利用可再生能源驱动，捕集的碳将永久封存于地下玄武岩岩层中。这一里程碑式的项目标志着人类应对气候变化进入新阶段，多国政府表示将加大对类似技术的投资支持。</p>
+                        <div>
+                            <span class="tag">环保科技</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_02.png" alt="联合国安理会通过人工智能军事应用决议草案" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">02</span>
+                        <h3 class="news-title">联合国安理会通过人工智能军事应用决议草案</h3>
+                        <p class="news-summary">联合国安理会日前以压倒性多数通过首份关于人工智能军事应用的行为准则草案，要求各国限制自主武器系统的使用场景，并建立跨国信息共享机制。草案同时设立专项基金，支持发展中国家提升AI治理能力。中方代表表示，该决议具有积极意义，但仍需进一步完善执行机制。</p>
+                        <div>
+                            <span class="tag">国际政治</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_03.png" alt="SpaceX星舰完成首次商业载荷发射任务" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">03</span>
+                        <h3 class="news-title">SpaceX星舰完成首次商业载荷发射任务</h3>
+                        <p class="news-summary">SpaceX宣布其星舰系统完成首次商业载荷发射任务，成功将一组通信卫星送入地球同步轨道。此次任务验证了星舰的重复使用能力，发射塔成功捕获了一级助推器，二级飞船也按计划返航回收。业内人士指出，这一突破将使卫星发射成本大幅下降，并加速太空资源开发进程。</p>
+                        <div>
+                            <span class="tag">航天科技</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_04.png" alt="全球供应链危机再现芯片短缺局面" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">04</span>
+                        <h3 class="news-title">全球供应链危机再现芯片短缺局面</h3>
+                        <p class="news-summary">受地缘政治影响和AI算力需求激增的双重推动，全球半导体供应链再次出现紧张态势。从汽车到消费电子，多个行业面临芯片交付延迟问题。台积电、三星等主要晶圆厂已宣布扩大产能计划，但产能释放仍需时日。业界呼吁建立更加多元化的芯片制造体系，以降低供应链风险。</p>
+                        <div>
+                            <span class="tag">经济金融</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_05.png" alt="日本成功研发全球首款脑机接口义肢" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">05</span>
+                        <h3 class="news-title">日本成功研发全球首款脑机接口义肢</h3>
+                        <p class="news-summary">日本东京大学研究团队宣布研发出全球首款商业化脑机接口智能义肢，该设备可通过解码大脑神经信号实现精细动作控制，响应延迟低于50毫秒。首批临床试验显示，截肢患者使用该义肢后可完成打字、握笔等复杂动作。研究团队表示将在明年启动大规模临床试验，力争三年内实现量产。</p>
+                        <div>
+                            <span class="tag">医疗健康</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_06.png" alt="欧洲多国遭遇极端高温提前来袭" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">06</span>
+                        <h3 class="news-title">欧洲多国遭遇极端高温提前来袭</h3>
+                        <p class="news-summary">受异常大气环流影响，欧洲多国五月中旬即出现35度以上高温天气，多地气温创下历史同期纪录。法国、西班牙、意大利等国已发布高温预警，部分地区学校暂停户外课程。专家指出，受全球变暖趋势影响，极端高温事件正变得更加频繁，各国需加快适应气候变化的基础设施建设。</p>
+                        <div>
+                            <span class="tag">气候变化</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_07.png" alt="中国自贸试验区推出跨境数据流动新政" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">07</span>
+                        <h3 class="news-title">中国自贸试验区推出跨境数据流动新政</h3>
+                        <p class="news-summary">国务院批准在现有自贸试验区基础上设立跨境数据流动示范区，允许符合条件的跨国企业在华设立数据中心并进行国际数据传输。政策同时明确了数据分类分级管理规则，在保障国家数据安全的前提下，最大限度释放数字经济活力。多家人工智能企业表示将利用新政策扩大在华研发布局。</p>
+                        <div>
+                            <span class="tag">政策经济</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_08.png" alt="新型忆阻器将计算能效提升百倍" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">08</span>
+                        <h3 class="news-title">新型忆阻器将计算能效提升百倍</h3>
+                        <p class="news-summary">美国麻省理工学院团队研发出一种新型存算一体忆阻器阵列，可在单个芯片上同时完成数据存储与计算，能效比较传统方案提升超过一百倍。该技术有望彻底解决AI大模型运行的高能耗困境。相关论文已发表于《自然》杂志，多家芯片巨头表达技术许可意向，预计五年内可实现商业化落地。</p>
+                        <div>
+                            <span class="tag">科技前沿</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_09.png" alt="巴西亚马逊雨林砍伐面积创历史新低" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">09</span>
+                        <h3 class="news-title">巴西亚马逊雨林砍伐面积创历史新低</h3>
+                        <p class="news-summary">巴西环境部公布数据显示，得益于无人机巡检和社区护林员制度的推广，亚马逊雨林年度砍伐面积较峰值下降78%，创二十年新低。国际社会对此表示欢迎，多个国家和组织承诺向巴西提供额外气候融资支持。环保组织同时提醒，持续的财政支持对于巩固保护成果至关重要。</p>
+                        <div>
+                            <span class="tag">环境保护</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_10.png" alt="全球电动汽车市场份额首超燃油车" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">10</span>
+                        <h3 class="news-title">全球电动汽车市场份额首超燃油车</h3>
+                        <p class="news-summary">国际能源署最新报告显示，今年第一季度全球电动汽车销量占汽车总销量的53%，首次超越传统燃油车。中国、欧洲市场需求持续强劲，美国市场增速超出预期。分析认为，电池成本持续下降和充电基础设施完善是推动渗透率攀升的主要因素，但锂、钴等关键矿产的供应保障仍是行业面临的重要挑战。</p>
+                        <div>
+                            <span class="tag">交通能源</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_11.png" alt="月球科研站项目获得多国正式签署" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">11</span>
+                        <h3 class="news-title">月球科研站项目获得多国正式签署</h3>
+                        <p class="news-summary">中国与俄罗斯联合倡议的月球科研站项目在维也纳举行签署仪式，共有十八个国家正式加入该项目。各方同意在联合国和平利用外层空间委员会框架下开展合作，共同推进月球表面科研设施的建设与运营。首批项目包括月面天文台和资源原位利用试验平台，预计2030年前完成部署。</p>
+                        <div>
+                            <span class="tag">国际合作</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_12.png" alt="全球珊瑚白化危机持续加剧" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">12</span>
+                        <h3 class="news-title">全球珊瑚白化危机持续加剧</h3>
+                        <p class="news-summary">澳大利亚大堡礁管理局发布报告显示，受海水温度持续偏高影响，大堡礁今年再次发生大规模白化事件，受影响珊瑚比例超过40%。科学家警告称，如果全球升温控制在1.5摄氏度以内的窗口期不能把握，全球九成以上的珊瑚礁将面临灭绝风险。各国正就珊瑚礁保护加大科研投入。</p>
+                        <div>
+                            <span class="tag">生态环境</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_13.png" alt="量子计算进入实用化阶段" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">13</span>
+                        <h3 class="news-title">量子计算进入实用化阶段</h3>
+                        <p class="news-summary">IBM与谷歌相继宣布其量子计算系统已在特定优化问题上实现量子优势，并开始向金融机构和制药企业提供商业化云计算服务。量子计算机在药物分子模拟、金融组合优化等场景展现出超越经典计算机的强大能力。专家指出，量子纠错技术的突破是实现实用化的关键转折点。</p>
+                        <div>
+                            <span class="tag">科技前沿</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_14.png" alt="土耳其与希腊边境再现移民危机" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">14</span>
+                        <h3 class="news-title">土耳其与希腊边境再现移民危机</h3>
+                        <p class="news-summary">土耳其与希腊边境近日再次出现大规模移民聚集，数千名来自中东和非洲的移民试图进入欧盟境内。欧盟紧急召开会议商讨对策，决定向希腊提供额外边境管控资金。人权组织则呼吁各方在加强边境管理的同时，确保移民的基本权利得到保障。</p>
+                        <div>
+                            <span class="tag">国际社会</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_15.png" alt="全球数字税改革谈判取得突破" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">15</span>
+                        <h3 class="news-title">全球数字税改革谈判取得突破</h3>
+                        <p class="news-summary">经济合作与发展组织宣布，140个参与数字税改革谈判的国家就全球最低企业税率框架的实施细则达成历史性共识。跨国科技巨头将按照新的公式在各国缴税，大型科技公司的实际税率预计将明显上升。协议同时建立了争端解决机制，为发展中国家维护税收权益提供了新工具。</p>
+                        <div>
+                            <span class="tag">全球经济</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_16.png" alt="深海采矿规则国际谈判启动" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">16</span>
+                        <h3 class="news-title">深海采矿规则国际谈判启动</h3>
+                        <p class="news-summary">国际海底管理局就深海矿产资源开发规章草案开放全球咨询，草案规定了深海采矿的环境影响评估标准和恢复性复垦要求。海洋科学家警告深海开采可能对生态系统造成不可逆破坏，呼吁将更多海域列为保护禁区。相关谈判结果将影响价值数万亿美元的深海矿产资源开发前景。</p>
+                        <div>
+                            <span class="tag">国际资源</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_17.png" alt="阿尔茨海默病新药三期试验效果积极" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">17</span>
+                        <h3 class="news-title">阿尔茨海默病新药三期试验效果积极</h3>
+                        <p class="news-summary">美国制药公司礼来宣布其阿尔茨海默病新药Donanemab的三期临床试验达到主要终点，接受治疗的患者认知功能下降速度减缓35%。该药通过清除大脑中的β-淀粉样蛋白斑块发挥作用。FDA已授予其突破性疗法资格，新药上市申请正在审批中，预计将为数百万患者带来新希望。</p>
+                        <div>
+                            <span class="tag">医疗健康</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_18.png" alt="全球粮食价格指数连续三个月回落" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">18</span>
+                        <h3 class="news-title">全球粮食价格指数连续三个月回落</h3>
+                        <p class="news-summary">联合国粮农组织公布数据显示，全球食品价格指数已连续三个月下行，主要受谷物、植物油供应改善以及运价回调影响。小麦、玉米价格较年初高点下降超过20%。但粮农组织警告，气候异常和地区冲突仍可能扰动粮食供应链，部分低收入国家的粮食安全形势依然严峻。</p>
+                        <div>
+                            <span class="tag">农业经济</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_19.png" alt="6G标准制定工作正式启动" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">19</span>
+                        <h3 class="news-title">6G标准制定工作正式启动</h3>
+                        <p class="news-summary">国际电信联盟在日内瓦召开第六代移动通信技术标准制定首次会议，来自全球五十多个国家的代表参会。会议确立了6G技术六大应用场景和十五项核心能力指标。中国、美国、欧盟、日本、韩国均派出大型代表团参与争夺标准话语权。6G网络预计将在2030年前后开始商用部署。</p>
+                        <div>
+                            <span class="tag">通信科技</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img class="news-image" src="../../../images/news_20260525_20.png" alt="全球多国联合打击野生动植物走私" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">20</span>
+                        <h3 class="news-title">全球多国联合打击野生动植物走私</h3>
+                        <p class="news-summary">国际刑警组织协调全球四十三个国家和地区开展代号为「雷霆」的联合打击行动，成功摧毁二十三个跨国野生动植物走私网络，查获象牙、犀牛角、珍稀兰花等非法制品总价值超过三亿美元。行动同时捣毁了多个非法猎杀营地和跨境走私通道，有效震慑了野生动植物犯罪网络。</p>
+                        <div>
+                            <span class="tag">生态环境</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comments-section">
+            <h2 class="comments-title">💬 评论区</h2>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻发布与更新 by <a href="https://github.com/yww001/news-blog" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://pollinations.ai" target="_blank">Pollinations AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">所有新闻内容仅供参考，请以官方发布为准 · 2026年05月25日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
