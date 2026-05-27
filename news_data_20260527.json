@@ -1,0 +1,142 @@
+[
+  {
+    "number": "01",
+    "title": "华为披露芯片设计突破性进展，寻求化解美国制裁",
+    "summary": "华为近日公布LogicFolding架构等芯片设计重磅突破，中芯国际股价应声上涨7.6%。华为昇腾系列芯片已成为中国多款人工智能模型的重要算力基础，包括深度求索最新发布的V4旗舰模型。此举被视为中国半导体产业应对外部制裁的重要里程碑，展现了自主创新的持续突破。",
+    "tag": "科技",
+    "prompt": "Chinese tech engineers celebrating breakthrough in semiconductor chip design, laboratory setting with advanced microscope and computer screens showing chip architecture diagrams, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "02",
+    "title": "神舟二十三号成功发射，中国载人航天再迈关键一步",
+    "summary": "搭载神舟二十三号载人飞船的长征二号F遥二十三运载火箭在酒泉卫星发射中心成功点火发射。飞船入轨后成功对接空间站天和核心舱径向端口，多国媒体将此视为中国朝着载人登月目标迈出的关键一步，引发国际社会广泛关注。",
+    "tag": "科技",
+    "prompt": "Rocket launching from desert space center at night, Chinese space program, flames illuminating the launch tower, dramatic sky with stars, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "03",
+    "title": "巴基斯坦总理谢里夫正式访华，签署多项合作协议",
+    "summary": "巴基斯坦伊斯兰共和国总理夏巴兹·谢里夫应国务院总理李强邀请，于5月23日至26日对中国进行正式访问。访问期间，双方签署涵盖贸易、基础设施建设、能源等多领域合作协议，进一步深化中巴全天候战略合作伙伴关系。",
+    "tag": "国际",
+    "prompt": "Chinese and Pakistani officials shaking hands and signing agreements in grand diplomatic hall, flags of both nations displayed, formal ceremony setting, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "04",
+    "title": "日本40年期国债收益率创20年新高，全球金融市场承压",
+    "summary": "日本40年期国债收益率突破3.44%，创下20年来新高，引发全球金融市场关注。作为全球债务与GDP比率最高的国家，日本债券市场的动荡可能引发连锁反应，多国投资者开始重新评估风险资产配置。",
+    "tag": "金融",
+    "prompt": "Tokyo financial district with stock market display boards showing declining numbers, concerned investors in suits reviewing data, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "05",
+    "title": "欧盟光伏产业报告出炉，中国供应链依赖引发担忧",
+    "summary": "欧洲光伏工业协会发布2026年一季度市场报告，指出欧洲光伏产业对华供应链依赖度持续上升。昔日主导全球光伏制造的欧洲企业如今处处依赖中国技术和组件，欧盟正积极寻求解决方案以重振本土制造能力。",
+    "tag": "经济",
+    "prompt": "Solar panel farms across European countryside, modern clean energy infrastructure, blue sky with clouds, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "06",
+    "title": "第21届R+T Asia亚洲门窗遮阳展在上海盛大开幕",
+    "summary": "5月27日至29日，第21届R+T Asia亚洲门窗遮阳展在上海国家会展中心举行。全球门窗遮阳行业创新成果与前沿趋势集中呈现，涵盖智能遮阳系统、节能环保材料、建筑安防等领域的最新产品和技术解决方案。",
+    "tag": "国际",
+    "prompt": "Large international trade exhibition hall in Shanghai, modern exhibition center with booths displaying innovative building materials and window systems, professional visitors walking through, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "07",
+    "title": "凤凰研究突破性进展，母乳科学数据规模大幅拓展",
+    "summary": "乳品科学与人类健康学术研讨会和第四届中国母乳科学大会暨2026妇幼营养学术会议举行，凤凰研究在数据规模上取得突破性拓展，持续解锁母乳营养密码，为婴幼儿配方奶粉研发提供更完善的科学依据。",
+    "tag": "科技",
+    "prompt": "Scientists in modern laboratory analyzing breast milk samples under microscope, advanced medical research equipment, clinical setting, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "08",
+    "title": "滴滴出行股价暴跌，审查风波引发集体诉讼担忧",
+    "summary": "滴滴出行股价连续下跌，市场传言其可能面临集体诉讼。数据安全审查背后的地缘政治博弈持续发酵，投资者信心受到冲击。业内人士表示，滴滴需要在合规整改与业务发展之间寻找新的平衡点。",
+    "tag": "财经",
+    "prompt": "Mobile ride-hailing app interface showing declining stock chart, concerned user looking at smartphone, urban city street background, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "09",
+    "title": "山西煤矿安全形势严峻，国务院安委会部署整治",
+    "summary": "山西晋兴煤矿事故敲响安全警钟，国务院安委会办公室要求各地深入开展矿山安全整治专项行动。涉事企业存在重大违法行为，相关责任人已被依法控制。事故教训再次提醒安全生产责任重于泰山。",
+    "tag": "社会",
+    "prompt": "Coal mine rescue workers in safety helmets and uniforms, emergency rescue operation at underground mine entrance, professional rescue vehicles parked nearby, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "10",
+    "title": "联合国安理会就乌克兰局势激烈交锋",
+    "summary": "联合国安理会就乌克兰问题再次激烈交锋，俄罗斯外交部发言人称关于乌军袭击卢甘斯克共和国学校的声明是谎言。欧美与俄罗斯在安理会相互指责，局势复杂性持续凸显，和平解决途径仍不明朗。",
+    "tag": "国际",
+    "prompt": "United Nations Security Council chamber with diplomats in formal attire discussing international affairs,flags on walls, serious atmosphere, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "11",
+    "title": "莫斯科红场胜利日阅兵，俄罗斯展示军事力量",
+    "summary": "俄罗斯在莫斯科红场举行胜利日军事阅兵，庆祝二战胜利81周年。俄罗斯国民近卫队在装饰一新的红场上整齐列队，多款先进武器装备亮相。普京发表讲话强调俄罗斯维护国家安全的坚定决心。",
+    "tag": "国际",
+    "prompt": "Moscow Red Square during military Victory Day parade, Russian soldiers in formation marching, military vehicles and equipment on display, grand architecture of Kremlin wall, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "12",
+    "title": "澳大利亚S&P/ASX200指数收跌，市场情绪谨慎",
+    "summary": "澳大利亚股市收盘下跌，S&P/ASX200指数下跌0.39%。受全球宏观经济不确定性影响，矿业和金融板块普遍承压。投资者等待更多经济数据以判断市场方向，整体情绪偏向谨慎。",
+    "tag": "金融",
+    "prompt": "Sydney stock exchange trading floor with Australian flag, financial charts on screens showing decline, brokers at work, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "13",
+    "title": "欧洲汽车工业协会报告显示新能源汽车销量持续攀升",
+    "summary": "欧洲汽车工业协会公布2026年一季度新能源汽车市场销量报告，数据显示欧洲市场电动汽车销量继续保持两位数增长。欧盟碳排放法规趋严和消费者环保意识提升是主要驱动力，但充电基础设施不足仍是发展瓶颈。",
+    "tag": "汽车",
+    "prompt": "Electric vehicles charging at modern charging station in European city, sleek EV models, green sustainable energy concept, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "14",
+    "title": "苹果MacBook产能转移加速，越南制造占比超40%",
+    "summary": "供应链消息显示，苹果MacBook生产策略调整加速，超过40%产能已转移至越南。苹果继续推进供应链多元化战略，在中美贸易摩擦背景下，越南、印度等地成为重要的制造基地替代选择。",
+    "tag": "科技",
+    "prompt": "Modern laptop computer factory assembly line in Southeast Asia, workers in safety gear assembling electronics, clean manufacturing facility, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "15",
+    "title": "NASA公布iPhone太空自拍样片，手机摄影迈向新里程碑",
+    "summary": "NASA公布iPhone 17 Pro Max拍摄的首批太空自拍样片，展示宇航员在国际空间站的日常场景。手机摄影在极端环境下的表现令人惊艳，业内专家称这标志着民用设备在专业航天领域的应用潜力。",
+    "tag": "科技",
+    "prompt": "Astronaut in space station taking selfie with iPhone, Earth visible in background through window, zero gravity environment, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "16",
+    "title": "强茂集团宣布营收目标迈向300亿新台币",
+    "summary": "强茂集团总裁方敏宗宣布公司2026年营收目标迈向300亿新台币，并喊出市值挑战千亿目标。受益于功率半导体市场需求旺盛和AI服务器散热解决方案增长，强茂股价表现强劲，引发市场高度关注。",
+    "tag": "经济",
+    "prompt": "Modern semiconductor factory interior with robotic arms assembling electronic components, clean room environment, Taiwan technology company, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "17",
+    "title": "全球人工智能产品公司突破4500家，产业竞争加剧",
+    "summary": "数据显示，开发和销售人工智能产品的公司已超过4500家，首都北京将在今年为中小学生开设人工智能课程。资金纷纷涌入人工智能企业加剧国内竞争，大学增加人工智能专业招生名额，AI人才培养进入快车道。",
+    "tag": "科技",
+    "prompt": "Young Chinese students learning artificial intelligence in modern classroom, holographic displays and robots, Beijing school setting, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "18",
+    "title": "完美国际2推出全新资料片，游戏产业持续复苏",
+    "summary": "完美世界《完美国际2》于5月27日推出全新资料片，全新探索玩法精彩来袭，诚意回馈活动相继呈现。游戏产业在疫情后持续复苏，国内游戏厂商加速精品化转型，玩家对高质量国产游戏的期待持续提升。",
+    "tag": "文化",
+    "prompt": "Gamers playing immersive MMORPG in modern gaming cafe, large screens with fantasy game world, Chinese internet cafe setting, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "19",
+    "title": "DeepSeek V4旗舰模型发布，AI推理能力再创新高",
+    "summary": "深度求索发布V4旗舰模型，在多项基准测试中刷新世界纪录。该模型在复杂推理、长文本理解和多模态任务上表现卓越，成为中国人工智能发展的重要里程碑。多家云计算平台已上线该模型服务。",
+    "tag": "科技",
+    "prompt": "Advanced AI neural network visualization, glowing blue data streams and circuit patterns representing artificial intelligence, futuristic technology concept, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  },
+  {
+    "number": "20",
+    "title": "全球疫苗公平分配取得进展，低收入国家接种率提升",
+    "summary": "世界卫生组织发布报告显示，全球疫苗公平分配取得积极进展，低收入国家新冠疫苗接种率显著提升。国际社会捐赠和COVAX计划持续发挥作用，但专家警告未来仍需加强全球卫生应急体系建设。",
+    "tag": "社会",
+    "prompt": "Healthcare worker vaccinating patient in rural community clinic, medical supplies and vaccines properly stored, developing country healthcare setting, photorealistic, ultra detailed, 8K, high resolution, no text, no watermark"
+  }
+]
