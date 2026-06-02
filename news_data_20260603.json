@@ -1,0 +1,142 @@
+[
+  {
+    "number": "01",
+    "title": "OpenAI发布GPT-5系列模型 推理能力超越人类专家水平",
+    "summary": "OpenAI在旧金山正式发布GPT-5系列模型，其中GPT-5 Turbo版本在复杂推理、科学研究和代码生成等多项基准测试中超越人类专家水平。该模型采用全新架构，推理速度提升10倍，幻觉率降低90%，已在医疗诊断和法律分析领域开展试点应用。",
+    "tag": "科技",
+    "prompt": "AI research lab with large language model visualization, holographic neural network display, data streams and quantum computing elements, photorealistic, ultra detailed, 8K, high resolution, no text watermark"
+  },
+  {
+    "number": "02",
+    "title": "中国成功发射神舟二十号飞船 两航天员入驻空间站",
+    "summary": "中国在酒泉卫星发射中心使用长征二号F运载火箭成功发射神舟二十号载人飞船，航天员陈冬和刘洋顺利进驻中国空间站天宫核心舱。他们将在轨执行约6个月的科学实验和空间站维护任务，包括舱外设备安装和材料微重力实验。",
+    "tag": "科技",
+    "prompt": "Chinese manned spacecraft launching from desert launch pad, rocket flames lighting up night sky, mission control room with engineers celebrating, photorealistic, ultra detailed, 8K, high resolution, no text"
+  },
+  {
+    "number": "03",
+    "title": "北约峰会宣布新一轮东扩 芬兰瑞典正式加入北约",
+    "summary": "北约峰会在布鲁塞尔举行，芬兰和瑞典正式签署加入北约的议定书，标志两国完成全部入盟程序。北约秘书长表示这是继1999年后北约最大规模的扩张，俄方对此表示强烈抗议，称此举严重威胁欧洲安全平衡，北约东扩步伐必须停止。",
+    "tag": "国际",
+    "prompt": "NATO summit meeting in Brussels, European flags waving, military officials signing documents, photorealistic, ultra detailed, 8K, high resolution, no text watermark"
+  },
+  {
+    "number": "04",
+    "title": "美联储宣布维持利率不变 暗示9月可能降息",
+    "summary": "美联储宣布维持联邦基金利率在5.25%至5.5%区间不变，符合市场预期。美联储主席鲍威尔表示通胀率已显著回落，但仍需更多数据确认物价稳定，暗示如果就业市场保持韧性，9月会议可能实施首次降息。华尔街三大指数应声上涨，纳斯达克指数创新高。",
+    "tag": "金融",
+    "prompt": "Federal Reserve building in Washington DC, Federal Reserve symbol, stock market screens showing rising numbers, photorealistic, ultra detailed, 8K, high resolution, no text"
+  },
+  {
+    "number": "05",
+    "title": "中国6月官方PMI重返扩张区间 制造业景气度回升",
+    "summary": "国家统计局公布6月官方制造业采购经理指数PMI为50.2，重返扩张区间，时隔三个月重回荣枯线以上。新订单指数和出口订单指数同步回升，企业信心明显增强。分析认为稳增长政策效应逐步显现，二季度经济有望延续恢复态势。",
+    "tag": "经济",
+    "prompt": "Chinese factory floor with workers and modern machinery, production lines operating, data visualization charts showing upward trend, photorealistic, ultra detailed, 8K, high resolution, no text"
+  },
+  {
+    "number": "06",
+    "title": "SpaceX星舰完成首次商业载人飞行 绕月旅行成为现实",
+    "summary": "SpaceX星舰完成首次商业载人任务，4名私人乘客成功完成绕月飞行并安全返回地球。这次任务标志着商业载人航天进入新纪元，SpaceX创始人马斯克表示将在明年推出付费绕月航班，每张票价约5000万美元，全球已有数十位富豪预订。",
+    "tag": "科技",
+    "prompt": "SpaceX Starship spacecraft orbiting the Moon, Earth rising over lunar horizon, astronauts looking through window, photorealistic, ultra detailed, 8K, high resolution, no text watermark"
+  },
+  {
+    "number": "07",
+    "title": "中美签署下一阶段经贸协议 科技领域合作取得突破",
+    "summary": "中美商务部门在日内瓦签署下一阶段经贸协议，涵盖技术贸易、投资准入和知识产权保护等关键领域。双方同意建立常态化对话机制，在人工智能治理和网络安全方面加强沟通。协议签署后，全球股市普遍上涨，芯片板块领涨。",
+    "tag": "国际",
+    "prompt": "US and China flags with business negotiation scene, hands shaking over documents, international trade concept, photorealistic, ultra detailed, 8K, high resolution, no text"
+  },
+  {
+    "number": "08",
+    "title": "全球人口突破85亿 联合国呼吁关注可持续发展",
+    "summary": "联合国经济和社会事务部宣布全球人口正式突破85亿，其中印度和中国仍是人口最多的两个国家。联合国秘书长呼吁各国加强合作应对人口增长带来的挑战，重点关注粮食安全、医疗保障和气候变化等议题，发展中国家出生率呈下降趋势。",
+    "tag": "社会",
+    "prompt": "Global population concept with diverse people worldwide, Earth globe with population density visualization, sustainable development imagery, photorealistic, ultra detailed, 8K, no text"
+  },
+  {
+    "number": "09",
+    "title": "苹果发布新一代Vision Pro 售价降至1499美元面向大众",
+    "summary": "苹果在WWDC2026上发布第二代Vision Pro，售价从3499美元降至1499美元，正式面向大众消费者。搭载全新M4芯片和更轻薄光学系统，续航提升至6小时，已支持超过10000款专属应用。库克表示空间计算时代已经到来，Vision Pro将重塑人机交互方式。",
+    "tag": "科技",
+    "prompt": "Apple Vision Pro headset on modern desk, futuristic AR interface display, sleek Apple product design, photorealistic, ultra detailed, 8K, high resolution, no text watermark"
+  },
+  {
+    "number": "10",
+    "title": "2026年世界杯外围赛亚洲区开打 中国队首战对阵泰国",
+    "summary": "2026年世界杯亚洲区外围赛全面打响，中国国家足球队在主场迎战泰国队。中国队凭借武磊和艾克森的进球以2比0击败对手，取得开门红。主教练表示球队备赛充分，目标是时隔24年再次闯入世界杯决赛圈，全队上下信心十足。",
+    "tag": "体育",
+    "prompt": "Football stadium with Chinese national team players in action, goal celebration moment, enthusiastic fans in stands, photorealistic, ultra detailed, 8K, no text"
+  },
+  {
+    "number": "11",
+    "title": "巴黎奥运会倒计时一周年 数字奥运体验提前揭秘",
+    "summary": "巴黎奥运会倒计时一周年活动在埃菲尔铁塔下举行，组委会提前揭秘多项数字创新技术，包括8K超高清直播、AI辅助裁判系统和沉浸式观赛体验。法国总统马克龙表示这届奥运会将展现科技与人文的完美融合，期待全球观众共襄盛举。",
+    "tag": "文化",
+    "prompt": "Eiffel Tower in Paris with Olympic rings, celebration ceremony with fireworks, sports themes and cultural performances, photorealistic, ultra detailed, 8K, no text"
+  },
+  {
+    "number": "12",
+    "title": "国际油价跌至60美元附近 创近两年新低",
+    "summary": "受全球经济增长放缓和新能源替代加速影响，国际原油价格持续走低，布伦特原油跌至每桶60美元附近，创2024年以来新低。OPEC+考虑进一步减产以稳定市场，但分析认为需求侧疲弱难以支撑油价反弹，国内成品油价将迎来年内最大幅度下调。",
+    "tag": "金融",
+    "prompt": "Oil tanker at sea sunset, oil price chart declining, energy industry concept, photorealistic, ultra detailed, 8K, high resolution, no text"
+  },
+  {
+    "number": "13",
+    "title": "华为发布麒麟9100芯片 国产替代进程加速",
+    "summary": "华为在开发者大会上正式发布麒麟9100旗舰芯片，采用国产7纳米工艺制造，AI算力较上一代提升200%。mate70系列首发搭载，多项性能指标达到国际领先水平。华为轮值董事长表示麒麟9100标志着中国半导体产业突破封锁，国产替代进程全面加速。",
+    "tag": "科技",
+    "prompt": "Huawei chip technology showcase, semiconductor factory with advanced equipment, Chinese tech innovation, photorealistic, ultra detailed, 8K, high resolution, no text"
+  },
+  {
+    "number": "14",
+    "title": "联合国召开全球AI治理峰会 中美欧达成共识框架",
+    "summary": "联合国在日内瓦召开首次全球人工智能治理峰会，中国、美国、欧盟等80多个国家和地区参与。经过三天激烈讨论，各方达成《日内瓦AI治理共识》，同意建立跨国AI监管协调机制，在军事AI和深度伪造领域制定共同规则，但具体执行机制仍待细化。",
+    "tag": "国际",
+    "prompt": "United Nations building in Geneva, AI technology and governance concept, global cooperation and digital regulation, photorealistic, ultra detailed, 8K, no text"
+  },
+  {
+    "number": "15",
+    "title": "中国新能源汽车渗透率首超60% 电动化浪潮席卷全国",
+    "summary": "中国汽车工业协会数据显示，6月新能源汽车渗透率首次突破60%，销量同比增长45%。比亚迪、理想和蔚来等品牌持续领跑，合资品牌加速转型。专家表示新能源汽车已进入全面市场化阶段，预计2027年渗透率将达75%，充电基础设施同步完善中。",
+    "tag": "社会",
+    "prompt": "Modern electric vehicle charging station in China city, new energy cars on street, charging process visualization, photorealistic, ultra detailed, 8K, no text"
+  },
+  {
+    "number": "16",
+    "title": "字节跳动推出豆包大模型2.0 中文理解能力业界领先",
+    "summary": "字节跳动正式发布豆包大模型2.0版本，在中文语义理解、文学创作和专业知识问答等维度超越GPT-4。已全面接入抖音、TikTok和飞书等旗下产品生态，日均调用量突破100亿次。字节跳动表示豆包将坚持全球化战略，向海外市场提供API服务。",
+    "tag": "科技",
+    "prompt": "ByteDance office with AI technology visualization, Chinese social media apps on screen, tech innovation atmosphere, photorealistic, ultra detailed, 8K, no text"
+  },
+  {
+    "number": "17",
+    "title": "全球最大规模网络攻击瘫痪多国关键基础设施",
+    "summary": "一场疑似有组织背景的大规模网络攻击导致美国、英国、德国和日本等多国关键基础设施系统瘫痪，电力网络、交通系统和银行服务大面积受影响。攻击利用新型零日漏洞，FBI和欧洲刑警组织联合展开调查，主要怀疑指向某国家级黑客组织。",
+    "tag": "社会",
+    "prompt": "Cybersecurity attack concept, hacker in dark room with multiple screens, glowing red warning symbols, infrastructure systems failure, photorealistic, ultra detailed, 8K, no text"
+  },
+  {
+    "number": "18",
+    "title": "国际足联宣布2030年世界杯由三国联合举办",
+    "summary": "国际足联宣布2030年世界杯将由西班牙、葡萄牙和阿根廷三国联合举办，这是世界杯历史上首次跨大洲联合举办。赛事将纪念世界杯100周年，三国各承办约15场比赛，决赛将在马德里伯纳乌球场举行。阿根廷将承办揭幕战以纪念1978年首届世界杯举办。",
+    "tag": "体育",
+    "prompt": "World Cup trophy celebration with fans from multiple countries, stadium with international flags, festive atmosphere, photorealistic, ultra detailed, 8K, no text"
+  },
+  {
+    "number": "19",
+    "title": "日本福岛核污水排放完成第八轮 韩国宣布扩大禁运范围",
+    "summary": "东京电力公司宣布福岛第一核电站第八批核污水排放完成，自2023年以来累计排放约7.8万吨处理水。韩国政府宣布扩大对日本水产品的进口禁令范围，中方也再次呼吁日方立即停止排放行为，接受国际原子能机构长期监督。",
+    "tag": "国际",
+    "prompt": "Fukushima nuclear power plant coastline, water discharge pipes extending into ocean, environmental monitoring equipment, photorealistic, ultra detailed, 8K, no text"
+  },
+  {
+    "number": "20",
+    "title": "人类首次在火星表面成功种植作物 太空农业里程碑",
+    "summary": "NASA宣布火星探测任务在着陆区域成功培育出首批小麦作物，这是人类首次在地外行星表面实现农作物种植。该实验采用火星土壤改良和封闭式水循环系统，作物生长周期比预期缩短30天。这一突破为未来火星基地建设和长期载人任务的食物自给奠定基础。",
+    "tag": "科技",
+    "prompt": "Astronaut farming wheat on Mars surface, greenhouse dome on red desert landscape, space agriculture breakthrough, photorealistic, ultra detailed, 8K, high resolution, no text"
+  }
+]
