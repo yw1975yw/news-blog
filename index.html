@@ -66,8 +66,9 @@
         footer a:hover { text-decoration: underline; }
         .footer-links { margin-top: 15px; }
         .footer-links a { margin: 0 10px; color: var(--footer-color); }
-        .comments-section { padding: 40px 30px; min-height: 800px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-section { padding: 40px 30px; min-height: 800px; max-width: 1200px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
         .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+        .giscus { width: 100% !important; max-width: 100% !important; }
     </style>
 </head>
 <body>
@@ -305,7 +306,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="news-card">
+<div class="news-card">
                     <img class="news-image" src="images/news_20260607_20.png" alt="诺贝尔物理学奖授予量子通信两位先驱 中国科学家在列" loading="lazy">
                     <div class="news-content">
                         <span class="news-number">20</span>
@@ -316,8 +317,11 @@
                         </div>
                     </div>
                 </div>
-            
-            <h2 class="comments-title">💬 评论区</h2>
+            </div>
+            <div class="comments-section">
+                <h2 class="comments-title">💬 评论区</h2>
+                <div class="giscus"></div>
+            </div>
             <script src="https://giscus.app/client.js"
                 data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
                 data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
