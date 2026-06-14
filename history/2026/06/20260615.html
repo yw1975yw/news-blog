@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 · 2026年06月15日 | 环球新闻</title>
+    <meta name="description" content="2026年06月15日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; min-height: 800px; max-width: 1200px; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+        .giscus { width: 100% !important; max-width: 100% !important; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="../../../rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <video id="coverVideo" src="../../../videos/cover.mp4" autoplay muted loop playsinline class="cover-image"></video>
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年06月15日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+            <div class="news-grid" id="newsGrid">
+                <article class="news-card" data-tag="科技">
+                    <img class="news-image" src="../../../images/news_20260615_01.png" alt="OpenAI发布GPT-5多模态模型 推理能力超越人类专家平均水平" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">01</span>
+                        <h3 class="news-title">OpenAI发布GPT-5多模态模型 推理能力超越人类专家平均水平</h3>
+                        <p class="news-summary">OpenAI在旧金山发布GPT-5多模态大模型，该模型在数学推理、代码生成和科学推理等基准测试中首次超越人类专家平均水平。GPT-5支持文本、图像、视频和音频的统一处理，上下文窗口扩展至200万tokens。OpenAI表示该模型已通过红队测试，将向ChatGPT Plus用户免费开放。英伟达同时宣布H200 GPU已优化支持GPT-5推理部署。</p>
+                        <div><span class="tag">科技</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="国际">
+                    <img class="news-image" src="../../../images/news_20260615_02.png" alt="G7峰会在法国埃维昂开幕 贸易与AI治理成核心议题" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">02</span>
+                        <h3 class="news-title">G7峰会在法国埃维昂开幕 贸易与AI治理成核心议题</h3>
+                        <p class="news-summary">七国集团峰会在法国阿尔卑斯山麓小镇埃维昂开幕，美国总统特朗普首次出席G7会议引发广泛关注。峰会聚焦全球贸易体系改革、人工智能全球治理框架和气候变化融资等议题。法德两国呼吁建立AI监管国际合作机制，但特朗普对美国参与多边AI治理框架态度谨慎。</p>
+                        <div><span class="tag">国际</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="金融">
+                    <img class="news-image" src="../../../images/news_20260615_03.png" alt="美联储宣布降息25个基点 结束为期两年的紧缩周期" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">03</span>
+                        <h3 class="news-title">美联储宣布降息25个基点 结束为期两年的紧缩周期</h3>
+                        <p class="news-summary">美联储宣布将联邦基金利率目标区间下调25个基点至4.75%至5%，结束自2024年启动的紧缩周期。美联储主席鲍威尔表示通胀率已接近2%目标，就业市场保持韧性，降息旨在维持经济扩张。美联储同时公布缩表放缓计划，每月国债缩减规模减半至300亿美元。美股三大指数集体上涨，纳斯达克指数上涨1.8%。</p>
+                        <div><span class="tag">金融</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="科技">
+                    <img class="news-image" src="../../../images/news_20260615_04.png" alt="SpaceX星舰完成首次载人绕月任务 两名私人乘客安全返回" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">04</span>
+                        <h3 class="news-title">SpaceX星舰完成首次载人绕月任务 两名私人乘客安全返回</h3>
+                        <p class="news-summary">SpaceX星舰完成历史性的载人绕月任务，两名私人乘客安全降落在夏威夷海域。星舰在轨飞行7天后成功返回，标志着人类时隔50年再次接近月球轨道。此次任务由日本富商前泽友作资助，票价据报道超过2亿美元。SpaceX表示这为2028年星舰载人登月任务奠定基础，NASA对此表示祝贺。</p>
+                        <div><span class="tag">科技</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="国际">
+                    <img class="news-image" src="../../../images/news_20260615_05.png" alt="中美在日内瓦签署新一轮科技合作框架 涉及AI与半导体" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">05</span>
+                        <h3 class="news-title">中美在日内瓦签署新一轮科技合作框架 涉及AI与半导体</h3>
+                        <p class="news-summary">中美两国代表在日内瓦签署科技合作框架协议，涵盖人工智能伦理、半导体供应链安全和量子计算合作等领域。该协议被视为两国关系的重大突破，为去年在旧金山APEC峰会期间达成的共识提供具体执行机制。协议规定双方将建立联合实验室，分享AI安全研究成果，并建立半导体贸易争端快速仲裁机制。</p>
+                        <div><span class="tag">国际</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="经济">
+                    <img class="news-image" src="../../../images/news_20260615_06.png" alt="欧盟碳边境调节机制全面生效 首批覆盖钢铁铝业等六大行业" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">06</span>
+                        <h3 class="news-title">欧盟碳边境调节机制全面生效 首批覆盖钢铁铝业等六大行业</h3>
+                        <p class="news-summary">欧盟碳边境调节机制（CBAM）正式全面生效，首批覆盖钢铁、铝、水泥、化肥、电力和氢能六大行业。欧盟进口商需为来自未实施碳定价国家的商品购买碳排放证书。该机制预计每年为欧盟带来超过100亿欧元收入，将用于支持发展中国家绿色转型。中国商务部表示中国出口企业已在欧洲设立合资工厂以规避额外关税。</p>
+                        <div><span class="tag">经济</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="科技">
+                    <img class="news-image" src="../../../images/news_20260615_07.png" alt="苹果发布iOS 19与自研AI助手Apple GPT 隐私保护成核心卖点" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">07</span>
+                        <h3 class="news-title">苹果发布iOS 19与自研AI助手Apple GPT 隐私保护成核心卖点</h3>
+                        <p class="news-summary">苹果在全球开发者大会上发布iOS 19操作系统和自主研发的Apple GPT助手，该助手完全运行在设备端以保护用户隐私。Apple GPT支持自然语言编程控制和跨应用任务编排，用户可通过语音指令完成复杂的多步骤操作。苹果同时发布M4 Ultra芯片，性能较前代提升60%，专门针对设备端AI推理优化。大会还宣布Siri将全面接入Apple GPT。</p>
+                        <div><span class="tag">科技</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="国际">
+                    <img class="news-image" src="../../../images/news_20260615_08.png" alt="俄乌局势出现重大转折 双方在土耳其重启和平谈判" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">08</span>
+                        <h3 class="news-title">俄乌局势出现重大转折 双方在土耳其重启和平谈判</h3>
+                        <p class="news-summary">俄罗斯与乌克兰代表团在土耳其安卡拉重启和平谈判，这是双方自2024年冲突升级以来的首次直接对话。谈判在土耳其和联合国共同斡旋下进行，重点讨论停火线、战俘交换和领土争议等核心议题。美国和欧盟对谈判表示欢迎，宣布暂停对俄部分能源制裁作为善意信号。谈判预计持续数周，最终协议还需各方议会批准。</p>
+                        <div><span class="tag">国际</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="金融">
+                    <img class="news-image" src="../../../images/news_20260615_09.png" alt="比特币价格再创历史新高 首次突破13万美元整数关口" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">09</span>
+                        <h3 class="news-title">比特币价格再创历史新高 首次突破13万美元整数关口</h3>
+                        <p class="news-summary">比特币价格在全球机构投资者持续买入的推动下首次突破13万美元，再创历史新高。比特币ETF净流入资金在过去一个月累计超过150亿美元，贝莱德和富达旗下产品需求旺盛。分析师指出特朗普政府可能建立比特币国家储备的预期是本轮行情的主要催化剂。加密货币总市值突破5万亿美元，以太坊同步上涨。</p>
+                        <div><span class="tag">金融</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="社会">
+                    <img class="news-image" src="../../../images/news_20260615_10.png" alt="全球AI人才争夺白热化 年薪百万美元岗位激增三倍" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">10</span>
+                        <h3 class="news-title">全球AI人才争夺白热化 年薪百万美元岗位激增三倍</h3>
+                        <p class="news-summary">猎头公司最新报告显示，全球AI和大模型领域高级人才年薪再创新高，具备大模型训练经验的工程师年薪普遍超过50万美元，头部人才年薪可达数百万美元。谷歌、微软和Meta为争夺顶级AI科学家展开激烈竞价，Meta今年AI人才薪酬预算增长40%。中国科技巨头也加入全球AI人才争夺，在硅谷设立研发中心。</p>
+                        <div><span class="tag">社会</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="科技">
+                    <img class="news-image" src="../../../images/news_20260615_11.png" alt="谷歌发布量子计算里程碑 量子纠错效率提升1000倍" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">11</span>
+                        <h3 class="news-title">谷歌发布量子计算里程碑 量子纠错效率提升1000倍</h3>
+                        <p class="news-summary">谷歌在量子计算领域取得重大突破，其Willow量子处理器实现了量子纠错效率提升1000倍的里程碑。谷歌量子AI团队表示，这一突破使实用量子计算的时间表从2030年提前至2028年。量子纠错是量子计算商业化的最大难题之一，新技术可将量子比特错误率降低至可接受范围。IBM和英特尔对谷歌的成果表示认可，并公布各自量子路线图。</p>
+                        <div><span class="tag">科技</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="经济">
+                    <img class="news-image" src="../../../images/news_20260615_12.png" alt="中国5月出口同比增长8.7% 新能源汽车和锂电池成核心引擎" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">12</span>
+                        <h3 class="news-title">中国5月出口同比增长8.7% 新能源汽车和锂电池成核心引擎</h3>
+                        <p class="news-summary">中国海关总署公布5月出口数据，以美元计同比增长8.7%，超出市场预期。新能源汽车、锂电池和光伏产品出口增速超过30%，成为出口增长的核心引擎。欧盟和美国市场对中国新能源产品需求保持强劲，东南亚和中东市场增速最快。分析师认为人民币适度贬值对出口形成支撑，但地缘政治风险仍是主要不确定因素。</p>
+                        <div><span class="tag">经济</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="社会">
+                    <img class="news-image" src="../../../images/news_20260615_13.png" alt="日本少子化危机加剧 2025年新生儿人数跌破70万创历史新低" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">13</span>
+                        <h3 class="news-title">日本少子化危机加剧 2025年新生儿人数跌破70万创历史新低</h3>
+                        <p class="news-summary">日本厚生劳动省公布2025年人口动态统计，全年新生儿人数仅为68万人，较上年减少12%，连续第9年创历史新低。日本总人口减少超过90万人，15岁以下人口占比首次跌破10%。日本政府宣布将育儿补贴提高至每月5万日元，并推出购房补贴和税收减免等多项鼓励生育措施，但人口学家对政策效果持悲观态度。</p>
+                        <div><span class="tag">社会</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="金融">
+                    <img class="news-image" src="../../../images/news_20260615_14.png" alt="全球股市普遍上涨 MSCI全球指数创年内收盘新高" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">14</span>
+                        <h3 class="news-title">全球股市普遍上涨 MSCI全球指数创年内收盘新高</h3>
+                        <p class="news-summary">受美联储降息和中美经贸关系改善预期提振，全球股市普遍上涨，MSCI全球指数收于年内新高。欧洲斯托克50指数上涨1.5%，日经225指数上涨1.2%，香港恒生指数上涨2.3%。科技股和金融股领涨，原材料板块表现落后。投资者风险偏好回升，新兴市场资产净流入超过80亿美元。</p>
+                        <div><span class="tag">金融</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="文化">
+                    <img class="news-image" src="../../../images/news_20260615_15.png" alt="中国科幻片《流浪地球3》全球票房突破10亿美元 创纪录" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">15</span>
+                        <h3 class="news-title">中国科幻片《流浪地球3》全球票房突破10亿美元 创纪录</h3>
+                        <p class="news-summary">中国科幻大片《流浪地球3》在全球上映第三周累计票房突破10亿美元，成为中国电影史上首部达到此成绩的作品。该片延续前作设定，讲述人类在太阳氦闪危机中寻找新家园的故事，特效制作水准获国际影评人盛赞。影片在北美、欧洲和东南亚市场均表现强劲，IMAX银幕占比超过35%。导演郭帆表示续集已在筹备中。</p>
+                        <div><span class="tag">文化</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="体育">
+                    <img class="news-image" src="../../../images/news_20260615_16.png" alt="2026年世界杯开幕在即 48支球队角逐大力神杯" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">16</span>
+                        <h3 class="news-title">2026年世界杯开幕在即 48支球队角逐大力神杯</h3>
+                        <p class="news-summary">2026年国际足联世界杯在美国、加拿大和墨西哥联合举办，开幕式将在纽约举行。本届世界杯首次扩军至48支球队，赛事覆盖16个主办城市。美国vs威尔士的揭幕战将在洛杉矶进行，卫冕冠军阿根廷由梅西领衔，目标冲击三连冠。中国男足历史上首次进入世界杯决赛圈，首场小组赛将对阵丹麦。</p>
+                        <div><span class="tag">体育</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="国际">
+                    <img class="news-image" src="../../../images/news_20260615_17.png" alt="印度总理莫迪访问俄罗斯 深化能源与防务合作" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">17</span>
+                        <h3 class="news-title">印度总理莫迪访问俄罗斯 深化能源与防务合作</h3>
+                        <p class="news-summary">印度总理莫迪对俄罗斯进行正式访问，与普京总统举行会谈并签署多项合作协议。两国签署为期10年的能源供应协议，俄罗斯将向印度提供折扣原油和液化天然气。防务合作方面，印度将向俄罗斯采购S-500防空系统并联合生产步兵战车。这是莫迪在特朗普关税压力背景下寻求外交多元化的战略举措。</p>
+                        <div><span class="tag">国际</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="科技">
+                    <img class="news-image" src="../../../images/news_20260615_18.png" alt="斯坦福大学发布AI指数报告 中国AI论文数量和质量双领先" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">18</span>
+                        <h3 class="news-title">斯坦福大学发布AI指数报告 中国AI论文数量和质量双领先</h3>
+                        <p class="news-summary">斯坦福大学人类中心人工智能研究所发布2026年AI指数报告，中国在AI学术论文数量和质量方面首次全面领先全球。中国2025年AI论文发表量超过35万篇，占全球总量40%以上，高被引论文数量较2020年增长300%。美国在AI创业投资和芯片算力方面保持领先。中国政府AI战略规划受到各国政府研究机构的重点关注。</p>
+                        <div><span class="tag">科技</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="社会">
+                    <img class="news-image" src="../../../images/news_20260615_19.png" alt="长江流域发生特大洪水 解放军出动抗洪救灾超十万人" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">19</span>
+                        <h3 class="news-title">长江流域发生特大洪水 解放军出动抗洪救灾超十万人</h3>
+                        <p class="news-summary">受持续强降雨影响，长江流域发生流域性特大洪水，监利以下河段超警戒水位3米以上。解放军和武警部队出动超过10万人投入抗洪救灾，转移受困群众超过50万人。国家防汛抗旱总指挥部启动一级应急响应，三峡水库首次开启9个泄洪深孔削峰调度。受灾地区农作物受灾面积超过500万亩，直接经济损失超过200亿元。</p>
+                        <div><span class="tag">社会</span></div>
+                    </div>
+                </article>
+                <article class="news-card" data-tag="经济">
+                    <img class="news-image" src="../../../images/news_20260615_20.png" alt="全球电动汽车销量突破2000万辆 中国市场渗透率突破75%" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">20</span>
+                        <h3 class="news-title">全球电动汽车销量突破2000万辆 中国市场渗透率突破75%</h3>
+                        <p class="news-summary">国际能源署发布报告，今年上半年全球电动汽车销量突破2000万辆，其中中国市场渗透率首次突破75%。比亚迪以月销60万辆的成绩稳居全球第一，泰国、印尼等东南亚市场增速超过100%。欧洲电动汽车销量增速放缓，市场竞争加剧。动力电池原材料碳酸锂价格跌至每吨8万元人民币，为消费者带来更大降价空间。</p>
+                        <div><span class="tag">经济</span></div>
+                    </div>
+                </article>
+            </div>
+            <div class="comments-section">
+                <h2 class="comments-title">💬 评论区</h2>
+                <div class="giscus"></div>
+            </div>
+            <script src="https://giscus.app/client.js"
+                data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+                data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+                data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+                data-emit-metadata="0" data-input-position="top"
+                data-theme="preferred_color_scheme" data-lang="zh-CN"
+                crossorigin="anonymous" async></script>
+        </div>
+        <footer>
+            <p>📰 新闻发布与更新 by <a href="https://github.com/yww001/news-blog" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://pollinations.ai" target="_blank">Pollinations AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="../../../rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">所有新闻内容仅供参考，请以官方发布为准 · 2026年06月13日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>

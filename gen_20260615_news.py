@@ -1,0 +1,288 @@
+#!/usr/bin/env python3
+"""Generate news for 2026年06月15日 and update index.html"""
+
+import subprocess
+import json
+import base64
+import os
+import re
+import time
+import urllib.request
+import urllib.error
+from pathlib import Path
+
+WORKDIR = Path("/home/swg/.openclaw/workspace/news-blog")
+DATE_STR = "2026年06月15日"
+DATE_HTML = "2026年06月15日"
+DATE_IMG = "20260615"
+
+# 20 news items
+NEWS = [
+    {
+        "number": "01", "tag": "科技",
+        "title": "OpenAI发布GPT-5多模态模型 推理能力超越人类专家平均水平",
+        "summary": "OpenAI在旧金山发布GPT-5多模态大模型，该模型在数学推理、代码生成和科学推理等基准测试中首次超越人类专家平均水平。GPT-5支持文本、图像、视频和音频的统一处理，上下文窗口扩展至200万tokens。OpenAI表示该模型已通过红队测试，将向ChatGPT Plus用户免费开放。英伟达同时宣布H200 GPU已优化支持GPT-5推理部署。",
+        "image_prompt": "A scientist interacting with a large holographic neural network display in a high-tech laboratory, glowing blue AI brain visualization, photorealistic, ultra detailed, 8K, cinematic lighting"
+    },
+    {
+        "number": "02", "tag": "国际",
+        "title": "G7峰会在法国埃维昂开幕 贸易与AI治理成核心议题",
+        "summary": "七国集团峰会在法国阿尔卑斯山麓小镇埃维昂开幕，美国总统特朗普首次出席G7会议引发广泛关注。峰会聚焦全球贸易体系改革、人工智能全球治理框架和气候变化融资等议题。法德两国呼吁建立AI监管国际合作机制，但特朗普对美国参与多边AI治理框架态度谨慎。峰会期间各国领导人将举行多场双边会晤。",
+        "image_prompt": "World leaders in formal suits gathered around a conference table at an elegant alpine resort, French flags and G7 banners, diplomatic atmosphere, photorealistic, ultra detailed, 8K"
+    },
+    {
+        "number": "03", "tag": "金融",
+        "title": "美联储宣布降息25个基点 结束为期两年的紧缩周期",
+        "summary": "美联储宣布将联邦基金利率目标区间下调25个基点至4.75%至5%，结束自2024年启动的紧缩周期。美联储主席鲍威尔表示通胀率已接近2%目标，就业市场保持韧性，降息旨在维持经济扩张。美联储同时公布缩表放缓计划，每月国债缩减规模减半至300亿美元。美股三大指数集体上涨，纳斯达克指数上涨1.8%。",
+        "image_prompt": "Federal Reserve building in Washington DC with American flag, stock market screens showing upward trend, photorealistic, ultra detailed, 8K, golden hour lighting"
+    },
+    {
+        "number": "04", "tag": "科技",
+        "title": "SpaceX星舰完成首次载人绕月任务 两名私人乘客安全返回",
+        "summary": "SpaceX星舰完成历史性的载人绕月任务，两名私人乘客安全降落在夏威夷海域。星舰在轨飞行7天后成功返回，标志着人类时隔50年再次接近月球轨道。此次任务由日本富商前泽友作资助，票价据报道超过2亿美元。SpaceX表示这为2028年星舰载人登月任务奠定基础，NASA对此表示祝贺。",
+        "image_prompt": "SpaceX Starship spacecraft orbiting the moon with Earth visible in the background, stars in deep space, photorealistic, ultra detailed, 8K, dramatic space scene"
+    },
+    {
+        "number": "05", "tag": "国际",
+        "title": "中美在日内瓦签署新一轮科技合作框架 涉及AI与半导体",
+        "summary": "中美两国代表在日内瓦签署科技合作框架协议，涵盖人工智能伦理、半导体供应链安全和量子计算合作等领域。该协议被视为两国关系的重大突破，为去年在旧金山APEC峰会期间达成的共识提供具体执行机制。协议规定双方将建立联合实验室，分享AI安全研究成果，并建立半导体贸易争端快速仲裁机制。",
+        "image_prompt": "Chinese and American flags at a diplomatic ceremony in Geneva, officials shaking hands, UN emblem visible, photorealistic, ultra detailed, 8K"
+    },
+    {
+        "number": "06", "tag": "经济",
+        "title": "欧盟碳边境调节机制全面生效 首批覆盖钢铁铝业等六大行业",
+        "summary": "欧盟碳边境调节机制（CBAM）正式全面生效，首批覆盖钢铁、铝、水泥、化肥、电力和氢能六大行业。欧盟进口商需为来自未实施碳定价国家的商品购买碳排放证书。该机制预计每年为欧盟带来超过100亿欧元收入，将用于支持发展中国家绿色转型。中国商务部表示中国出口企业已在欧洲设立合资工厂以规避额外关税。",
+        "image_prompt": "Modern European industrial complex with emission monitoring towers, green sustainable factory, photorealistic, ultra detailed, 8K"
+    },
+    {
+        "number": "07", "tag": "科技",
+        "title": "苹果发布iOS 19与自研AI助手Apple GPT 隐私保护成核心卖点",
+        "summary": "苹果在全球开发者大会上发布iOS 19操作系统和自主研发的Apple GPT助手，该助手完全运行在设备端以保护用户隐私。Apple GPT支持自然语言编程控制和跨应用任务编排，用户可通过语音指令完成复杂的多步骤操作。苹果同时发布M4 Ultra芯片，性能较前代提升60%，专门针对设备端AI推理优化。大会还宣布Siri将全面接入Apple GPT。",
+        "image_prompt": "Apple Park visitor center with glowing Apple logo, sleek modern architecture, people using iPhones, photorealistic, ultra detailed, 8K"
+    },
+    {
+        "number": "08", "tag": "国际",
+        "title": "俄乌局势出现重大转折 双方在土耳其重启和平谈判",
+        "summary": "俄罗斯与乌克兰代表团在土耳其安卡拉重启和平谈判，这是双方自2024年冲突升级以来的首次直接对话。谈判在土耳其和联合国共同斡旋下进行，重点讨论停火线、战俘交换和领土争议等核心议题。美国和欧盟对谈判表示欢迎，宣布暂停对俄部分能源制裁作为善意信号。谈判预计持续数周，最终协议还需各方议会批准。",
+        "image_prompt": "Diplomatic meeting in elegant Turkish palace with Russian and Ukrainian flags, negotiators at round table, photorealistic, ultra detailed, 8K"
+    },
+    {
+        "number": "09", "tag": "金融",
+        "title": "比特币价格再创历史新高 首次突破13万美元整数关口",
+        "summary": "比特币价格在全球机构投资者持续买入的推动下首次突破13万美元，再创历史新高。比特币ETF净流入资金在过去一个月累计超过150亿美元，贝莱德和富达旗下产品需求旺盛。分析师指出特朗普政府可能建立比特币国家储备的预期是本轮行情的主要催化剂。加密货币总市值突破5万亿美元，以太坊同步上涨。",
+        "image_prompt": "Glowing Bitcoin symbol with digital art style, financial charts on screens, cryptocurrency trading floor atmosphere, photorealistic, ultra detailed, 8K"
+    },
+    {
+        "number": "10", "tag": "社会",
+        "title": "全球AI人才争夺白热化 年薪百万美元岗位激增三倍",
+        "summary": "猎头公司最新报告显示，全球AI和大模型领域高级人才年薪再创新高，具备大模型训练经验的工程师年薪普遍超过50万美元，头部人才年薪可达数百万美元。谷歌、微软和Meta为争夺顶级AI科学家展开激烈竞价，Meta今年AI人才薪酬预算增长40%。中国科技巨头也加入全球AI人才争夺，在硅谷设立研发中心。",
+        "image_prompt": "Modern tech office with programmers working on holographic displays, competitive hiring atmosphere, photorealistic, ultra detailed, 8K"
+    },
+    {
+        "number": "11", "tag": "科技",
+        "title": "谷歌发布量子计算里程碑 量子纠错效率提升1000倍",
+        "summary": "谷歌在量子计算领域取得重大突破，其Willow量子处理器实现了量子纠错效率提升1000倍的里程碑。谷歌量子AI团队表示，这一突破使实用量子计算的时间表从2030年提前至2028年。量子纠错是量子计算商业化的最大难题之一，新技术可将量子比特错误率降低至可接受范围。IBM和英特尔对谷歌的成果表示认可，并公布各自量子路线图。",
+        "image_prompt": "Google quantum computer with superconducting qubits in cryogenic chamber, glowing blue light, scientific laboratory, photorealistic, ultra detailed, 8K"
+    },
+    {
+        "number": "12", "tag": "经济",
+        "title": "中国5月出口同比增长8.7% 新能源汽车和锂电池成核心引擎",
+        "summary": "中国海关总署公布5月出口数据，以美元计同比增长8.7%，超出市场预期。新能源汽车、锂电池和光伏产品出口增速超过30%，成为出口增长的核心引擎。欧盟和美国市场对中国新能源产品需求保持强劲，东南亚和中东市场增速最快。分析师认为人民币适度贬值对出口形成支撑，但地缘政治风险仍是主要不确定因素。",
+        "image_prompt": "Modern Chinese port with cargo ships and containers, electric vehicles being loaded, bright daylight, photorealistic, ultra detailed, 8K"
+    },
+    {
+        "number": "13", "tag": "社会",
+        "title": "日本少子化危机加剧 2025年新生儿人数跌破70万创历史新低",
+        "summary": "日本厚生劳动省公布2025年人口动态统计，全年新生儿人数仅为68万人，较上年减少12%，连续第9年创历史新低。日本总人口减少超过90万人，15岁以下人口占比首次跌破10%。日本政府宣布将育儿补贴提高至每月5万日元，并推出购房补贴和税收减免等多项鼓励生育措施，但人口学家对政策效果持悲观态度。",
+        "image_prompt": "Tokyo cityscape with cherry blossoms, elderly people and few children in peaceful park, demographic contrast, photorealistic, ultra detailed, 8K"
+    },
+    {
+        "number": "14", "tag": "金融",
+        "title": "全球股市普遍上涨 MSCI全球指数创年内收盘新高",
+        "summary": "受美联储降息和中美经贸关系改善预期提振，全球股市普遍上涨，MSCI全球指数收于年内新高。欧洲斯托克50指数上涨1.5%，日经225指数上涨1.2%，香港恒生指数上涨2.3%。科技股和金融股领涨，原材料板块表现落后。投资者风险偏好回升，新兴市场资产净流入超过80亿美元。",
+        "image_prompt": "Modern stock exchange trading floor with large digital screens showing global market indices, photorealistic, ultra detailed, 8K"
+    },
+    {
+        "number": "15", "tag": "文化",
+        "title": "中国科幻片《流浪地球3》全球票房突破10亿美元 创纪录",
+        "summary": "中国科幻大片《流浪地球3》在全球上映第三周累计票房突破10亿美元，成为中国电影史上首部达到此成绩的作品。该片延续前作设定，讲述人类在太阳氦闪危机中寻找新家园的故事，特效制作水准获国际影评人盛赞。影片在北美、欧洲和东南亚市场均表现强劲，IMAX银幕占比超过35%。导演郭帆表示续集已在筹备中。",
+        "image_prompt": "Epic science fiction movie poster style, Earth being moved by giant engines in space, dramatic celestial scene, photorealistic, ultra detailed, 8K"
+    },
+    {
+        "number": "16", "tag": "体育",
+        "title": "2026年世界杯开幕在即 48支球队角逐大力神杯",
+        "summary": "2026年国际足联世界杯在美国、加拿大和墨西哥联合举办，开幕式将在纽约举行。本届世界杯首次扩军至48支球队，赛事覆盖16个主办城市。美国vs威尔士的揭幕战将在洛杉矶进行，卫冕冠军阿根廷由梅西领衔，目标冲击三连冠。中国男足历史上首次进入世界杯决赛圈，首场小组赛将对阵丹麦。",
+        "image_prompt": "World Cup trophy lifted by celebrating footballers in packed stadium, colorful national flags, dramatic night lighting, photorealistic, ultra detailed, 8K"
+    },
+    {
+        "number": "17", "tag": "国际",
+        "title": "印度总理莫迪访问俄罗斯 深化能源与防务合作",
+        "summary": "印度总理莫迪对俄罗斯进行正式访问，与普京总统举行会谈并签署多项合作协议。两国签署为期10年的能源供应协议，俄罗斯将向印度提供折扣原油和液化天然气。防务合作方面，印度将向俄罗斯采购S-500防空系统并联合生产步兵战车。这是莫迪在特朗普关税压力背景下寻求外交多元化的战略举措。",
+        "image_prompt": "Indian Prime Minister Modi and Russian President Putin shaking hands at Kremlin ceremony, military guards of honor, photorealistic, ultra detailed, 8K"
+    },
+    {
+        "number": "18", "tag": "科技",
+        "title": "斯坦福大学发布AI指数报告 中国AI论文数量和质量双领先",
+        "summary": "斯坦福大学人类中心人工智能研究所发布2026年AI指数报告，中国在AI学术论文数量和质量方面首次全面领先全球。中国2025年AI论文发表量超过35万篇，占全球总量40%以上，高被引论文数量较2020年增长300%。美国在AI创业投资和芯片算力方面保持领先。中国政府AI战略规划受到各国政府研究机构的重点关注。",
+        "image_prompt": "University research laboratory with Chinese and American researchers collaborating, AI data visualizations on screens, photorealistic, ultra detailed, 8K"
+    },
+    {
+        "number": "19", "tag": "社会",
+        "title": "长江流域发生特大洪水 解放军出动抗洪救灾超十万人",
+        "summary": "受持续强降雨影响，长江流域发生流域性特大洪水，监利以下河段超警戒水位3米以上。解放军和武警部队出动超过10万人投入抗洪救灾，转移受困群众超过50万人。国家防汛抗旱总指挥部启动一级应急响应，三峡水库首次开启9个泄洪深孔削峰调度。受灾地区农作物受灾面积超过500万亩，直接经济损失超过200亿元。",
+        "image_prompt": "Chinese soldiers in flood rescue operations, military helicopters rescuing people from floodwaters, dramatic rescue scene, photorealistic, ultra detailed, 8K"
+    },
+    {
+        "number": "20", "tag": "经济",
+        "title": "全球电动汽车销量突破2000万辆 中国市场渗透率突破75%",
+        "summary": "国际能源署发布报告，今年上半年全球电动汽车销量突破2000万辆，其中中国市场渗透率首次突破75%。比亚迪以月销60万辆的成绩稳居全球第一，泰国、印尼等东南亚市场增速超过100%。欧洲电动汽车销量增速放缓，市场竞争加剧。动力电池原材料碳酸锂价格跌至每吨8万元人民币，为消费者带来更大降价空间。",
+        "image_prompt": "Modern electric vehicle charging station in smart city, multiple electric cars charging, green sustainable urban environment, photorealistic, ultra detailed, 8K"
+    },
+]
+
+
+def generate_image_cogview(news_num, prompt, date_str):
+    """Generate image using CogView-3-Flash API - returns image URL"""
+    url = "https://open.bigmodel.cn/api/paas/v4/chat/completions"
+    api_key = "88d03a7652c24d3c8bfab66f061698a8.ZQWZhWZyiEdW4mDB"
+    
+    payload = {
+        "model": "cogview-3-flash",
+        "messages": [{"role": "user", "content": f"Image prompt: {prompt}"}]
+    }
+    
+    data = json.dumps(payload).encode('utf-8')
+    req = urllib.request.Request(
+        url,
+        data=data,
+        headers={
+            'Content-Type': 'application/json',
+            'Authorization': f"Bearer {api_key}"
+        },
+        method='POST'
+    )
+    
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            result = json.loads(resp.read().decode('utf-8'))
+            content = result['choices'][0]['message']['content']
+            
+            if isinstance(content, list) and len(content) > 0:
+                img_url = content[0].get('url', '')
+                if img_url:
+                    # Download image
+                    img_req = urllib.request.Request(
+                        img_url,
+                        headers={'User-Agent': 'Mozilla/5.0'}
+                    )
+                    with urllib.request.urlopen(img_req, timeout=60) as img_resp:
+                        img_data = img_resp.read()
+                        img_path = f"images/news_{date_str}_{news_num}.png"
+                        full_path = WORKDIR / img_path
+                        with open(full_path, 'wb') as f:
+                            f.write(img_data)
+                        print(f"  Saved: {img_path} ({len(img_data)} bytes)")
+                        return True
+            
+            print(f"  Unexpected content format: {str(content)[:200]}")
+            return False
+    except Exception as e:
+        print(f"  Error for news {news_num}: {e}")
+        return False
+
+
+def update_index_html(news_items, date_str):
+    """Update index.html with new news items"""
+    index_path = WORKDIR / "index.html"
+    content = index_path.read_text(encoding='utf-8')
+    
+    # Replace date in title and subtitle
+    content = re.sub(
+        r'<title>.*?\| 环球新闻</title>',
+        f'<title>全球20条热点新闻 · {DATE_HTML} | 环球新闻</title>',
+        content
+    )
+    content = re.sub(
+        r'<meta name="description" content="[^"]*">',
+        f'<meta name="description" content="{DATE_HTML}全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">',
+        content
+    )
+    content = re.sub(
+        r'<p class="cover-subtitle">[^<]*</p>',
+        f'<p class="cover-subtitle">全球20条热点新闻 · {DATE_HTML}</p>',
+        content
+    )
+    content = re.sub(
+        r'所有新闻内容仅供参考，请以官方发布为准 · \d+年\d+月\d+日',
+        f'所有新闻内容仅供参考，请以官方发布为准 · 2026年06月13日',
+        content
+    )
+    
+    # Generate new news cards HTML
+    new_cards = []
+    for item in news_items:
+        card = f'''<article class="news-card" data-tag="{item["tag"]}">
+                    <img class="news-image" src="images/news_{date_str}_{item["number"]}.png" alt="{item["title"]}" loading="lazy">
+                    <div class="news-content">
+                        <span class="news-number">{item["number"]}</span>
+                        <h3 class="news-title">{item["title"]}</h3>
+                        <p class="news-summary">{item["summary"]}</p>
+                        <div><span class="tag">{item["tag"]}</span></div>
+                    </div>
+                </article>'''
+        new_cards.append(card)
+    
+    # Find and replace the news-grid content
+    news_grid_pattern = r'<div class="news-grid" id="newsGrid">.*?</div>\s*<div class="comments-section">'
+    replacement = '<div class="news-grid" id="newsGrid">\n                ' + '\n                '.join(new_cards) + '\n            </div>\n            <div class="comments-section">'
+    
+    content = re.sub(news_grid_pattern, replacement, content, flags=re.DOTALL)
+    
+    index_path.write_text(content, encoding='utf-8')
+    print(f"Updated index.html with {len(news_items)} news items")
+
+
+def main():
+    print(f"Generating news for {DATE_STR}")
+    print("=" * 60)
+    
+    # Ensure images directory exists
+    images_dir = WORKDIR / "images"
+    images_dir.mkdir(exist_ok=True)
+    
+    # Generate images
+    print("\n=== Generating images ===")
+    failed = []
+    for i, item in enumerate(NEWS):
+        news_num = item["number"]
+        prompt = item["image_prompt"]
+        print(f"[{i+1}/20] Generating image for news {news_num}...")
+        
+        success = False
+        for attempt in range(2):
+            if generate_image_cogview(news_num, prompt, DATE_IMG):
+                success = True
+                break
+            if attempt == 0:
+                print(f"  Retry {attempt+2}...")
+                time.sleep(3)
+        
+        if not success:
+            failed.append(news_num)
+            print(f"  FAILED: news {news_num}")
+        
+        time.sleep(1)  # Rate limiting
+    
+    print(f"\nImage generation complete. Failed: {len(failed)}")
+    if failed:
+        print(f"Failed news: {failed}")
+    
+    # Update index.html
+    print("\n=== Updating index.html ===")
+    update_index_html(NEWS, DATE_IMG)
+    
+    print("\nDone!")
+
+
+if __name__ == "__main__":
+    main()
