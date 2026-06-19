@@ -1,0 +1,142 @@
+[
+  {
+    "number": "01",
+    "tag": "国际",
+    "title": "G7峰会联合公报发布 同意建立关键矿产合作机制",
+    "summary": "在法国埃维昂闭幕的G7峰会发表联合公报，成员国同意建立关键矿产供应链合作机制，以减少对单一国家的依赖。公报还涵盖乌克兰重建、伊朗核问题以及人工智能治理等内容。马克龙表示此次峰会展现了西方国家的团结，为应对全球挑战提供了共同方案。",
+    "image_prompt": "World leaders at G7 summit meeting in elegant conference hall, flags of multiple nations displayed, formal diplomatic atmosphere, photographers capturing the moment, photorealistic, ultra detailed, 8K high resolution"
+  },
+  {
+    "number": "02",
+    "tag": "体育",
+    "title": "世界杯1/4决赛：法国点球大战淘汰阿根廷晋级四强",
+    "summary": "2026年世界杯又一场经典对决在洛杉矶索菲体育场落幕，法国与阿根廷在120分钟内战成2-2平，最终法国在点球大战中以5-4险胜晋级四强。法国球星姆巴佩独中两元当选全场最佳，半决赛将对阵此前淘汰英格兰的葡萄牙。",
+    "image_prompt": "Soccer stadium filled with enthusiastic fans, World Cup match in progress, players competing on the grass field, dramatic atmosphere, night game with floodlights, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "03",
+    "tag": "科技",
+    "title": "中国工信部发布《人工智能产业发展白皮书2026》",
+    "summary": "工业和信息化部发布最新人工智能产业发展白皮书，数据显示中国AI核心产业规模已突破1万亿元人民币，位居全球第二。白皮书提出到2030年实现AI全面赋能实体经济的目标，并宣布将在北京、上海、深圳建设三大国家级AI创新试验区。",
+    "image_prompt": "Modern technology conference presentation with holographic AI displays, Chinese tech executives watching a presentation about artificial intelligence, sleek futuristic auditorium, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "04",
+    "tag": "科技",
+    "title": "特斯拉发布Optimus Gen-3机器人 具备精细操作能力",
+    "summary": "特斯拉在加州帕洛阿尔托总部发布Optimus Gen-3人形机器人，该机器人具备双手精细操作能力，可完成拼装电子元件、折叠衣物等复杂任务。马斯克表示新机器人将在2027年开始在其工厂进行测试，首批将生产1万台用于内部物流。",
+    "image_prompt": "Humanoid robot with advanced mechanical design working in modern factory, Tesla-style sleek industrial environment, precise robotic arms performing delicate tasks, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "05",
+    "tag": "经济",
+    "title": "欧盟统计局：欧元区5月通胀率回落至2.0%",
+    "summary": "欧盟统计局公布数据显示，欧元区5月通胀率回落至2.0%，为2021年以来首次达到欧洲央行目标水平。能源价格下降和食品通胀缓解是主要原因。经济学家认为这为欧洲央行在未来几个月降息提供了空间，欧元区经济有望在下半年加速复苏。",
+    "image_prompt": "European Central Bank building in Frankfurt, Euro currency symbols, financial district skyline, morning sunlight, photorealistic, ultra detailed, 8K high resolution"
+  },
+  {
+    "number": "06",
+    "tag": "国际",
+    "title": "中欧峰会达成多项合作协议 签署科技贸易协定",
+    "summary": "中欧峰会在布鲁塞尔举行，中国与欧盟领导人就深化双边合作达成广泛共识。峰会签署涵盖数字经济、绿色能源和地理标志保护的多项合作协议。欧方表示中国是欧盟重要的贸易伙伴，双方应管控分歧、加强合作，推动中欧关系稳定发展。",
+    "image_prompt": "European Union and China flags side by side at diplomatic summit, officials shaking hands in grand meeting hall, photorealistic, ultra detailed, 8K high resolution"
+  },
+  {
+    "number": "07",
+    "tag": "金融",
+    "title": "日本央行宣布加息25个基点 结束负利率时代",
+    "summary": "日本央行货币政策会议决定将政策利率上调25个基点至0.5%，正式结束长达八年的负利率政策。日本央行表示经济温和复苏和通胀持续达标为加息提供了条件。日元对美元汇率应声升值至152:1，分析人士认为这标志着日本货币政策正常化迈出重要一步。",
+    "image_prompt": "Bank of Japan building in Tokyo, Japanese yen banknotes and coins, cherry blossoms in spring, photorealistic, ultra detailed, 8K high resolution"
+  },
+  {
+    "number": "08",
+    "tag": "科技",
+    "title": "SpaceX星舰完成第20次试飞 首次实现载荷返回",
+    "summary": "SpaceX在得克萨斯州博卡奇卡基地完成星舰第20次综合测试飞行，发射约40分钟后成功实现飞船受控返回并软着陆在预定海域。此次试飞还搭载了3吨模拟载荷并成功回收，标志着星舰货运能力获得验证。马斯克表示商业运营预计将在2027年启动。",
+    "image_prompt": "SpaceX Starship rocket launching from coastal launch pad, massive rocket exhaust flames, ocean view at sunset, dramatic sky with smoke trails, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "09",
+    "tag": "社会",
+    "title": "印度人口突破14.2亿 成为全球第一人口大国",
+    "summary": "印度官方人口数据显示其总人口已达14.2亿，正式超越中国成为全球第一人口大国。印度政府宣布新增200亿美元投入教育医疗，以应对人口红利带来的机遇与挑战。经济学家指出印度年轻劳动力资源丰富，将为全球制造业转移提供重要目的地。",
+    "image_prompt": "Crowded busy street scene in India, diverse population of people going about daily life, colorful markets and modern buildings coexisting, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "10",
+    "tag": "国际",
+    "title": "第79届世界卫生大会闭幕 通过大流行防范新框架",
+    "summary": "在日内瓦举行的第79届世界卫生大会闭幕，大会通过了大流行防范新框架，同意建立全球公共卫生情报监测网络。新框架要求各国建立常规疫情演练机制，并设立100亿美元应急储备资金。谭德塞表示这是全球卫生治理的重大改革。",
+    "image_prompt": "World Health Organization headquarters building in Geneva with flags, international delegates walking toward conference center, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "11",
+    "tag": "科技",
+    "title": "中国科研团队研发成功512量子比特超导量子计算机",
+    "summary": "中国科学技术大学潘建伟团队宣布研制成功512量子比特超导量子计算机，在量子优越性测试中比经典超级计算机快1亿倍。该成果发表在《自然》杂志上，被认为是量子计算领域的重大突破。量子计算机可用于药物研发、金融建模和密码学等领域。",
+    "image_prompt": "Superconducting quantum computer in cryogenic chamber, complex laboratory with advanced scientific equipment, glowing blue quantum circuits, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "12",
+    "tag": "科技",
+    "title": "全球芯片市场回暖 韩国芯片出口额创历史新高",
+    "summary": "韩国产业通商资源部公布数据，5月韩国芯片出口额达142亿美元，创历史单月最高纪录。AI服务器和数据中心需求是主要驱动力，三星和SK海力士的HBM内存芯片供不应求。韩国政府表示将追加投资支持半导体产业升级，巩固其在全球存储芯片市场的领先地位。",
+    "image_prompt": "Modern semiconductor factory interior with clean room, workers in protective suits inspecting silicon wafers, glowing blue lighting, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "13",
+    "tag": "国际",
+    "title": "联合国报告：全球平均气温较工业化前上升1.52℃",
+    "summary": "联合国环境规划署发布年度气候评估报告，显示全球平均气温已较工业化前水平上升1.52℃，接近《巴黎协定》1.5℃目标红线。报告警告部分地区升温已超过2℃，极端天气事件频率上升。各国政府需加速淘汰化石燃料，否则将面临更严峻的气候后果。",
+    "image_prompt": "Aerial view of melting glacier with dramatic ice formations, Arctic landscape with rising sea, climate change visualization, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "14",
+    "tag": "体育",
+    "title": "2026年环法自行车赛开赛 首站波尔多至利摩日",
+    "summary": "第113届环法自行车赛在法国波尔多揭幕，首站全程203公里的赛程中，来自珍宝车队的奥运冠军在最后冲刺阶段夺冠穿上领骑黄衫。来自21支车队的176名车手将在23天内完成21个赛段争夺，全程超过3500公里。",
+    "image_prompt": "Tour de France cycling race in French countryside, peloton of cyclists on open road through vineyards, fans cheering along the route, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "15",
+    "tag": "文化",
+    "title": "中国科幻电影《流浪地球3》全球票房突破10亿美元",
+    "summary": "中国科幻大片《流浪地球3》全球票房突破10亿美元大关，成为首部达成此成就的中国电影。影片以太阳即将毁灭为背景，讲述人类带着地球寻找新家园的故事。导演郭帆表示感谢全球观众支持，中国科幻电影将继续探索人类命运共同体的主题。",
+    "image_prompt": "Epic science fiction movie poster with giant Earth and futuristic spacecraft, dramatic space scene with orange atmosphere, cinema audience silhouette, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "16",
+    "tag": "金融",
+    "title": "美联储维持联邦基金利率不变 暗示9月降息",
+    "summary": "美联储联邦公开市场委员会宣布维持联邦基金利率在5.25%-5.5%不变，符合市场预期。美联储主席鲍威尔在新闻发布会上表示通胀水平正稳步回落，若经济数据保持趋势，9月可能迎来首次降息。华尔街对此表示欢迎，道琼斯指数应声上涨200点。",
+    "image_prompt": "Federal Reserve building in Washington DC, US dollar bills and financial charts, Federal Reserve emblem, photorealistic, ultra detailed, 8K high resolution"
+  },
+  {
+    "number": "17",
+    "tag": "社会",
+    "title": "欧洲热浪持续 意大利多地气温突破47℃",
+    "summary": "欧洲南部热浪持续第三周，意大利南部和西班牙多地气温突破47摄氏度，造成至少12人死亡。意大利政府宣布紧急状态，关闭南部多地学校和公共场所。高温还导致希腊、克罗地亚等国发生严重山火，欧洲各国消防力量已展开联合救援行动。",
+    "image_prompt": "European summer heat wave scene, scorched dry landscape with heat haze, people cooling off at fountain, orange warning sky, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "18",
+    "tag": "国际",
+    "title": "中美商贸联合委员会会议在华盛顿举行",
+    "summary": "中美商贸联合委员会第33次会议在华盛顿举行，双方就贸易平衡、市场准入和知识产权保护等议题展开磋商。中方代表团表示愿意扩大美国农产品和能源进口，美方则关注半导体和高科技领域的公平竞争环境。双方表示此次会谈具有建设性，同意继续对话。",
+    "image_prompt": "US and China flags at diplomatic meeting venue, trade negotiation scene with officials in conference room, photorealistic, ultra detailed, 8K high resolution"
+  },
+  {
+    "number": "19",
+    "tag": "经济",
+    "title": "全球电动汽车销量突破2000万辆 中国市场占六成",
+    "summary": "国际能源署报告显示，今年上半年全球电动汽车销量突破2000万辆，其中中国市场销量超过1200万辆，占比达60%。中国电动车企比亚迪、蔚来等品牌在欧洲市场份额不断提升。报告预测到2030年全球电动车销量将占全部新车销量的40%。",
+    "image_prompt": "Modern electric car charging station with multiple EVs, sleek EV models in contemporary urban setting, green energy concept, photorealistic, ultra detailed, 8K"
+  },
+  {
+    "number": "20",
+    "tag": "文化",
+    "title": "敦煌研究院推出首个AI讲解员 游客可个性化体验",
+    "summary": "敦煌研究院宣布在其数字平台上线首个AI讲解员系统，游客可通过手机APP与虚拟讲解员互动，获得针对不同兴趣的定制化讲解内容。AI系统基于敦煌壁画知识库训练，能回答游客关于历史、艺术和考古的各种问题，为文化遗产数字化保护探索新路径。",
+    "image_prompt": "Ancient Dunhuang Mogao Caves entrance with stunning Buddhist murals, digital holographic guide projection, tourists experiencing VR tour, photorealistic, ultra detailed, 8K"
+  }
+]

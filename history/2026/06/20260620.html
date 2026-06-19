@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全球20条热点新闻 · 2026年06月20日 | 环球新闻</title>
+    <meta name="description" content="2026年06月20日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; min-height: 800px; width: 100%; max-width: none; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+.comments-wrapper { max-width: 1200px; margin: 0 auto; }
+.comments-wrapper .giscus { width: 100% !important; max-width: 100% !important; }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+        .giscus { width: 100% !important; max-width: 100% !important; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <video id="coverVideo" src="../../../videos/cover.mp4" autoplay muted loop playsinline class="cover-image"></video>
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年06月20日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+                        <div class="news-grid" id="newsGrid">
+
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260620_01.png" alt="G7峰会联合公报发布 同意建立关键矿产合作机制" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">01</span>
+        <h3 class="news-title">G7峰会联合公报发布 同意建立关键矿产合作机制</h3>
+        <p class="news-summary">在法国埃维昂闭幕的G7峰会发表联合公报，成员国同意建立关键矿产供应链合作机制，以减少对单一国家的依赖。公报还涵盖乌克兰重建、伊朗核问题以及人工智能治理等内容。马克龙表示此次峰会展现了西方国家的团结，为应对全球挑战提供了共同方案。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="体育">
+    <img class="news-image" src="../../../images/news_20260620_02.png" alt="世界杯1/4决赛：法国点球大战淘汰阿根廷晋级四强" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">02</span>
+        <h3 class="news-title">世界杯1/4决赛：法国点球大战淘汰阿根廷晋级四强</h3>
+        <p class="news-summary">2026年世界杯又一场经典对决在洛杉矶索菲体育场落幕，法国与阿根廷在120分钟内战成2-2平，最终法国在点球大战中以5-4险胜晋级四强。法国球星姆巴佩独中两元当选全场最佳，半决赛将对阵此前淘汰英格兰的葡萄牙。</p>
+        <div><span class="tag">体育</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260620_03.png" alt="中国工信部发布《人工智能产业发展白皮书2026》" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">03</span>
+        <h3 class="news-title">中国工信部发布《人工智能产业发展白皮书2026》</h3>
+        <p class="news-summary">工业和信息化部发布最新人工智能产业发展白皮书，数据显示中国AI核心产业规模已突破1万亿元人民币，位居全球第二。白皮书提出到2030年实现AI全面赋能实体经济的目标，并宣布将在北京、上海、深圳建设三大国家级AI创新试验区。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260620_04.png" alt="特斯拉发布Optimus Gen-3机器人 具备精细操作能力" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">04</span>
+        <h3 class="news-title">特斯拉发布Optimus Gen-3机器人 具备精细操作能力</h3>
+        <p class="news-summary">特斯拉在加州帕洛阿尔托总部发布Optimus Gen-3人形机器人，该机器人具备双手精细操作能力，可完成拼装电子元件、折叠衣物等复杂任务。马斯克表示新机器人将在2027年开始在其工厂进行测试，首批将生产1万台用于内部物流。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="经济">
+    <img class="news-image" src="../../../images/news_20260620_05.png" alt="欧盟统计局：欧元区5月通胀率回落至2.0%" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">05</span>
+        <h3 class="news-title">欧盟统计局：欧元区5月通胀率回落至2.0%</h3>
+        <p class="news-summary">欧盟统计局公布数据显示，欧元区5月通胀率回落至2.0%，为2021年以来首次达到欧洲央行目标水平。能源价格下降和食品通胀缓解是主要原因。经济学家认为这为欧洲央行在未来几个月降息提供了空间，欧元区经济有望在下半年加速复苏。</p>
+        <div><span class="tag">经济</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260620_06.png" alt="中欧峰会达成多项合作协议 签署科技贸易协定" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">06</span>
+        <h3 class="news-title">中欧峰会达成多项合作协议 签署科技贸易协定</h3>
+        <p class="news-summary">中欧峰会在布鲁塞尔举行，中国与欧盟领导人就深化双边合作达成广泛共识。峰会签署涵盖数字经济、绿色能源和地理标志保护的多项合作协议。欧方表示中国是欧盟重要的贸易伙伴，双方应管控分歧、加强合作，推动中欧关系稳定发展。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="金融">
+    <img class="news-image" src="../../../images/news_20260620_07.png" alt="日本央行宣布加息25个基点 结束负利率时代" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">07</span>
+        <h3 class="news-title">日本央行宣布加息25个基点 结束负利率时代</h3>
+        <p class="news-summary">日本央行货币政策会议决定将政策利率上调25个基点至0.5%，正式结束长达八年的负利率政策。日本央行表示经济温和复苏和通胀持续达标为加息提供了条件。日元对美元汇率应声升值至152:1，分析人士认为这标志着日本货币政策正常化迈出重要一步。</p>
+        <div><span class="tag">金融</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260620_08.png" alt="SpaceX星舰完成第20次试飞 首次实现载荷返回" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">08</span>
+        <h3 class="news-title">SpaceX星舰完成第20次试飞 首次实现载荷返回</h3>
+        <p class="news-summary">SpaceX在得克萨斯州博卡奇卡基地完成星舰第20次综合测试飞行，发射约40分钟后成功实现飞船受控返回并软着陆在预定海域。此次试飞还搭载了3吨模拟载荷并成功回收，标志着星舰货运能力获得验证。马斯克表示商业运营预计将在2027年启动。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="../../../images/news_20260620_09.png" alt="印度人口突破14.2亿 成为全球第一人口大国" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">09</span>
+        <h3 class="news-title">印度人口突破14.2亿 成为全球第一人口大国</h3>
+        <p class="news-summary">印度官方人口数据显示其总人口已达14.2亿，正式超越中国成为全球第一人口大国。印度政府宣布新增200亿美元投入教育医疗，以应对人口红利带来的机遇与挑战。经济学家指出印度年轻劳动力资源丰富，将为全球制造业转移提供重要目的地。</p>
+        <div><span class="tag">社会</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260620_10.png" alt="第79届世界卫生大会闭幕 通过大流行防范新框架" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">10</span>
+        <h3 class="news-title">第79届世界卫生大会闭幕 通过大流行防范新框架</h3>
+        <p class="news-summary">在日内瓦举行的第79届世界卫生大会闭幕，大会通过了大流行防范新框架，同意建立全球公共卫生情报监测网络。新框架要求各国建立常规疫情演练机制，并设立100亿美元应急储备资金。谭德塞表示这是全球卫生治理的重大改革。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260620_11.png" alt="中国科研团队研发成功512量子比特超导量子计算机" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">11</span>
+        <h3 class="news-title">中国科研团队研发成功512量子比特超导量子计算机</h3>
+        <p class="news-summary">中国科学技术大学潘建伟团队宣布研制成功512量子比特超导量子计算机，在量子优越性测试中比经典超级计算机快1亿倍。该成果发表在《自然》杂志上，被认为是量子计算领域的重大突破。量子计算机可用于药物研发、金融建模和密码学等领域。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260620_12.png" alt="全球芯片市场回暖 韩国芯片出口额创历史新高" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">12</span>
+        <h3 class="news-title">全球芯片市场回暖 韩国芯片出口额创历史新高</h3>
+        <p class="news-summary">韩国产业通商资源部公布数据，5月韩国芯片出口额达142亿美元，创历史单月最高纪录。AI服务器和数据中心需求是主要驱动力，三星和SK海力士的HBM内存芯片供不应求。韩国政府表示将追加投资支持半导体产业升级，巩固其在全球存储芯片市场的领先地位。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260620_13.png" alt="联合国报告：全球平均气温较工业化前上升1.52℃" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">13</span>
+        <h3 class="news-title">联合国报告：全球平均气温较工业化前上升1.52℃</h3>
+        <p class="news-summary">联合国环境规划署发布年度气候评估报告，显示全球平均气温已较工业化前水平上升1.52℃，接近《巴黎协定》1.5℃目标红线。报告警告部分地区升温已超过2℃，极端天气事件频率上升。各国政府需加速淘汰化石燃料，否则将面临更严峻的气候后果。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="体育">
+    <img class="news-image" src="../../../images/news_20260620_14.png" alt="2026年环法自行车赛开赛 首站波尔多至利摩日" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">14</span>
+        <h3 class="news-title">2026年环法自行车赛开赛 首站波尔多至利摩日</h3>
+        <p class="news-summary">第113届环法自行车赛在法国波尔多揭幕，首站全程203公里的赛程中，来自珍宝车队的奥运冠军在最后冲刺阶段夺冠穿上领骑黄衫。来自21支车队的176名车手将在23天内完成21个赛段争夺，全程超过3500公里。</p>
+        <div><span class="tag">体育</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="文化">
+    <img class="news-image" src="../../../images/news_20260620_15.png" alt="中国科幻电影《流浪地球3》全球票房突破10亿美元" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">15</span>
+        <h3 class="news-title">中国科幻电影《流浪地球3》全球票房突破10亿美元</h3>
+        <p class="news-summary">中国科幻大片《流浪地球3》全球票房突破10亿美元大关，成为首部达成此成就的中国电影。影片以太阳即将毁灭为背景，讲述人类带着地球寻找新家园的故事。导演郭帆表示感谢全球观众支持，中国科幻电影将继续探索人类命运共同体的主题。</p>
+        <div><span class="tag">文化</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="金融">
+    <img class="news-image" src="../../../images/news_20260620_16.png" alt="美联储维持联邦基金利率不变 暗示9月降息" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">16</span>
+        <h3 class="news-title">美联储维持联邦基金利率不变 暗示9月降息</h3>
+        <p class="news-summary">美联储联邦公开市场委员会宣布维持联邦基金利率在5.25%-5.5%不变，符合市场预期。美联储主席鲍威尔在新闻发布会上表示通胀水平正稳步回落，若经济数据保持趋势，9月可能迎来首次降息。华尔街对此表示欢迎，道琼斯指数应声上涨200点。</p>
+        <div><span class="tag">金融</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="../../../images/news_20260620_17.png" alt="欧洲热浪持续 意大利多地气温突破47℃" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">17</span>
+        <h3 class="news-title">欧洲热浪持续 意大利多地气温突破47℃</h3>
+        <p class="news-summary">欧洲南部热浪持续第三周，意大利南部和西班牙多地气温突破47摄氏度，造成至少12人死亡。意大利政府宣布紧急状态，关闭南部多地学校和公共场所。高温还导致希腊、克罗地亚等国发生严重山火，欧洲各国消防力量已展开联合救援行动。</p>
+        <div><span class="tag">社会</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260620_18.png" alt="中美商贸联合委员会会议在华盛顿举行" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">18</span>
+        <h3 class="news-title">中美商贸联合委员会会议在华盛顿举行</h3>
+        <p class="news-summary">中美商贸联合委员会第33次会议在华盛顿举行，双方就贸易平衡、市场准入和知识产权保护等议题展开磋商。中方代表团表示愿意扩大美国农产品和能源进口，美方则关注半导体和高科技领域的公平竞争环境。双方表示此次会谈具有建设性，同意继续对话。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="经济">
+    <img class="news-image" src="../../../images/news_20260620_19.png" alt="全球电动汽车销量突破2000万辆 中国市场占六成" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">19</span>
+        <h3 class="news-title">全球电动汽车销量突破2000万辆 中国市场占六成</h3>
+        <p class="news-summary">国际能源署报告显示，今年上半年全球电动汽车销量突破2000万辆，其中中国市场销量超过1200万辆，占比达60%。中国电动车企比亚迪、蔚来等品牌在欧洲市场份额不断提升。报告预测到2030年全球电动车销量将占全部新车销量的40%。</p>
+        <div><span class="tag">经济</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="文化">
+    <img class="news-image" src="../../../images/news_20260620_20.png" alt="敦煌研究院推出首个AI讲解员 游客可个性化体验" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">20</span>
+        <h3 class="news-title">敦煌研究院推出首个AI讲解员 游客可个性化体验</h3>
+        <p class="news-summary">敦煌研究院宣布在其数字平台上线首个AI讲解员系统，游客可通过手机APP与虚拟讲解员互动，获得针对不同兴趣的定制化讲解内容。AI系统基于敦煌壁画知识库训练，能回答游客关于历史、艺术和考古的各种问题，为文化遗产数字化保护探索新路径。</p>
+        <div><span class="tag">文化</span></div>
+    </div>
+</article>
+</div>
+    </div>
+    <div class="comments-section">
+        <h2 class="comments-title">💬 评论区</h2>
+        <div class="giscus"></div>
+    </div>
+    <script src="https://giscus.app/client.js"
+        data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+        data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+        data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+        data-emit-metadata="0" data-input-position="top"
+        data-theme="preferred_color_scheme" data-lang="zh-CN"
+        crossorigin="anonymous" async></script>
+    <footer>
+            <p>📰 新闻发布与更新 by <a href="https://github.com/yww001/news-blog" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://pollinations.ai" target="_blank">Pollinations AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">所有新闻内容仅供参考，请以官方发布为准 · 2026年06月20日</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>
