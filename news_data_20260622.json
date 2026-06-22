@@ -1,0 +1,146 @@
+{
+  "date": "2026年06月22日",
+  "date_short": "20260622",
+  "news": [
+    {
+      "number": "01",
+      "tag": "国际",
+      "title": "G7峰会在意大利召开 聚焦人工智能治理与气候行动",
+      "summary": "七国集团峰会在意大利索伦托开幕，人工智能治理成为首要议题。与会领导人就AI安全标准、跨境数据流动和数字税等问题展开讨论。峰会同时呼吁加快气候行动，承诺到2030年将清洁能源投资翻倍。德国总理表示G7必须成为AI时代的规则制定者。",
+      "prompt": "G7 summit meeting in Sorrento Italy, world leaders in formal discussion, Mediterranean coastal venue, photorealistic, ultra detailed, 8K, high resolution, diplomatic conference"
+    },
+    {
+      "number": "02",
+      "tag": "科技",
+      "title": "SpaceX星舰完成首次商业货运任务 运载160吨物资",
+      "summary": "SpaceX宣布星舰完成首次商业货运任务，成功向国际空间站运送160吨物资和设备。这次任务验证了星舰的大规模运输能力，为未来月球基地建设奠定基础。马斯克表示星舰将在2028年前执行载人登月任务。",
+      "prompt": "SpaceX Starship spacecraft docking with space station, massive rocket in orbit with Earth background, photorealistic, ultra detailed, 8K, high resolution, space exploration"
+    },
+    {
+      "number": "03",
+      "tag": "经济",
+      "title": "中国发布促进民营经济发展新举措 聚焦融资与市场准入",
+      "summary": "国务院发布关于促进民营经济发展壮大的意见，推出31条具体措施，涵盖拓宽融资渠道、降低市场准入门槛和保护民营企业合法权益。工信部表示将开展清理拖欠企业账款专项行动，力争年底前清偿现有无争议欠款。",
+      "prompt": "Business meeting in modern office tower, executives reviewing financial reports, city skyline through windows, photorealistic, ultra detailed, 8K, high resolution, corporate environment"
+    },
+    {
+      "number": "04",
+      "tag": "金融",
+      "title": "美联储维持利率不变 暗示9月可能降息",
+      "summary": "美联储结束为期两天的货币政策会议，决定维持联邦基金利率在5.25%至5.5%区间不变。美联储主席鲍威尔表示通胀数据持续改善，若经济走势符合预期，9月可能是降息的合适时机。美联储还上调了今年GDP增长预期至2.1%。",
+      "prompt": "Federal Reserve building in Washington DC, financial charts and economic data display, photorealistic, ultra detailed, 8K, high resolution, monetary policy"
+    },
+    {
+      "number": "05",
+      "tag": "科技",
+      "title": "字节跳动发布豆包大模型1.5版 支持100种语言实时翻译",
+      "summary": "字节跳动在新加坡发布豆包大模型1.5版本，新增100种语言实时互译功能和跨语言知识检索能力。该模型已在TikTok和剪映海外版上线，日处理跨语言请求超过50亿次。张楠表示豆包将成为中国企业出海的重要工具。",
+      "prompt": "ByteDance AI technology launch event in Singapore, large digital translation display, photorealistic, ultra detailed, 8K, high resolution, tech presentation"
+    },
+    {
+      "number": "06",
+      "tag": "社会",
+      "title": "全国医保支付方式改革启动 住院按病种付费全覆盖",
+      "summary": "国家医保局宣布在全国范围内启动医保支付方式改革，年底前实现住院医疗服务按病种付费全覆盖。新方式将引导医疗机构主动控制成本，减少不必要检查和过度医疗。专家预计改革将使医保基金使用效率提升15%以上。",
+      "prompt": "Modern hospital with doctors reviewing patient data, medical insurance cards and digital systems, photorealistic, ultra detailed, 8K, high resolution, healthcare reform"
+    },
+    {
+      "number": "07",
+      "tag": "国际",
+      "title": "北约在波兰部署永久性装甲部队 规模达万人",
+      "summary": "北约在波兰正式部署永久性装甲部队，这是冷战以来北约首次在东欧部署如此规模的地面作战力量。该部队由美德英法四国军队组成，配备最新型主战坦克和装甲车。北约秘书长表示此举是对盟友安全的坚定承诺。",
+      "prompt": "NATO military vehicles and tanks deployed in Poland, soldiers in formation, photorealistic, ultra detailed, 8K, high resolution, military exercise"
+    },
+    {
+      "number": "08",
+      "tag": "体育",
+      "title": "法网公开赛决赛 阿尔卡拉斯击败辛纳夺冠",
+      "summary": "法国网球公开赛男单决赛在巴黎进行，西班牙选手阿尔卡拉斯以3-1击败意大利选手辛纳，第三度夺得法网冠军。四盘比分为6-3、2-6、7-5、6-2。阿尔卡拉斯的世界排名将继续稳居第一，他也成为首位在24岁前三次获得法网冠军的球员。",
+      "prompt": "French Open tennis final in Paris, player celebrating victory on clay court, crowd cheering, photorealistic, ultra detailed, 8K, high resolution, sports championship"
+    },
+    {
+      "number": "09",
+      "tag": "科技",
+      "title": "清华大学研制成功类脑芯片 能效比提升百倍",
+      "summary": "清华大学团队研制成功新型类脑计算芯片，在典型AI推理任务中能效比达到传统GPU的100倍。该芯片采用仿生神经网络架构，支持在线学习和实时推理。团队负责人表示该芯片可广泛应用于自动驾驶和智能机器人领域。",
+      "prompt": "Tsinghua University research laboratory with scientists working on brain-like chip, microelectronics close-up, photorealistic, ultra detailed, 8K, high resolution, scientific research"
+    },
+    {
+      "number": "10",
+      "tag": "文化",
+      "title": "三星堆遗址新发现8座祭祀坑 出土文物近万件",
+      "summary": "四川省文物考古研究院公布三星堆遗址最新考古成果，新发现8座祭祀坑，出土珍贵文物近万件，其中包括迄今为止最大的青铜神坛。三星堆新一轮考古发掘将为研究古蜀文明提供更多实证，对理解中华文明多元一体格局意义重大。",
+      "prompt": "Sanxingdui archaeological site with ancient bronze artifacts, researchers carefully excavating relics, photorealistic, ultra detailed, 8K, high resolution, ancient civilization discovery"
+    },
+    {
+      "number": "11",
+      "tag": "经济",
+      "title": "国际油价持续下跌 布伦特原油跌破75美元",
+      "summary": "国际油价持续承压下跌，布伦特原油期货价格跌破每桶75美元关口，创下近两年新低。分析师认为全球需求疲软和美国增加库存是主要利空因素。油价下跌预计将降低全球通胀压力，多国央行降息空间进一步扩大。",
+      "prompt": "Oil price chart declining on financial screen, fuel pump with falling prices, photorealistic, ultra detailed, 8K, high resolution, energy market"
+    },
+    {
+      "number": "12",
+      "tag": "金融",
+      "title": "阿里巴巴业绩超预期 营收同比增长12%",
+      "summary": "阿里巴巴集团发布最新季度财报，总营收达到2650亿元，同比增长12%，超出市场预期。淘天集团客户管理收入增长15%，阿里云AI相关收入增长超过50%。蔡崇信表示AI正在重塑电商和云计算的业务模式。",
+      "prompt": "Alibaba headquarters building in Hangzhou, financial reports and e-commerce growth charts, photorealistic, ultra detailed, 8K, high resolution, tech company success"
+    },
+    {
+      "number": "13",
+      "tag": "国际",
+      "title": "印度成为全球第一人口大国 劳动力红利引关注",
+      "summary": "联合国人口报告显示印度已超越中国成为全球第一人口大国，总人口达14.5亿。印度平均年龄仅28岁，劳动力资源充沛。国际金融机构普遍看好印度的人口红利，预计未来十年印度将成为全球经济增长最快的国家之一。",
+      "prompt": "Mumbai India cityscape with diverse population, modern business district with workers, photorealistic, ultra detailed, 8K, high resolution, demographic changes"
+    },
+    {
+      "number": "14",
+      "tag": "社会",
+      "title": "全国铁路暑运启动 预计发送旅客8.6亿人次",
+      "summary": "全国铁路暑运今日启动，至8月31日结束，共计62天。国铁集团预计暑运期间全国铁路将发送旅客8.6亿人次，日均发送旅客1380万人次。京沪高铁和成渝客专等线路将加开列车，满足学生流和旅游流出行需求。",
+      "prompt": "High-speed train station with passengers during summer travel rush, large display boards showing departures, photorealistic, ultra detailed, 8K, high resolution, railway travel"
+    },
+    {
+      "number": "15",
+      "tag": "科技",
+      "title": "特斯拉发布人形机器人Optimus第三代 可独立完成工厂任务",
+      "summary": "特斯拉发布人形机器人Optimus第三代原型机，展示了在特斯拉工厂独立完成汽车组装任务的能力。机器人全身拥有50个自由度，手部精细操作能力大幅提升。马斯克表示Optimus将在2026年开始对外销售，售价约2万美元。",
+      "prompt": "Tesla humanoid robot Optimus working in factory, robot arm assembling car parts, photorealistic, ultra detailed, 8K, high resolution, robotics technology"
+    },
+    {
+      "number": "16",
+      "tag": "金融",
+      "title": "比特币ETF净流入超50亿美元 机构持仓创新高",
+      "summary": "美国比特币现货ETF连续第三周实现净流入，本月累计净流入超过50亿美元，持仓总市值突破650亿美元。贝莱德和富达的比特币ETF产品最受机构青睐。分析师认为比特币已逐渐成为机构投资者的标准配置资产。",
+      "prompt": "Bitcoin ETF trading data on screen, institutional investors portfolio display, financial charts rising, photorealistic, ultra detailed, 8K, high resolution, cryptocurrency investment"
+    },
+    {
+      "number": "17",
+      "tag": "文化",
+      "title": "中国动漫电影《长安三万里》全球票房突破50亿元",
+      "summary": "国产动漫电影《长安三万里》全球票房正式突破50亿元人民币，成为中国影史票房最高的动画电影。该片以唐代诗人高适的视角，展现了李白、杜甫等诗人的传奇人生，在海外市场也收获良好口碑，推动中华文化国际传播。",
+      "prompt": "Chinese animated film scene with Tang Dynasty poets, stunning visuals of Chang'an city, photorealistic, ultra detailed, 8K, high resolution, cultural movie"
+    },
+    {
+      "number": "18",
+      "tag": "体育",
+      "title": "中国游泳队打破4x100米混合泳接力世界纪录",
+      "summary": "中国游泳队在世界杯上海站以3分28秒34的成绩打破4x100米混合泳接力世界纪录，领先原纪录超过1秒。徐嘉余、覃海洋、张雨霏和杨浚瑄组成的中国队包揽本站赛事全部9枚金牌，中国游泳再次震惊世界。",
+      "prompt": "Chinese swimming team celebrating world record victory, swimmers in pool with splashing water, photorealistic, ultra detailed, 8K, high resolution, world championship"
+    },
+    {
+      "number": "19",
+      "tag": "社会",
+      "title": "教育部发布新版课程方案 加强中小学人工智能教育",
+      "summary": "教育部发布新版义务教育课程方案和课程标准，明确将人工智能教育纳入中小学必修内容。新方案要求各校配备人工智能实验室，开设编程和算法基础课程。教育部表示AI教育将从城市学校试点后逐步向农村学校推广。",
+      "prompt": "Students learning AI in modern classroom with computers and robots, teacher guiding, photorealistic, ultra detailed, 8K, high resolution, education technology"
+    },
+    {
+      "number": "20",
+      "tag": "国际",
+      "title": "澳大利亚将削减移民配额 限制留学生签证发放",
+      "summary": "澳大利亚政府宣布将大幅削减永久移民配额，从每年19万降至13万，同时收紧留学生签证审批。澳政府表示新措施旨在缓解基础设施压力和住房短缺问题。教育行业对此表示担忧，称限制留学生将影响大学收入和研究投入。",
+      "prompt": "Australian parliament building in Canberra with international students on campus, photorealistic, ultra detailed, 8K, high resolution, immigration policy"
+    }
+  ]
+}

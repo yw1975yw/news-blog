@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球20条热点新闻 · 2026年06月23日 | 环球新闻</title>
+    <meta name="description" content="2026年06月23日全球20条热点新闻，涵盖科技、政治、军事、经济等领域的最新动态">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg-image: url('../../../images/website-background-8k.png');
+            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --container-bg: white; --text-color: #333;
+            --card-bg: linear-gradient(145deg, #f6f8fa 0%, #ffffff 100%);
+            --tag-bg: #e8f4f8; --tag-color: #1976d2;
+            --warning-bg: #fff3cd; --warning-border: #ffc107; --warning-color: #856404;
+            --footer-bg: #f8f9fa; --footer-color: #6c757d;
+            --nav-bg: white; --nav-text: #333; --search-bg: #f8f9fa; --border-color: rgba(0,0,0,0.1);
+        }
+        .dark-mode {
+            --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            --container-bg: #1a1a2e; --text-color: #e0e0e0;
+            --card-bg: linear-gradient(145deg, #252540 0%, #1f1f38 100%);
+            --tag-bg: #1a3a5c; --tag-color: #64b5f6;
+            --warning-bg: #4a4732; --warning-border: #7c6d00; --warning-color: #d4c656;
+            --footer-bg: #16213e; --footer-color: #a0a0a0;
+            --nav-bg: #1f1f38; --nav-text: #e0e0e0; --search-bg: #252540; --border-color: rgba(255,255,255,0.1);
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8; background: var(--bg-image) no-repeat center center fixed; background-size: cover; min-height: 100vh; padding: 20px; color: var(--text-color); }
+        .container { max-width: 1200px; margin: 0 auto; background: rgba(255,255,255,0.85); border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .navbar { background: var(--nav-bg); padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar-brand { font-size: 1.5em; font-weight: bold; color: var(--nav-text); text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--nav-text); text-decoration: none; font-weight: 500; }
+        .nav-links a:hover { color: #667eea; }
+        .theme-toggle { background: none; border: 2px solid var(--border-color); color: var(--nav-text); padding: 8px 16px; border-radius: 20px; cursor: pointer; }
+        .theme-toggle:hover { background: var(--tag-bg); color: #667eea; }
+        .search-container { padding: 20px 30px; background: var(--nav-bg); border-bottom: 1px solid var(--border-color); }
+        .search-box { width: 100%; padding: 12px 20px; border: 2px solid var(--border-color); border-radius: 25px; font-size: 1em; background: var(--search-bg); color: var(--text-color); }
+        .search-box:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102,126,234,0.1); }
+        header { background: var(--bg-gradient); color: white; padding: 50px 30px; text-align: center; position: relative; overflow: hidden; }
+        @keyframes pulse { 0%,100%{transform:translate(-30%,-30%) scale(1);} 50%{transform:translate(-30%,-30%) scale(1.1);} }
+        header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%); animation:pulse 3s ease-in-out infinite; }
+        .cover-section { position:relative; width:100%; height:400px; margin-bottom:30px; border-radius:12px; overflow:hidden; box-shadow:0 8px 16px rgba(0,0,0,0.2); }
+        .cover-image { width:100%; height:100%; object-fit:cover; }
+        .cover-overlay { position:absolute; bottom:0; left:0; right:0; background:linear-gradient(to top,rgba(0,0,0,0.8),transparent); padding:40px 30px; color:white; }
+        .cover-title { font-size:3em; margin-bottom:10px; text-shadow:2px 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size:1.3em; opacity:0.9; }
+        @media(max-width:768px){.cover-section{height:300px;}.cover-title{font-size:2em;}.nav-links{display:none;}.news-grid{grid-template-columns:1fr;}}
+        .content { padding: 40px 30px; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .news-grid { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
+        .news-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.05); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid var(--border-color); }
+        .news-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .news-card.hidden { display: none; }
+        .news-image { width: 100%; height: 280px; object-fit: cover; display: block; cursor: pointer; transition: transform 0.3s; }
+        .news-card:hover .news-image { transform: scale(1.05); }
+        .news-content { padding: 20px; }
+        .news-number { display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; margin-bottom: 12px; }
+        .news-title { font-size: 1.4em; font-weight: bold; margin-bottom: 12px; color: var(--text-color); line-height: 1.4; }
+        .news-summary { color: var(--text-color); opacity: 0.8; line-height: 1.7; font-size: 1em; }
+        .tag { display: inline-block; padding: 5px 12px; margin: 8px 4px 0 0; background: var(--tag-bg); color: var(--tag-color); border-radius: 12px; font-size: 0.85em; font-weight: 500; }
+        .warning { background: var(--warning-bg); border-left: 4px solid var(--warning-border); padding: 15px 20px; margin: 30px 0; border-radius: 4px; color: var(--warning-color); font-size: 0.95em; }
+        footer { background: var(--footer-bg); padding: 30px; text-align: center; color: var(--footer-color); font-size: 0.95em; border-top: 2px solid var(--border-color); }
+        footer a { color: #667eea; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-top: 15px; }
+        .footer-links a { margin: 0 10px; color: var(--footer-color); }
+        .comments-section { padding: 40px 30px; min-height: 800px; width: 100%; max-width: none; background: var(--container-bg); border-top: 2px solid var(--border-color); }
+.comments-wrapper { max-width: 1200px; margin: 0 auto; }
+.comments-wrapper .giscus { width: 100% !important; max-width: 100% !important; }
+        .comments-title { font-size: 1.5em; font-weight: bold; margin-bottom: 20px; color: var(--text-color); }
+        .giscus { width: 100% !important; max-width: 100% !important; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../../index.html" class="navbar-brand">📰 环球新闻</a>
+        <ul class="nav-links">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../about.html">关于</a></li>
+            <li><a href="../../../contact.html">联系</a></li>
+            <li><a href="../../../history.html">历史</a></li>
+            <li><a href="rss.xml">RSS</a></li>
+        </ul>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓 切换主题</button>
+    </nav>
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchInput" placeholder="🔍 搜索新闻标题或内容..." onkeyup="searchNews()">
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="cover-section">
+                <video id="coverVideo" src="../../../videos/cover.mp4" autoplay muted loop playsinline class="cover-image"></video>
+                <div class="cover-overlay">
+                    <h1 class="cover-title">🌍 环球新闻</h1>
+                    <p class="cover-subtitle">全球20条热点新闻 · 2026年06月23日</p>
+                </div>
+            </div>
+            <div class="warning">⚠️ <strong>注意：</strong> 新闻信息基于搜索结果整理，图片由 AI 生成，仅供参考。建议通过官方渠道获取最新准确信息。</div>
+                        <div class="news-grid" id="newsGrid">
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260623_01.png" alt="夏季达沃斯论坛在大连开幕 聚焦规模化创新与全球合作" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">01</span>
+        <h3 class="news-title">夏季达沃斯论坛在大连开幕 聚焦规模化创新与全球合作</h3>
+        <p class="news-summary">2026年夏季达沃斯论坛今日在大连正式开幕，主题为"规模化创新"。超过90个国家和地区的1700多名嘉宾参会，共同探讨AI驱动下的全球经济复苏路径。中国领导人出席开幕式并发表主旨演讲，强调加强国际合作与开放共赢。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260623_02.png" alt="美伊在瑞士日内瓦重启核谈判 霍尔木兹海峡局势紧张" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">02</span>
+        <h3 class="news-title">美伊在瑞士日内瓦重启核谈判 霍尔木兹海峡局势紧张</h3>
+        <p class="news-summary">美国与伊朗代表今日在日内瓦举行新一轮核问题谈判，双方就解除制裁和铀浓缩活动进行深入讨论。伊朗此前警告称若谈判破裂将重新封锁霍尔木兹海峡。特朗普在社交媒体上发文警告伊朗不要"玩火"，地区局势引发国际社会高度关注。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260623_03.png" alt="字节跳动火山引擎FORCE大会开幕 发布AI全家桶新品" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">03</span>
+        <h3 class="news-title">字节跳动火山引擎FORCE大会开幕 发布AI全家桶新品</h3>
+        <p class="news-summary">字节跳动在新加坡举办火山引擎FORCE原动力大会，发布覆盖云基础、大模型、应用产品的AI全家桶新品。豆包大模型1.5版本支持100种语言实时互译，日处理跨语言请求超50亿次。张楠表示豆包将成为中国企业出海的重要工具。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260623_04.png" alt="DeepSeek完成510亿元融资 估值突破1500亿元" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">04</span>
+        <h3 class="news-title">DeepSeek完成510亿元融资 估值突破1500亿元</h3>
+        <p class="news-summary">AI初创公司DeepSeek宣布完成新一轮510亿元融资，由多家主权基金和顶级风投联合领投，估值达1500亿元。创始人梁文锋表示将投入200亿元自研算力基础设施。此轮融资后，DeepSeek正式跻身中国估值最高的AI独角兽行列。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260623_05.png" alt="英伟达成全球市值最高公司 黄仁勋发布新一代Blackwell架构" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">05</span>
+        <h3 class="news-title">英伟达成全球市值最高公司 黄仁勋发布新一代Blackwell架构</h3>
+        <p class="news-summary">英伟达今日成为全球市值最高的公司，突破3.5万亿美元。黄仁勋在台北电脑展发布新一代Blackwell架构GPU，性能较上代提升4倍，能效提升50倍。台积电确认将于Q4开始量产3nm Blackwell芯片，供货量预计翻倍。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260623_06.png" alt="特斯拉Optimus机器人量产版亮相 售价2万美元起" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">06</span>
+        <h3 class="news-title">特斯拉Optimus机器人量产版亮相 售价2万美元起</h3>
+        <p class="news-summary">特斯拉发布Optimus人形机器人量产版本，展示了在特斯拉工厂独立完成汽车组装任务的能力。机器人全身拥有50个自由度，手部精细操作能力大幅提升。马斯克表示Optimus将在年底开始对外销售，售价约2万美元。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260623_07.png" alt="清华大学发布类脑芯片天机X 能效比GPU提升百倍" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">07</span>
+        <h3 class="news-title">清华大学发布类脑芯片天机X 能效比GPU提升百倍</h3>
+        <p class="news-summary">清华大学团队研制成功新型类脑计算芯片"天机X"，在典型AI推理任务中能效比达到传统GPU的100倍。该芯片采用仿生神经网络架构，支持在线学习和实时推理。团队负责人表示该芯片可广泛应用于自动驾驶和智能机器人领域。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="../../../images/news_20260623_08.png" alt="OpenAI发布GPT-5.6系列 推理能力超越人类专家" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">08</span>
+        <h3 class="news-title">OpenAI发布GPT-5.6系列 推理能力超越人类专家</h3>
+        <p class="news-summary">OpenAI发布GPT-5.6系列模型，在数学推理、代码生成和科学问题回答等多项基准测试中超越人类专家水平。新模型支持128K上下文窗口，多模态能力显著增强。奥特曼表示GPT-5.6已经开始向Plus用户推送，企业版将于下周发布。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="经济">
+    <img class="news-image" src="../../../images/news_20260623_09.png" alt="中国八部门联合发布新能源汽车下乡政策 155款车型入选" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">09</span>
+        <h3 class="news-title">中国八部门联合发布新能源汽车下乡政策 155款车型入选</h3>
+        <p class="news-summary">工信部等八部门联合发布2026年新能源汽车下乡车型目录，共155款车型入选，包括小米SU7、特斯拉Model 3、红旗E-QM5等热门车型。政策提供购置税减免和充电桩建设补贴支持，推动新能源汽车向农村市场普及。</p>
+        <div><span class="tag">经济</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="经济">
+    <img class="news-image" src="../../../images/news_20260623_10.png" alt="国务院出台31条措施促进民营经济发展 聚焦融资与市场准入" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">10</span>
+        <h3 class="news-title">国务院出台31条措施促进民营经济发展 聚焦融资与市场准入</h3>
+        <p class="news-summary">国务院发布关于促进民营经济发展壮大的意见，推出31条具体措施，涵盖拓宽融资渠道、降低市场准入门槛和保护民营企业合法权益。工信部表示将开展清理拖欠企业账款专项行动，力争年底前清偿现有无争议欠款。</p>
+        <div><span class="tag">经济</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="金融">
+    <img class="news-image" src="../../../images/news_20260623_11.png" alt="美联储宣布维持利率不变 鲍威尔暗示9月降息可能" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">11</span>
+        <h3 class="news-title">美联储宣布维持利率不变 鲍威尔暗示9月降息可能</h3>
+        <p class="news-summary">美联储结束为期两天的货币政策会议，决定维持联邦基金利率在5.25%至5.5%区间不变。美联储主席鲍威尔表示通胀数据持续改善，若经济走势符合预期，9月可能是降息的合适时机。美联储还上调了今年GDP增长预期至2.1%。</p>
+        <div><span class="tag">金融</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="金融">
+    <img class="news-image" src="../../../images/news_20260623_12.png" alt="比特币现货ETF单月净流入超50亿美元 机构持仓创新高" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">12</span>
+        <h3 class="news-title">比特币现货ETF单月净流入超50亿美元 机构持仓创新高</h3>
+        <p class="news-summary">美国比特币现货ETF连续第三周实现净流入，本月累计净流入超过50亿美元，持仓总市值突破650亿美元。贝莱德和富达的比特币ETF产品最受机构青睐。分析师认为比特币已逐渐成为机构投资者的标准配置资产。</p>
+        <div><span class="tag">金融</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="金融">
+    <img class="news-image" src="../../../images/news_20260623_13.png" alt="国际油价持续下跌 布伦特原油跌破75美元关口" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">13</span>
+        <h3 class="news-title">国际油价持续下跌 布伦特原油跌破75美元关口</h3>
+        <p class="news-summary">国际油价持续承压下跌，布伦特原油期货价格跌破每桶75美元关口，创下近两年新低。分析师认为全球需求疲软和美国增加库存是主要利空因素。油价下跌预计将降低全球通胀压力，多国央行降息空间进一步扩大。</p>
+        <div><span class="tag">金融</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="金融">
+    <img class="news-image" src="../../../images/news_20260623_14.png" alt="阿里巴巴季度营收2650亿元 AI云业务增长超50%" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">14</span>
+        <h3 class="news-title">阿里巴巴季度营收2650亿元 AI云业务增长超50%</h3>
+        <p class="news-summary">阿里巴巴集团发布最新季度财报，总营收达到2650亿元，同比增长12%，超出市场预期。淘天集团客户管理收入增长15%，阿里云AI相关收入增长超过50%。蔡崇信表示AI正在重塑电商和云计算的业务模式。</p>
+        <div><span class="tag">金融</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="文化">
+    <img class="news-image" src="../../../images/news_20260623_15.png" alt="三星堆遗址新出土文物近万件 再现古蜀文明辉煌" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">15</span>
+        <h3 class="news-title">三星堆遗址新出土文物近万件 再现古蜀文明辉煌</h3>
+        <p class="news-summary">四川省文物考古研究院公布三星堆遗址最新考古成果，新发现8座祭祀坑，出土珍贵文物近万件，其中包括迄今为止最大的青铜神坛。三星堆新一轮考古发掘将为研究古蜀文明提供更多实证，对理解中华文明多元一体格局意义重大。</p>
+        <div><span class="tag">文化</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="文化">
+    <img class="news-image" src="../../../images/news_20260623_16.png" alt="中国动漫长安三万里全球票房突破50亿元" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">16</span>
+        <h3 class="news-title">中国动漫《长安三万里》全球票房突破50亿元</h3>
+        <p class="news-summary">国产动漫电影《长安三万里》全球票房正式突破50亿元人民币，成为中国影史票房最高的动画电影。该片以唐代诗人高适的视角，展现了李白、杜甫等诗人的传奇人生，在海外市场也收获良好口碑，推动中华文化国际传播。</p>
+        <div><span class="tag">文化</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="体育">
+    <img class="news-image" src="../../../images/news_20260623_17.png" alt="中国游泳队世界杯上海站包揽9金 刷新世界纪录" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">17</span>
+        <h3 class="news-title">中国游泳队世界杯上海站包揽9金 刷新世界纪录</h3>
+        <p class="news-summary">中国游泳队在世界杯上海站以3分28秒34的成绩打破4x100米混合泳接力世界纪录，领先原纪录超过1秒。中国队包揽本站赛事全部9枚金牌，多个项目刷新亚洲纪录。中国游泳再次震惊世界，备战巴黎奥运会状态火热。</p>
+        <div><span class="tag">体育</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="国际">
+    <img class="news-image" src="../../../images/news_20260623_18.png" alt="英民调显示王室支持率跌至33年最低 仅三成民众支持君主制" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">18</span>
+        <h3 class="news-title">英民调显示王室支持率跌至33年最低 仅三成民众支持君主制</h3>
+        <p class="news-summary">最新民调显示英国民众对君主制的支持率跌至33年来最低点，仅有三成民众表示支持保留君主制。超过百名议员呼吁首相斯塔默下台，分析认为近期王室相关争议和通胀高企导致民众情绪恶化。王室未来改革方向引发广泛讨论。</p>
+        <div><span class="tag">国际</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="../../../images/news_20260623_19.png" alt="全国铁路暑运启动 预计发送旅客8.6亿人次" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">19</span>
+        <h3 class="news-title">全国铁路暑运启动 预计发送旅客8.6亿人次</h3>
+        <p class="news-summary">全国铁路暑运今日启动，至8月31日结束，共计62天。国铁集团预计暑运期间全国铁路将发送旅客8.6亿人次，日均发送旅客1380万人次。京沪高铁和成渝客专等线路将加开列车，满足学生流和旅游流出行需求。</p>
+        <div><span class="tag">社会</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="../../../images/news_20260623_20.png" alt="教育部将AI教育纳入中小学必修课 配备人工智能实验室" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">20</span>
+        <h3 class="news-title">教育部将AI教育纳入中小学必修课 配备人工智能实验室</h3>
+        <p class="news-summary">教育部发布新版义务教育课程方案和课程标准，明确将人工智能教育纳入中小学必修内容。新方案要求各校配备人工智能实验室，开设编程和算法基础课程。教育部表示AI教育将从城市学校试点后逐步向农村学校推广。</p>
+        <div><span class="tag">社会</span></div>
+    </div>
+</article>
+</div>
+    </div>
+    <div class="comments-section">
+        <h2 class="comments-title">💬 评论区</h2>
+        <div class="giscus"></div>
+    </div>
+    <script src="https://giscus.app/client.js"
+        data-repo="yww001/news-blog" data-repo-id="R_kgDORthBdA"
+        data-category="Announcements" data-category-id="DIC_kwDORthBdM4C5AnK"
+        data-mapping="pathname" data-strict="0" data-reactions-enabled="1"
+        data-emit-metadata="0" data-input-position="top"
+        data-theme="preferred_color_scheme" data-lang="zh-CN"
+        crossorigin="anonymous" async></script>
+    <footer>
+            <p>📰 新闻发布与更新 by <a href="https://github.com/yww001/news-blog" target="_blank">Hermes Agent</a> | 图片生成 by <a href="https://pollinations.ai" target="_blank">Pollinations AI</a></p>
+            <div class="footer-links">
+                <a href="../../../index.html">首页</a> | <a href="../../../about.html">关于</a> | <a href="../../../contact.html">联系</a> | <a href="rss.xml">RSS 订阅</a>
+            </div>
+            <p style="margin-top:10px;font-size:0.9em;">所有新闻内容仅供参考，请以官方发布为准</p>
+        </footer>
+    </div>
+    <script>
+        function toggleTheme(){document.body.classList.toggle('dark-mode');localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');}
+        const saved=localStorage.getItem('theme');if(saved==='dark')document.body.classList.add('dark-mode');
+        if(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches&&!saved)document.body.classList.add('dark-mode');
+        function searchNews(){const i=document.getElementById('searchInput').value.toLowerCase();document.querySelectorAll('.news-card').forEach(c=>{const t=c.querySelector('.news-title').textContent.toLowerCase(),s=c.querySelector('.news-summary').textContent.toLowerCase(),g=Array.from(c.querySelectorAll('.tag')).map(x=>x.textContent.toLowerCase()).join(' ');(t.includes(i)||s.includes(i)||g.includes(i))?c.classList.remove('hidden'):c.classList.add('hidden');});}
+    </script>
+</body>
+</html>

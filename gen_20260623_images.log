@@ -1,0 +1,131 @@
+Generating 20 images for 2026年06月23日...
+============================================================
+
+[01/20] Generating: 夏季达沃斯论坛在大连开幕 聚焦规模化创新与全球合作
+[01] ERROR: 'list' object has no attribute 'startswith'
+
+[02/20] Generating: 美伊在瑞士日内瓦重启核谈判 霍尔木兹海峡局势紧张
+[02] ERROR: 'list' object has no attribute 'startswith'
+
+[03/20] Generating: 字节跳动火山引擎FORCE大会开幕 发布AI全家桶新品
+[03] ERROR: 'list' object has no attribute 'startswith'
+
+[04/20] Generating: DeepSeek完成510亿元融资 估值突破1500亿元
+[04] ERROR: 'list' object has no attribute 'startswith'
+
+[05/20] Generating: 英伟达成全球市值最高公司 黄仁勋发布新一代Blackwell架构
+[05] ERROR: 'list' object has no attribute 'startswith'
+
+[06/20] Generating: 特斯拉Optimus机器人量产版亮相 售价2万美元起
+[06] ERROR: 'list' object has no attribute 'startswith'
+
+[07/20] Generating: 清华大学发布类脑芯片天机X 能效比GPU提升百倍
+[07] ERROR: 'list' object has no attribute 'startswith'
+
+[08/20] Generating: OpenAI发布GPT-5.6系列 推理能力超越人类专家
+[08] ERROR: 'list' object has no attribute 'startswith'
+
+[09/20] Generating: 中国八部门联合发布新能源汽车下乡政策 155款车型入选
+[09] ERROR: 'list' object has no attribute 'startswith'
+
+[10/20] Generating: 国务院出台31条措施促进民营经济发展 聚焦融资与市场准入
+[10] ERROR: No choices in response - {'contentFilter': [{'level': 2, 'role': 'user'}], 'error': {'code': '1301', 'message': '系统检测到输入或生成内容可能包含不安全或敏感内容，请您避免输入易产生敏感内容的提示语，感谢您的配合。'}}
+
+[11/20] Generating: 美联储宣布维持利率不变 鲍威尔暗示9月降息可能
+[11] ERROR: 'list' object has no attribute 'startswith'
+
+[12/20] Generating: 比特币现货ETF单月净流入超50亿美元 机构持仓创新高
+[12] ERROR: 'list' object has no attribute 'startswith'
+
+[13/20] Generating: 国际油价持续下跌 布伦特原油跌破75美元关口
+[13] ERROR: 'list' object has no attribute 'startswith'
+
+[14/20] Generating: 阿里巴巴季度营收2650亿元 AI云业务增长超50%
+[14] ERROR: 'list' object has no attribute 'startswith'
+
+[15/20] Generating: 三星堆遗址新出土文物近万件 再现古蜀文明辉煌
+[15] ERROR: 'list' object has no attribute 'startswith'
+
+[16/20] Generating: 中国动漫《长安三万里》全球票房突破50亿元
+[16] ERROR: No choices in response - {'contentFilter': [{'level': 2, 'role': 'user'}], 'error': {'code': '1301', 'message': '系统检测到输入或生成内容可能包含不安全或敏感内容，请您避免输入易产生敏感内容的提示语，感谢您的配合。'}}
+
+[17/20] Generating: 中国游泳队世界杯上海站包揽9金 覃海洋刷新世界纪录
+[17] ERROR: No choices in response - {'contentFilter': [{'level': 2, 'role': 'assistant'}], 'error': {'code': '1301', 'message': '系统检测到输入或生成内容可能包含不安全或敏感内容，请您避免输入易产生敏感内容的提示语，感谢您的配合。'}}
+
+[18/20] Generating: 英民调显示王室支持率跌至33年最低 仅三成民众支持君主制
+[18] ERROR: 'list' object has no attribute 'startswith'
+
+[19/20] Generating: 全国铁路暑运启动 预计发送旅客8.6亿人次
+[19] ERROR: 'list' object has no attribute 'startswith'
+
+[20/20] Generating: 教育部将AI教育纳入中小学必修课 配备人工智能实验室
+[20] ERROR: 'list' object has no attribute 'startswith'
+
+============================================================
+Results: 0/20 images generated successfully
+
+Retrying 20 failed images...
+
+[01] RETRY: 夏季达沃斯论坛在大连开幕 聚焦规模化创新与全球合作
+[01] ERROR: 'list' object has no attribute 'startswith'
+
+[02] RETRY: 美伊在瑞士日内瓦重启核谈判 霍尔木兹海峡局势紧张
+[02] ERROR: 'list' object has no attribute 'startswith'
+
+[03] RETRY: 字节跳动火山引擎FORCE大会开幕 发布AI全家桶新品
+[03] ERROR: 'list' object has no attribute 'startswith'
+
+[04] RETRY: DeepSeek完成510亿元融资 估值突破1500亿元
+[04] ERROR: 'list' object has no attribute 'startswith'
+
+[05] RETRY: 英伟达成全球市值最高公司 黄仁勋发布新一代Blackwell架构
+[05] ERROR: 'list' object has no attribute 'startswith'
+
+[06] RETRY: 特斯拉Optimus机器人量产版亮相 售价2万美元起
+[06] ERROR: 'list' object has no attribute 'startswith'
+
+[07] RETRY: 清华大学发布类脑芯片天机X 能效比GPU提升百倍
+[07] ERROR: 'list' object has no attribute 'startswith'
+
+[08] RETRY: OpenAI发布GPT-5.6系列 推理能力超越人类专家
+[08] ERROR: 'list' object has no attribute 'startswith'
+
+[09] RETRY: 中国八部门联合发布新能源汽车下乡政策 155款车型入选
+[09] ERROR: 'list' object has no attribute 'startswith'
+
+[10] RETRY: 国务院出台31条措施促进民营经济发展 聚焦融资与市场准入
+[10] ERROR: No choices in response - {'contentFilter': [{'level': 2, 'role': 'user'}], 'error': {'code': '1301', 'message': '系统检测到输入或生成内容可能包含不安全或敏感内容，请您避免输入易产生敏感内容的提示语，感谢您的配合。'}}
+
+[11] RETRY: 美联储宣布维持利率不变 鲍威尔暗示9月降息可能
+[11] ERROR: 'list' object has no attribute 'startswith'
+
+[12] RETRY: 比特币现货ETF单月净流入超50亿美元 机构持仓创新高
+[12] ERROR: 'list' object has no attribute 'startswith'
+
+[13] RETRY: 国际油价持续下跌 布伦特原油跌破75美元关口
+[13] ERROR: 'list' object has no attribute 'startswith'
+
+[14] RETRY: 阿里巴巴季度营收2650亿元 AI云业务增长超50%
+[14] ERROR: 'list' object has no attribute 'startswith'
+
+[15] RETRY: 三星堆遗址新出土文物近万件 再现古蜀文明辉煌
+[15] ERROR: 'list' object has no attribute 'startswith'
+
+[16] RETRY: 中国动漫《长安三万里》全球票房突破50亿元
+[16] ERROR: No choices in response - {'contentFilter': [{'level': 2, 'role': 'user'}], 'error': {'code': '1301', 'message': '系统检测到输入或生成内容可能包含不安全或敏感内容，请您避免输入易产生敏感内容的提示语，感谢您的配合。'}}
+
+[17] RETRY: 中国游泳队世界杯上海站包揽9金 覃海洋刷新世界纪录
+[17] ERROR: 'list' object has no attribute 'startswith'
+
+[18] RETRY: 英民调显示王室支持率跌至33年最低 仅三成民众支持君主制
+[18] ERROR: 'list' object has no attribute 'startswith'
+
+[19] RETRY: 全国铁路暑运启动 预计发送旅客8.6亿人次
+[19] ERROR: 'list' object has no attribute 'startswith'
+
+[20] RETRY: 教育部将AI教育纳入中小学必修课 配备人工智能实验室
+[20] ERROR: 'list' object has no attribute 'startswith'
+
+Still 20 failed after retry: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20']
+
+FINAL: 0/20 images ready
