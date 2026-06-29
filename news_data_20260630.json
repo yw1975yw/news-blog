@@ -1,0 +1,142 @@
+[
+  {
+    "number": "01",
+    "title": "美伊双方在卡塔尔达成临时核协议 局势暂时缓和",
+    "summary": "美国与伊朗在卡塔尔杜哈结束第三轮技术谈判后宣布达成临时协议，伊朗承诺暂停铀浓缩活动至今年年底，美国则同意暂停部分制裁。联合国原子能机构将派驻特别核查员。协议为期六个月，双方将于明年一月恢复全面谈判。国际油价应声下跌3%，全球金融市场情绪明显回暖。",
+    "tag": "国际",
+    "prompt": "Diplomatic negotiation scene at luxury hotel conference room in Doha, officials from Iran and United States shaking hands, formal atmosphere, Middle Eastern decor, international flags, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "02",
+    "title": "中国宣布自主研发7纳米芯片量产成功",
+    "summary": "中芯国际宣布7纳米制程工艺实现规模化量产，这是中国半导体行业重大突破。首款搭载国产7纳米芯片的智能手机将于下月上市。工信部表示该芯片性能接近台积电5纳米水平，将主要用于消费电子和物联网设备。院士表示这是中国芯片产业独立自主的重要里程碑。",
+    "tag": "科技",
+    "prompt": "Semiconductor factory clean room with advanced lithography equipment, Chinese engineers in protective suits working on chip manufacturing, glowing blue light, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "03",
+    "title": "上证指数再创新高 突破4700点整数关口",
+    "summary": "A股市场今日强势上涨，上证指数大涨3.2%突破4700点，深成指涨3.8%，创业板指涨4.5%。两市成交额达3.2万亿元创历史天量。券商板块集体涨停，北向资金净买入超800亿元。机构投资者表示政策面和资金面双重利好，市场做多情绪高涨，但需注意短期回调风险。",
+    "tag": "金融",
+    "prompt": "Stock market trading floor with large digital displays showing stock prices rising, bullish atmosphere, investors celebrating, Shanghai skyline background, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "04",
+    "title": "神舟二十一号成功着陆 三名航天员安全返回",
+    "summary": "神舟二十一号载人飞船在东风着陆场成功着陆，三名航天员圆满完成183天太空驻留任务。航天员在轨期间完成了空间科学实验、材料制备和太空授课等任务，并进行两次出舱活动。医监医保人员确认航天员身体状态良好，此次任务是中国空间站运营以来的第6次载人飞行。",
+    "tag": "科技",
+    "prompt": "Shenzhou spacecraft reentry capsule landing in desert, rescue helicopters surrounding, Chinese flag, dust cloud, astronauts being helped out, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "05",
+    "title": "中国数字人民币跨境支付覆盖50个国家",
+    "summary": "中国人民银行宣布数字人民币跨境支付试点范围扩大至50个国家，新增包括法国、意大利、西班牙等主要发达经济体。数字人民币跨境支付单日交易额突破500亿元，同比增长200%。央行表示将继续扩大试点范围，推动数字人民币国际化，助力国际贸易结算便利化。",
+    "tag": "金融",
+    "prompt": "Digital payment concept art with Chinese yuan symbol, mobile phone showing digital yuan transaction, global connectivity, futuristic financial technology, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "06",
+    "title": "全国高考成绩公布 多省录取分数线上涨",
+    "summary": "2026年全国高考成绩正式公布，1293万考生可查询成绩。河南、广东、四川等高考大省一本录取分数线普遍上涨5至10分。清华、北大等顶尖高校在多省投档线再创新高。教育部提醒考生理性看待分数线变化，高校招生咨询会将于下周陆续展开。",
+    "tag": "社会",
+    "prompt": "Chinese university campus with happy students celebrating gaokao results, confetti, excitement, modern campus buildings, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "07",
+    "title": "全球首个AI生成内容识别国际标准正式发布",
+    "summary": "国际标准化组织ISO正式发布全球首个AI生成内容识别技术标准，谷歌、微软、百度、阿里巴巴等48家科技企业承诺采用。该标准要求深度合成内容必须添加肉眼不可见的数字水印，否则视为违规。违规者将面临最高年全球营业额4%的罚款。标准将于2027年1月1日起强制实施。",
+    "tag": "科技",
+    "prompt": "Artificial intelligence concept with glowing neural network, digital watermark technology, global standard document, futuristic technology illustration, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "08",
+    "title": "华为发布Mate 70系列 搭载国产麒麟9020芯片",
+    "summary": "华为在深圳发布Mate 70系列旗舰手机，首发搭载麒麟9020芯片，该芯片采用国产7纳米工艺打造，AI算力提升80%。Mate 70 Pro配备6.9英寸折叠屏，售价从8999元起。华为宣布Mate 70系列将预装HarmonyOS NEXT操作系统，不兼容安卓应用，首销预订量已突破500万台。",
+    "tag": "科技",
+    "prompt": "Latest Huawei smartphone on display in modern tech store, sleek design, glowing screen, surrounded by people, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "09",
+    "title": "中国新能源汽车出口量首季超越日本跃居全球第一",
+    "summary": "中国汽车工业协会数据显示，今年第一季度中国新能源汽车出口量达68万辆，首次超越日本成为全球最大新能源汽车出口国。比亚迪、吉利、蔚来等品牌在欧洲和东南亚市场表现强劲。国产新能源汽车在电池技术续航里程和智能化配置方面竞争优势明显，全球市场份额已达45%。",
+    "tag": "经济",
+    "prompt": "Electric vehicle charging station with Chinese EV brands, modern city background, green energy concept, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "10",
+    "title": "第35届东南亚运动会在曼谷闭幕 中国健儿获佳绩",
+    "summary": "第35届东南亚运动会在泰国曼谷闭幕，中国体育代表团获得金牌榜和奖牌榜双第一，共收获金牌186枚。中国运动员在游泳、田径、体操等传统优势项目上表现出色，并在电子竞技和霹雳舞等新增项目上斩获多枚金牌。闭幕式上杭州作为下届运动会主办城市接过了会旗。",
+    "tag": "体育",
+    "prompt": "Southeast Asian Games closing ceremony in Bangkok, colorful fireworks display, sports stadium, athletes celebrating, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "11",
+    "title": "国际货币基金组织上调中国经济增长预期至5.8%",
+    "summary": "国际货币基金组织发布最新《世界经济展望》报告，上调中国2026年经济增长预期至5.8%，较年初预测提高0.5个百分点。IMF表示中国消费复苏超预期，房地产市场趋稳，制造业回暖是上调的主要原因。报告同时警告地缘政治紧张和全球贸易摩擦可能带来下行风险。",
+    "tag": "经济",
+    "prompt": "International Monetary Fund building in Washington DC, global economy concept, data charts, professional business setting, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "12",
+    "title": "中国科学家首次实现百公里量子直接通信",
+    "summary": "北京量子信息研究院宣布首次实现100公里量子直接通信，刷新世界纪录。该技术无需密钥分发即可实现安全通信，理论上无法被窃听。实验在北京市区和延庆之间进行，误码率低于1%。该突破为量子通信网络商用化奠定基础，预计将在金融、政务等领域率先应用。",
+    "tag": "科技",
+    "prompt": "Chinese scientists in quantum physics laboratory, optical table with laser equipment, quantum communication technology, university research facility, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "13",
+    "title": "全国多地出现强降雨 防汛应急响应提升至二级",
+    "summary": "受梅雨锋影响，长江中下游和淮河流域出现强降雨天气，多地降雨量突破历史极值。国家防汛抗旱总指挥部将防汛应急响应提升至二级，要求各地做好洪涝灾害防御工作。浙江、安徽、江苏已转移危险区域群众超过50万人。气象部门预报此轮降雨将于周末减弱。",
+    "tag": "社会",
+    "prompt": "Heavy rainfall and flooding in Chinese city, flooded streets, emergency rescue workers helping citizens, dark storm clouds, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "14",
+    "title": "特斯拉上海工厂第500万辆整车下线",
+    "summary": "特斯拉上海超级工厂第500万辆整车正式下线，这是特斯拉在全球范围内的重要里程碑。从100万到500万辆，上海工厂仅用时三年。下线的车型为Model Y高性能版，将主要供应亚太市场。马斯克通过视频致辞表示上海工厂效率全球领先，将继续扩大在华投资。",
+    "tag": "科技",
+    "prompt": "Tesla Shanghai Gigafactory celebration ceremony, new car rolling off assembly line, red carpet event, Elon Musk video message, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "15",
+    "title": "教育部出台AI赋能教育三年行动计划",
+    "summary": "教育部发布《人工智能赋能教育高质量发展三年行动计划》，要求到2028年实现AI辅助教学覆盖全部学科，建成国家级AI教育数字平台100个，培训AI教师200万人次。学生可获得个性化学习路径和智能辅导，减轻课外负担同时提升学习效率。",
+    "tag": "社会",
+    "prompt": "Modern classroom with AI-powered educational technology, students using tablets, intelligent tutoring system, smart classroom environment, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "16",
+    "title": "中国自主研制的大型客机C929完成首飞",
+    "summary": "中国商飞自主研制的双通道大型客机C929在陕西阎良完成首飞，飞行时间持续62分钟，各系统工作正常。C929采用国产CJ-2000发动机，最大载客量超过300人，航程达12000公里。中国商飞表示将按计划推进适航取证，预计2029年交付首家用户。",
+    "tag": "科技",
+    "prompt": "Chinese homemade large passenger aircraft C929 taking off from runway, sky background, historic first flight moment, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "17",
+    "title": "全球最大的绿色氢能项目在内蒙古投产",
+    "summary": "全球最大的绿氢一体化项目在内蒙古鄂尔多斯正式投产，项目总投资300亿元，年产绿氢30万吨。项目利用当地丰富的风光资源进行电解水制氢，所产氢气将主要供应京津冀地区工业企业。业内认为这是中国能源转型和碳中和进程中的标志性项目。",
+    "tag": "经济",
+    "prompt": "Large green hydrogen production facility in Inner Mongolia, wind turbines and solar panels in background, industrial equipment, clean energy, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "18",
+    "title": "字节跳动AI助手豆包月活用户突破5亿",
+    "summary": "字节跳动宣布AI助手产品豆包月活用户突破5亿，成为国内仅次于文心一言的第二大AI应用。豆包集成于抖音、飞书等字节系产品，主打短视频生成和智能客服功能。公司透露豆包API已吸引超过50万开发者接入，字节跳动成为国内AI生态最完善的企业之一。",
+    "tag": "科技",
+    "prompt": "Young people using AI assistant on smartphones, Douyin interface visible, modern urban setting, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "19",
+    "title": "中欧班列累计开行突破10万列 创历史纪录",
+    "summary": "中欧班列累计开行数量正式突破10万列，连接亚欧大陆125个城市。上半年班列开行量同比增长18%，运送货物种类从最初的电子产品扩展至汽车配件、跨境电商、医疗物资等。沿线国家正受益于亚欧大陆贸易通道带来的物流红利，中国与沿线国家贸易额再创新高。",
+    "tag": "经济",
+    "prompt": "China-Europe freight train on railway bridge crossing border, loaded with containers, modern railway infrastructure, photorealistic, ultra detailed, 8K, high resolution"
+  },
+  {
+    "number": "20",
+    "title": "国际权威期刊发表中国科学家室温超导新成果",
+    "summary": "《自然》杂志发表中国科学家团队关于室温超导材料的新研究成果，该材料在35摄氏度、常规压力下实现超导特性，稳定性较此前版本提升10倍。全球二十多个实验室宣布将重复实验验证。业内认为如获确认，将开启超导材料商业化应用新纪元，对电力传输和医学成像领域影响深远。",
+    "tag": "科技",
+    "prompt": "Scientists in laboratory conducting superconductivity experiment, glowing material sample in specialized equipment, advanced physics research, photorealistic, ultra detailed, 8K, high resolution"
+  }
+]

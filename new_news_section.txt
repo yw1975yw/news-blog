@@ -1,180 +1,180 @@
 <article class="news-card" data-tag="国际">
-    <img class="news-image" src="images/news_20260625_01.png" alt="夏季达沃斯论坛在大连开幕 AI治理与全球经济复苏成焦点" loading="lazy">
+    <img class="news-image" src="images/news_20260630_01.png" alt="美伊双方在卡塔尔达成临时核协议 局势暂时缓和" loading="lazy">
     <div class="news-content">
         <span class="news-number">01</span>
-        <h3 class="news-title">夏季达沃斯论坛在大连开幕 AI治理与全球经济复苏成焦点</h3>
-        <p class="news-summary">2026年夏季达沃斯论坛在大连国际会议中心正式开幕，主题为「未来增长的新动力」。超过1700位全球政商领袖参会，重点讨论人工智能治理框架、供应链重构与绿色转型三大议题。中国国务院总理出席开幕式并发表主旨演讲，呼吁构建开放型世界经济。</p>
+        <h3 class="news-title">美伊双方在卡塔尔达成临时核协议 局势暂时缓和</h3>
+        <p class="news-summary">美国与伊朗在卡塔尔杜哈结束第三轮技术谈判后宣布达成临时协议，伊朗承诺暂停铀浓缩活动至今年年底，美国则同意暂停部分制裁。联合国原子能机构将派驻特别核查员。协议为期六个月，双方将于明年一月恢复全面谈判。国际油价应声下跌3%，全球金融市场情绪明显回暖。</p>
         <div><span class="tag">国际</span></div>
     </div>
 </article>
 <article class="news-card" data-tag="科技">
-    <img class="news-image" src="images/news_20260625_02.png" alt="OpenAI发布GPT-5.6系列 推理能力超越人类专家" loading="lazy">
+    <img class="news-image" src="images/news_20260630_02.png" alt="中国宣布自主研发7纳米芯片量产成功" loading="lazy">
     <div class="news-content">
         <span class="news-number">02</span>
-        <h3 class="news-title">OpenAI发布GPT-5.6系列 推理能力超越人类专家</h3>
-        <p class="news-summary">OpenAI正式发布GPT-5.6系列大模型，在数学推理、代码生成和科学问题回答等多项基准测试中超越人类专家水平。新模型支持128K超长上下文窗口，多模态能力显著增强，可同时处理文本、图像和视频。奥特曼表示GPT-5.6已开始向Plus用户推送，企业版将于下周发布。</p>
+        <h3 class="news-title">中国宣布自主研发7纳米芯片量产成功</h3>
+        <p class="news-summary">中芯国际宣布7纳米制程工艺实现规模化量产，这是中国半导体行业重大突破。首款搭载国产7纳米芯片的智能手机将于下月上市。工信部表示该芯片性能接近台积电5纳米水平，将主要用于消费电子和物联网设备。院士表示这是中国芯片产业独立自主的重要里程碑。</p>
         <div><span class="tag">科技</span></div>
     </div>
 </article>
 <article class="news-card" data-tag="金融">
-    <img class="news-image" src="images/news_20260625_03.png" alt="美联储宣布维持利率不变 鲍威尔暗示9月降息可能" loading="lazy">
+    <img class="news-image" src="images/news_20260630_03.png" alt="上证指数再创新高 突破4700点整数关口" loading="lazy">
     <div class="news-content">
         <span class="news-number">03</span>
-        <h3 class="news-title">美联储宣布维持利率不变 鲍威尔暗示9月降息可能</h3>
-        <p class="news-summary">美联储结束为期两天的货币政策会议，决定维持联邦基金利率在5.25%至5.5%区间不变。美联储主席鲍威尔表示通胀数据持续改善，若经济走势符合预期，9月可能是降息的合适时机。美联储还上调了今年GDP增长预期至2.1%，美股三大指数应声上涨。</p>
+        <h3 class="news-title">上证指数再创新高 突破4700点整数关口</h3>
+        <p class="news-summary">A股市场今日强势上涨，上证指数大涨3.2%突破4700点，深成指涨3.8%，创业板指涨4.5%。两市成交额达3.2万亿元创历史天量。券商板块集体涨停，北向资金净买入超800亿元。机构投资者表示政策面和资金面双重利好，市场做多情绪高涨，但需注意短期回调风险。</p>
         <div><span class="tag">金融</span></div>
     </div>
 </article>
 <article class="news-card" data-tag="科技">
-    <img class="news-image" src="images/news_20260625_04.png" alt="英伟达发布新一代Blackwell Ultra 算力提升5倍" loading="lazy">
+    <img class="news-image" src="images/news_20260630_04.png" alt="神舟二十一号成功着陆 三名航天员安全返回" loading="lazy">
     <div class="news-content">
         <span class="news-number">04</span>
-        <h3 class="news-title">英伟达发布新一代Blackwell Ultra 算力提升5倍</h3>
-        <p class="news-summary">英伟达在台北电脑展期间发布新一代Blackwell Ultra架构GPU，黄仁勋表示该芯片AI算力较上代提升5倍，能效提升40倍。台积电确认将于今年第四季度开始量产3纳米Blackwell Ultra芯片，主要客户包括微软、谷歌和亚马逊。云服务商已经开始排队预订。</p>
+        <h3 class="news-title">神舟二十一号成功着陆 三名航天员安全返回</h3>
+        <p class="news-summary">神舟二十一号载人飞船在东风着陆场成功着陆，三名航天员圆满完成183天太空驻留任务。航天员在轨期间完成了空间科学实验、材料制备和太空授课等任务，并进行两次出舱活动。医监医保人员确认航天员身体状态良好，此次任务是中国空间站运营以来的第6次载人飞行。</p>
         <div><span class="tag">科技</span></div>
     </div>
 </article>
 <article class="news-card" data-tag="金融">
-    <img class="news-image" src="images/news_20260625_05.png" alt="中国数字人民币跨境支付系统上线 覆盖50个国家" loading="lazy">
+    <img class="news-image" src="images/news_20260630_05.png" alt="中国数字人民币跨境支付覆盖50个国家" loading="lazy">
     <div class="news-content">
         <span class="news-number">05</span>
-        <h3 class="news-title">中国数字人民币跨境支付系统上线 覆盖50个国家</h3>
-        <p class="news-summary">中国数字人民币跨境支付系统正式上线，首批覆盖50个国家和地区，支持实时汇兑和低成本跨境转账。该系统基于区块链技术，交易可在数秒内完成，手续费较传统跨境汇款降低90%以上。跨境电商从业者表示这将大幅降低外汇结算成本和时间。</p>
+        <h3 class="news-title">中国数字人民币跨境支付覆盖50个国家</h3>
+        <p class="news-summary">中国人民银行宣布数字人民币跨境支付试点范围扩大至50个国家，新增包括法国、意大利、西班牙等主要发达经济体。数字人民币跨境支付单日交易额突破500亿元，同比增长200%。央行表示将继续扩大试点范围，推动数字人民币国际化，助力国际贸易结算便利化。</p>
         <div><span class="tag">金融</span></div>
     </div>
 </article>
-<article class="news-card" data-tag="科技">
-    <img class="news-image" src="images/news_20260625_06.png" alt="谷歌DeepMind攻克蛋白质折叠难题 加速新药研发" loading="lazy">
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="images/news_20260630_06.png" alt="全国高考成绩公布 多省录取分数线上涨" loading="lazy">
     <div class="news-content">
         <span class="news-number">06</span>
-        <h3 class="news-title">谷歌DeepMind攻克蛋白质折叠难题 加速新药研发</h3>
-        <p class="news-summary">谷歌DeepMind团队宣布其AlphaFold 4系统成功预测超过6亿种蛋白质结构，覆盖地球上已知的所有蛋白质。该成果被视为结构生物学里程碑，可将新药研发周期从平均10年缩短至3-5年。多家国际药企已签署合作协议，利用该系统开发抗癌药物和疫苗。</p>
-        <div><span class="tag">科技</span></div>
+        <h3 class="news-title">全国高考成绩公布 多省录取分数线上涨</h3>
+        <p class="news-summary">2026年全国高考成绩正式公布，1293万考生可查询成绩。河南、广东、四川等高考大省一本录取分数线普遍上涨5至10分。清华、北大等顶尖高校在多省投档线再创新高。教育部提醒考生理性看待分数线变化，高校招生咨询会将于下周陆续展开。</p>
+        <div><span class="tag">社会</span></div>
     </div>
 </article>
-<article class="news-card" data-tag="社会">
-    <img class="news-image" src="images/news_20260625_07.png" alt="全国多地高温预警 电网负荷创历史新高" loading="lazy">
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="images/news_20260630_07.png" alt="全球首个AI生成内容识别国际标准正式发布" loading="lazy">
     <div class="news-content">
         <span class="news-number">07</span>
-        <h3 class="news-title">全国多地高温预警 电网负荷创历史新高</h3>
-        <p class="news-summary">中央气象台发布高温橙色预警，18个省份出现35℃以上高温，局部地区达40℃。国家电网数据显示，全国电网负荷突破12亿千瓦时，创历史新高。浙江、江苏等地启动有序用电方案，相关部门呼吁居民节约用电、错峰用电，重点保障居民和公共设施用电。</p>
-        <div><span class="tag">社会</span></div>
+        <h3 class="news-title">全球首个AI生成内容识别国际标准正式发布</h3>
+        <p class="news-summary">国际标准化组织ISO正式发布全球首个AI生成内容识别技术标准，谷歌、微软、百度、阿里巴巴等48家科技企业承诺采用。该标准要求深度合成内容必须添加肉眼不可见的数字水印，否则视为违规。违规者将面临最高年全球营业额4%的罚款。标准将于2027年1月1日起强制实施。</p>
+        <div><span class="tag">科技</span></div>
     </div>
 </article>
-<article class="news-card" data-tag="金融">
-    <img class="news-image" src="images/news_20260625_08.png" alt="A股三大指数集体上涨 成交额突破2万亿元" loading="lazy">
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="images/news_20260630_08.png" alt="华为发布Mate 70系列 搭载国产麒麟9020芯片" loading="lazy">
     <div class="news-content">
         <span class="news-number">08</span>
-        <h3 class="news-title">A股三大指数集体上涨 成交额突破2万亿元</h3>
-        <p class="news-summary">A股市场今日放量大涨，沪指涨2.1%收复3400点，深成指涨2.8%，创业板指涨3.5%。两市成交额突破2.1万亿元，创年内新高。AI、半导体板块领涨，北向资金净流入超200亿元，市场情绪明显回暖，券商和基金人士对后市持乐观态度。</p>
-        <div><span class="tag">金融</span></div>
+        <h3 class="news-title">华为发布Mate 70系列 搭载国产麒麟9020芯片</h3>
+        <p class="news-summary">华为在深圳发布Mate 70系列旗舰手机，首发搭载麒麟9020芯片，该芯片采用国产7纳米工艺打造，AI算力提升80%。Mate 70 Pro配备6.9英寸折叠屏，售价从8999元起。华为宣布Mate 70系列将预装HarmonyOS NEXT操作系统，不兼容安卓应用，首销预订量已突破500万台。</p>
+        <div><span class="tag">科技</span></div>
     </div>
 </article>
-<article class="news-card" data-tag="科技">
-    <img class="news-image" src="images/news_20260625_09.png" alt="中国成功发射天宫空间站扩展舱 首次实现太空制造" loading="lazy">
+<article class="news-card" data-tag="经济">
+    <img class="news-image" src="images/news_20260630_09.png" alt="中国新能源汽车出口量首季超越日本跃居全球第一" loading="lazy">
     <div class="news-content">
         <span class="news-number">09</span>
-        <h3 class="news-title">中国成功发射天宫空间站扩展舱 首次实现太空制造</h3>
-        <p class="news-summary">中国载人航天工程办公室宣布，天宫空间站梦天实验舱与天和核心舱成功对接。航天员在轨进行了首次太空材料制造实验，成功生产出高纯度光纤预制棒。这标志着中国成为首个在太空实现规模化材料制造的国家，为未来太空工业化和深空探索奠定基础。</p>
-        <div><span class="tag">科技</span></div>
-    </div>
-</article>
-<article class="news-card" data-tag="金融">
-    <img class="news-image" src="images/news_20260625_10.png" alt="国际金价再创新高 突破每盎司2800美元" loading="lazy">
-    <div class="news-content">
-        <span class="news-number">10</span>
-        <h3 class="news-title">国际金价再创新高 突破每盎司2800美元</h3>
-        <p class="news-summary">国际金价持续走高，纽约商品交易所黄金期货价格突破每盎司2800美元关口，创历史新高。分析师指出地缘政治风险和全球央行降息预期是推动金价上涨的主要因素。全球央行持续增持黄金，中国和印度央行是最大买家，黄金ETF持仓量创近三年新高。</p>
-        <div><span class="tag">金融</span></div>
-    </div>
-</article>
-<article class="news-card" data-tag="科技">
-    <img class="news-image" src="images/news_20260625_11.png" alt="清华大学发布类脑芯片天机X 能效比GPU提升百倍" loading="lazy">
-    <div class="news-content">
-        <span class="news-number">11</span>
-        <h3 class="news-title">清华大学发布类脑芯片天机X 能效比GPU提升百倍</h3>
-        <p class="news-summary">清华大学团队研制成功新型类脑计算芯片天机X，在典型AI推理任务中能效比达到传统GPU的100倍。该芯片采用仿生神经网络架构，支持在线学习和实时推理，无需云计算即可在终端设备完成复杂AI任务。团队负责人表示该芯片可广泛应用于自动驾驶和智能机器人领域。</p>
-        <div><span class="tag">科技</span></div>
-    </div>
-</article>
-<article class="news-card" data-tag="经济">
-    <img class="news-image" src="images/news_20260625_12.png" alt="中国八部门联合发布新能源汽车下乡政策 155款车型入选" loading="lazy">
-    <div class="news-content">
-        <span class="news-number">12</span>
-        <h3 class="news-title">中国八部门联合发布新能源汽车下乡政策 155款车型入选</h3>
-        <p class="news-summary">工信部等八部门联合发布2026年新能源汽车下乡车型目录，共155款车型入选，包括小米SU7、特斯拉Model 3、红旗E-QM5等热门车型。政策提供购置税减免和充电桩建设补贴支持，推动新能源汽车向农村市场普及，预计带动农村新能源汽车销量增长40%。</p>
-        <div><span class="tag">经济</span></div>
-    </div>
-</article>
-<article class="news-card" data-tag="社会">
-    <img class="news-image" src="images/news_20260625_13.png" alt="新版国家医保药品目录发布 新增120种创新药" loading="lazy">
-    <div class="news-content">
-        <span class="news-number">13</span>
-        <h3 class="news-title">新版国家医保药品目录发布 新增120种创新药</h3>
-        <p class="news-summary">国家医保局发布2026年版国家医保药品目录，新增120种创新药，其中包括多款抗肿瘤和罕见病药物。目录内药品总数超过3100种。谈判药品价格平均降幅超过50%，创新药的可及性将大幅提升，预计每年可为患者减轻药费负担超过500亿元。</p>
-        <div><span class="tag">社会</span></div>
-    </div>
-</article>
-<article class="news-card" data-tag="科技">
-    <img class="news-image" src="images/news_20260625_14.png" alt="SpaceX星舰完成首次商业任务 成功部署120颗卫星" loading="lazy">
-    <div class="news-content">
-        <span class="news-number">14</span>
-        <h3 class="news-title">SpaceX星舰完成首次商业任务 成功部署120颗卫星</h3>
-        <p class="news-summary">SpaceX星舰完成首次商业卫星部署任务，将120颗星链卫星送入轨道。此次任务验证了星舰的重复使用能力，助推器与飞船均成功回收。SpaceX表示星舰将在明年实现每周一次的商业发射频率，大幅降低卫星发射成本，每公斤载荷运输价格将降至100美元以下。</p>
-        <div><span class="tag">科技</span></div>
-    </div>
-</article>
-<article class="news-card" data-tag="社会">
-    <img class="news-image" src="images/news_20260625_15.png" alt="教育部将AI教育纳入中小学必修课 配备人工智能实验室" loading="lazy">
-    <div class="news-content">
-        <span class="news-number">15</span>
-        <h3 class="news-title">教育部将AI教育纳入中小学必修课 配备人工智能实验室</h3>
-        <p class="news-summary">教育部发布新版义务教育课程方案和课程标准，明确将人工智能教育纳入中小学必修内容。新方案要求各校配备人工智能实验室，开设编程和算法基础课程。教育部表示AI教育将从城市学校试点后逐步向农村学校推广，首批试点学校超过5000所。</p>
-        <div><span class="tag">社会</span></div>
-    </div>
-</article>
-<article class="news-card" data-tag="文化">
-    <img class="news-image" src="images/news_20260625_16.png" alt="第78届戛纳电影节开幕 中国导演竞逐金棕榈" loading="lazy">
-    <div class="news-content">
-        <span class="news-number">16</span>
-        <h3 class="news-title">第78届戛纳电影节开幕 中国导演竞逐金棕榈</h3>
-        <p class="news-summary">第78届戛纳电影节在法国开幕，中国导演的作品《黄河谣》入围主竞赛单元，争夺金棕榈奖。华语电影在戛纳电影节的表现受到国际影坛关注，中国演员舒淇担任本届电影节评委，这也是时隔十年再次有华人演员担任主竞赛评委。</p>
-        <div><span class="tag">文化</span></div>
-    </div>
-</article>
-<article class="news-card" data-tag="经济">
-    <img class="news-image" src="images/news_20260625_17.png" alt="全国夏粮收购超预期 同比增长12%" loading="lazy">
-    <div class="news-content">
-        <span class="news-number">17</span>
-        <h3 class="news-title">全国夏粮收购超预期 同比增长12%</h3>
-        <p class="news-summary">国家粮食和物资储备局公布夏粮收购数据，全国夏粮收购量已超过3000万吨，同比增长12%。优质小麦收购比例提高，收购价格保持稳定。农业农村部表示夏粮丰收为全年粮食稳产增产打下坚实基础，有望实现二十连丰。</p>
+        <h3 class="news-title">中国新能源汽车出口量首季超越日本跃居全球第一</h3>
+        <p class="news-summary">中国汽车工业协会数据显示，今年第一季度中国新能源汽车出口量达68万辆，首次超越日本成为全球最大新能源汽车出口国。比亚迪、吉利、蔚来等品牌在欧洲和东南亚市场表现强劲。国产新能源汽车在电池技术续航里程和智能化配置方面竞争优势明显，全球市场份额已达45%。</p>
         <div><span class="tag">经济</span></div>
     </div>
 </article>
 <article class="news-card" data-tag="体育">
-    <img class="news-image" src="images/news_20260625_18.png" alt="中国游泳队世界杯上海站包揽9金 刷新世界纪录" loading="lazy">
+    <img class="news-image" src="images/news_20260630_10.png" alt="第35届东南亚运动会在曼谷闭幕 中国健儿获佳绩" loading="lazy">
     <div class="news-content">
-        <span class="news-number">18</span>
-        <h3 class="news-title">中国游泳队世界杯上海站包揽9金 刷新世界纪录</h3>
-        <p class="news-summary">中国游泳队在世界杯上海站以3分28秒34的成绩打破4x100米混合泳接力世界纪录，领先原纪录超过1秒。中国队包揽本站赛事全部9枚金牌，多个项目刷新亚洲纪录。中国游泳再次震惊世界，备战巴黎奥运会状态火热。</p>
+        <span class="news-number">10</span>
+        <h3 class="news-title">第35届东南亚运动会在曼谷闭幕 中国健儿获佳绩</h3>
+        <p class="news-summary">第35届东南亚运动会在泰国曼谷闭幕，中国体育代表团获得金牌榜和奖牌榜双第一，共收获金牌186枚。中国运动员在游泳、田径、体操等传统优势项目上表现出色，并在电子竞技和霹雳舞等新增项目上斩获多枚金牌。闭幕式上杭州作为下届运动会主办城市接过了会旗。</p>
         <div><span class="tag">体育</span></div>
     </div>
 </article>
-<article class="news-card" data-tag="金融">
-    <img class="news-image" src="images/news_20260625_19.png" alt="比特币现货ETF单月净流入超50亿美元 机构持仓创新高" loading="lazy">
+<article class="news-card" data-tag="经济">
+    <img class="news-image" src="images/news_20260630_11.png" alt="国际货币基金组织上调中国经济增长预期至5.8%" loading="lazy">
     <div class="news-content">
-        <span class="news-number">19</span>
-        <h3 class="news-title">比特币现货ETF单月净流入超50亿美元 机构持仓创新高</h3>
-        <p class="news-summary">美国比特币现货ETF连续第三周实现净流入，本月累计净流入超过50亿美元，持仓总市值突破650亿美元。贝莱德和富达的比特币ETF产品最受机构青睐。分析师认为比特币已逐渐成为机构投资者的标准配置资产，现货ETF将推动加密市场进入主流化阶段。</p>
-        <div><span class="tag">金融</span></div>
+        <span class="news-number">11</span>
+        <h3 class="news-title">国际货币基金组织上调中国经济增长预期至5.8%</h3>
+        <p class="news-summary">国际货币基金组织发布最新《世界经济展望》报告，上调中国2026年经济增长预期至5.8%，较年初预测提高0.5个百分点。IMF表示中国消费复苏超预期，房地产市场趋稳，制造业回暖是上调的主要原因。报告同时警告地缘政治紧张和全球贸易摩擦可能带来下行风险。</p>
+        <div><span class="tag">经济</span></div>
     </div>
 </article>
-<article class="news-card" data-tag="文化">
-    <img class="news-image" src="images/news_20260625_20.png" alt="三星堆遗址新出土文物近万件 再现古蜀文明辉煌" loading="lazy">
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="images/news_20260630_12.png" alt="中国科学家首次实现百公里量子直接通信" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">12</span>
+        <h3 class="news-title">中国科学家首次实现百公里量子直接通信</h3>
+        <p class="news-summary">北京量子信息研究院宣布首次实现100公里量子直接通信，刷新世界纪录。该技术无需密钥分发即可实现安全通信，理论上无法被窃听。实验在北京市区和延庆之间进行，误码率低于1%。该突破为量子通信网络商用化奠定基础，预计将在金融、政务等领域率先应用。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="images/news_20260630_13.png" alt="全国多地出现强降雨 防汛应急响应提升至二级" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">13</span>
+        <h3 class="news-title">全国多地出现强降雨 防汛应急响应提升至二级</h3>
+        <p class="news-summary">受梅雨锋影响，长江中下游和淮河流域出现强降雨天气，多地降雨量突破历史极值。国家防汛抗旱总指挥部将防汛应急响应提升至二级，要求各地做好洪涝灾害防御工作。浙江、安徽、江苏已转移危险区域群众超过50万人。气象部门预报此轮降雨将于周末减弱。</p>
+        <div><span class="tag">社会</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="images/news_20260630_14.png" alt="特斯拉上海工厂第500万辆整车下线" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">14</span>
+        <h3 class="news-title">特斯拉上海工厂第500万辆整车下线</h3>
+        <p class="news-summary">特斯拉上海超级工厂第500万辆整车正式下线，这是特斯拉在全球范围内的重要里程碑。从100万到500万辆，上海工厂仅用时三年。下线的车型为Model Y高性能版，将主要供应亚太市场。马斯克通过视频致辞表示上海工厂效率全球领先，将继续扩大在华投资。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="社会">
+    <img class="news-image" src="images/news_20260630_15.png" alt="教育部出台AI赋能教育三年行动计划" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">15</span>
+        <h3 class="news-title">教育部出台AI赋能教育三年行动计划</h3>
+        <p class="news-summary">教育部发布《人工智能赋能教育高质量发展三年行动计划》，要求到2028年实现AI辅助教学覆盖全部学科，建成国家级AI教育数字平台100个，培训AI教师200万人次。学生可获得个性化学习路径和智能辅导，减轻课外负担同时提升学习效率。</p>
+        <div><span class="tag">社会</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="images/news_20260630_16.png" alt="中国自主研制的大型客机C929完成首飞" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">16</span>
+        <h3 class="news-title">中国自主研制的大型客机C929完成首飞</h3>
+        <p class="news-summary">中国商飞自主研制的双通道大型客机C929在陕西阎良完成首飞，飞行时间持续62分钟，各系统工作正常。C929采用国产CJ-2000发动机，最大载客量超过300人，航程达12000公里。中国商飞表示将按计划推进适航取证，预计2029年交付首家用户。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="经济">
+    <img class="news-image" src="images/news_20260630_17.png" alt="全球最大的绿色氢能项目在内蒙古投产" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">17</span>
+        <h3 class="news-title">全球最大的绿色氢能项目在内蒙古投产</h3>
+        <p class="news-summary">全球最大的绿氢一体化项目在内蒙古鄂尔多斯正式投产，项目总投资300亿元，年产绿氢30万吨。项目利用当地丰富的风光资源进行电解水制氢，所产氢气将主要供应京津冀地区工业企业。业内认为这是中国能源转型和碳中和进程中的标志性项目。</p>
+        <div><span class="tag">经济</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="images/news_20260630_18.png" alt="字节跳动AI助手豆包月活用户突破5亿" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">18</span>
+        <h3 class="news-title">字节跳动AI助手豆包月活用户突破5亿</h3>
+        <p class="news-summary">字节跳动宣布AI助手产品豆包月活用户突破5亿，成为国内仅次于文心一言的第二大AI应用。豆包集成于抖音、飞书等字节系产品，主打短视频生成和智能客服功能。公司透露豆包API已吸引超过50万开发者接入，字节跳动成为国内AI生态最完善的企业之一。</p>
+        <div><span class="tag">科技</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="经济">
+    <img class="news-image" src="images/news_20260630_19.png" alt="中欧班列累计开行突破10万列 创历史纪录" loading="lazy">
+    <div class="news-content">
+        <span class="news-number">19</span>
+        <h3 class="news-title">中欧班列累计开行突破10万列 创历史纪录</h3>
+        <p class="news-summary">中欧班列累计开行数量正式突破10万列，连接亚欧大陆125个城市。上半年班列开行量同比增长18%，运送货物种类从最初的电子产品扩展至汽车配件、跨境电商、医疗物资等。沿线国家正受益于亚欧大陆贸易通道带来的物流红利，中国与沿线国家贸易额再创新高。</p>
+        <div><span class="tag">经济</span></div>
+    </div>
+</article>
+<article class="news-card" data-tag="科技">
+    <img class="news-image" src="images/news_20260630_20.png" alt="国际权威期刊发表中国科学家室温超导新成果" loading="lazy">
     <div class="news-content">
         <span class="news-number">20</span>
-        <h3 class="news-title">三星堆遗址新出土文物近万件 再现古蜀文明辉煌</h3>
-        <p class="news-summary">四川省文物考古研究院公布三星堆遗址最新考古成果，新发现8座祭祀坑，出土珍贵文物近万件，其中包括迄今为止最大的青铜神坛。三星堆新一轮考古发掘将为研究古蜀文明提供更多实证，对理解中华文明多元一体格局意义重大。</p>
-        <div><span class="tag">文化</span></div>
+        <h3 class="news-title">国际权威期刊发表中国科学家室温超导新成果</h3>
+        <p class="news-summary">《自然》杂志发表中国科学家团队关于室温超导材料的新研究成果，该材料在35摄氏度、常规压力下实现超导特性，稳定性较此前版本提升10倍。全球二十多个实验室宣布将重复实验验证。业内认为如获确认，将开启超导材料商业化应用新纪元，对电力传输和医学成像领域影响深远。</p>
+        <div><span class="tag">科技</span></div>
     </div>
 </article>
